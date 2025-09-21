@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
+  <judgement>
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>Osnovni Sud u Kotoru</FRBRauthor>
+          <FRBRdate date="2008-03-04">2008-03-04</FRBRdate>
+          <FRBRtitle>K 132/2007</FRBRtitle>
+          <FRBRcountry>CG</FRBRcountry>
+        </FRBRWork>
+      </identification>
+      <references>
+        <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Kotor" showAs="<organization id="os" refersTo="#os">Osnovni sud u Kotoru</organization>"/>
+        <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Kotor" showAs="Osnovno državno tužilaštvo u Kotoru"/>
+        <TLCPerson eId="vpean" href="/ontology/person/vpean" showAs="Vesna Pean"/>
+        <TLCPerson eId="sgoranovic" href="/ontology/person/sgoranovic" showAs="Šćepan Goranović"/>
+        <TLCPerson eId="bkukalj" href="/ontology/person/bkukalj" showAs="Branko Kukalj"/>
+        <TLCPerson eId="tnikolic" href="/ontology/person/tnikolic" showAs="Tatjana Nikolić"/>
+        <TLCPerson eId="ha" href="/ontology/person/ha" showAs="<party id="ha" refersTo="#ha" as="#defendant">H. A.</party>"/>
+        <TLCPerson eId="jc" href="/ontology/person/jc" showAs="J. Č."/>
+        <TLCPerson eId="jz" href="/ontology/person/jz" showAs="<party id="jz" refersTo="#jz" as="#victim">J. Z.</party>"/>
+        <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge"/>
+        <TLCRole eId="jury" href="/ontology/role/jury" showAs="Jury"/>
+        <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk"/>
+        <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant"/>
+        <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff"/>
+        <TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim"/>
+      </references>
+
+    </meta>
+
+    <introduction>
+<p>Posl.br.K.132/07</p>
+<p>U  IME  NARODA !</p>
+<p><organization id="os" refersTo="#os">Osnovni sud u Kotoru</organization>, kao nadležni prvostepeni krivični sud, u vijeću sastavljenom od Predsjednika vijeća-</p>
+<p><party id="vpean" refersTo="#vpean" as="#judge">sudije Vesne Pean</party> i članova vijeća-sudija porotnika <party id="sgoranovic" refersTo="#sgoranovic" as="#jury">Šćepana Goranovića</party> i <party id="bkukalj" refersTo="#bkukalj" as="#jury">Branka Kukalja</party>, uz učešće</p>
+<p>zapisničara <party id="tnikolic" refersTo="#tnikolic" as="#clerk">Tatjane Nikolić</party>, u predmetu okr. <party id="ha" refersTo="#ha" as="#defendant">H. A.</party> ,zbog krivičnog djela davanja mita iz <ref href="/krivicni#art_424_para_1">čl.424. st.1Krivičnog</ref></p>
+<p>zakonika Crne Gore, koji se vodi po optužnici <organization id="odt" refersTo="#odt">ODT Kotor</organization>, Kt. br.580/06 od 17.03.2007. god., nakon održanog</p>
+<p>glavnog i javnog pretresa. u prisustvu okrivljenog i zastupnika tužbe <party id="jc" refersTo="#jc" as="#plaintiff">J. Č.</party>, zamjenice <organization id="odt" refersTo="#odt">ODT Kotor</organization>, donio je i</p>
+<p>javno objavio dana 4.03.2008 godine sledeću,</p>
+<p>P R E S U D U</p>
+    </introduction>
+
+    <background>
+<p>Okr.<party id="ha" refersTo="#ha" as="#defendant">H. A.</party> od oca V. i majke N., rođene B., rodjenog 22.04.1985. godine u B. P., stalno nastanjenog u B. P., selo</p>
+<p>...., državljanina RCG, po zanimanju vodinstalatere, neoženjenog, vojni rok nije služio, ne vodi se u VE,</p>
+<p>srednjeg imovnog stanja, ranije neosuđivanog, protiv kojeg se ne vodi postupak za drugo krivično djelo,</p>
+    </background>
+
+    <decision>
+<p>K r i v   j e</p>
+<p>Što je</p>
+<p>Dana 06. 10. 2006. godine u B., ovlašćenom službenom licu OB Budva <party id="jz" refersTo="#jz" as="#victim">J. Z.</party>, učinio korist da u okviru svog</p>
+<p>službenog ovlašćenja ne izvrši službenu radnju koju je morao izvršiti, na način što nakon što je <party id="jz" refersTo="#jz" as="#victim">J. Z.</party>, prilikom</p>
+<p>redovne kontrole saobraćaja, utvrdio tehničku neispravnost putničkog vozila marke «Fiat Uno» reg. ozn. ...</p>
+<p>kojim je upravljao osumnjičeni, a prilikom uzimanja podataka u cilju sačinjavanja prekršajne prijave, iz svog</p>
+<p>džepa izvadio novčanicu u apoenu od 10 eura ser. broja M 14133539199, istu stavio na mjesto suvozača u</p>
+<p>službenom vozilu MUP-a govoreći pri tom «Evo ti da popiješ piće»  a potom moleći službeno lice da mu za</p>
+<p>uzvrat ne piše prekršajnu prijavu,</p>
+<p>- čime je učinio krivično djelo davanje mita iz čl. <ref href="/krivicni#art_424_para_1">424. st.1  Krivičnog zakonika</ref></p>
+<p>Pa mu  sud na osnovu napred navedene krivično pravne odredbe te čl. <ref href="/krivicni#art_2">2</ref>,<ref href="/krivicni#art_4">4</ref>,<ref href="/krivicni#art_5">5</ref>,<ref href="/krivicni#art_15">15</ref>,<ref href="/krivicni#art_32">32</ref>,<ref href="/krivicni#art_33">33</ref>,<ref href="/krivicni#art_36">36</ref>,<ref href="/krivicni#art_42">42</ref>,<ref href="/krivicni#art_45">45</ref>,<ref href="/krivicni#art_46">46</ref>,<ref href="/krivicni#art_52">52</ref>,<ref href="/krivicni#art_53">53</ref> i <ref href="/krivicni#art_54">54</ref>,</p>
+<p>Krivičnog zakonika CG, te <ref href="/zkp#art_364">čl.364.ZKP CG</ref>,izriče</p>
+<p>USLOVNU    OSUDU</p>
+<p>Kojom mu sud prthodno utvrđuje kaznu zatvora  u trajanju od 3(tri) mjeseca,te se istovremeno</p>
+<p>određuje da se ista neće izvršiti u koliko okrivljeni za vrijeme od jedne godine od dana pravosnažnosti</p>
+<p>presude ne učini novo krivično djelo.</p>
+<p>Dužan je okrivljenu na ime sudskog paušala platiti iznos od 50 eura, u roku od 60 dana od dana</p>
+<p>pravosnažnosti presude  na žiro račun Osnovnog suda Kotor br.832-16-52 pod prijetnjom prinudnog izvršenja</p>
+<p>.</p>
+<p>Prema okrivljenoms e shodno čl. <ref href="/krivicni#art_67">67.</ref> i <ref href="/krivicni#art_75">75.</ref> KZ CG, izriče</p>
+<p>MJERA BEZBJEDNOSTI</p>
+<p>Osnovni Sud u Kotoru</p>
+<p>K 132/2007</p>
+<p>04. Mart 2008</p>
+<p>Oduzimanja predmeta krivičnog djela i to novčanice apoena od 10 eura, serijski br. M14133539199.</p>
+    </decision>
+
+    <arguments>
+<p>O b r a z l o ž e nj e</p>
+<p>ODT iz Kotora podnijelo je ovom sudu optužnicu protiv <party id="ha" refersTo="#ha" as="#defendant">H. A.</party>   stavljajući mu na teret krivično djelo  davanja</p>
+<p>mita iz <ref href="/krivicni#art_424_para_1">čl.424 st.1 Krivičnog zakonika</ref> CG.</p>
+<p>Zastupnik tužbe je do završetka glavnog pretresa ostala pri podnijetoj optužnici, smatrajući dokazanim</p>
+<p>krivično djelo koje je okrivljenom stavljeno na teret, što jasno proizilazi iz svih provedenih dokaza, pa je</p>
+<p>predložila sudu da ga oglasi krivim i kazni po zakonu.</p>
+<p>U svojoj odbrani okrivljeni je izjavio da nije tačno da je kritične prilike novčanicu  u apoenu od 10,oo eura,</p>
+<p>stavio na mjesto suvozača u službeno vozilo MUP-a, službenom licu OB B., radi davanja mita, niti da se istom</p>
+<p>obratio riječima „evo ti da platiš piće“.Objasnio je da se kritičnog dana nalazio kod svog brata <party id="ha" refersTo="#ha" as="#defendant">H. A.</party> u B., te da</p>
+<p>je od njega uzeo vozilo sa namjerom da ode do B., da je kod sebe imao saobraćajnu i vozačku dozvolu.Na</p>
+<p>raskrsnici u B. ga je zaustavio službenik OB B., i tražio mu dokumenta, te mu je nakon toga pregledao vozilo i</p>
+<p>utvrdio da mu ne radi  jedno dugo svijetlo, pa je iz tog razloga počeo da piše krivičnu prijavu.Pošto ne</p>
+<p>poznaje zakon, izvadio je iz džepa 10 eura sa namjerom da plati kaznu rekavši da nema više para, a u  tom</p>
+<p>momentu mu je policajac istrgao iz ruke novac i pozvao dežurnu službu OB B., koji su odmah stigli i priveli</p>
+<p>ga.Objasnio je da nije imao namjeru da daje mito, već je mislio da se radi o prekršaju, pa je htio da plati kaznu</p>
+<p>na licu mjesta.Na kraju je izjavio da nije tačno da se kritične prilike nalazio u službenom vozilu MUP-a, već se</p>
+<p>konverzacija sa policajcem odvijala u blizini službenog vozila.</p>
+<p>U dokaznom postupku koji je proveden radi rasvjetljenja činjeničnog stanja na saglasan predlog stranaka</p>
+<p>pročitan  je iskaz svjedoka  <party id="jz" refersTo="#jz" as="#victim">J. Z.</party> dat na zapisnik istažnom sudiji ovog suda 12.03.2007.g,.te  su pročitani</p>
+<p>sljedeći pismeni dokazi: službena zabilješka OB B. br.... od 9.10.2006.g., potvrda o privremenom oduzimanju</p>
+<p>predmeta OB B. od 6.10.2006.g., te se izvršio uvid u novčanicu u apoenu od 10 eura.</p>
+<p>Svjedok <party id="jz" refersTo="#jz" as="#victim">J. Z.</party> je izjavio da je kritičnog dana obavljao redovnu saobraćajnu kontrolu kada je na  vozilu  „Fiat</p>
+<p>uno“, primjetio da nije ispravna prednja signalizacija, te je isto zaustavio i pitao vozača o čemu se radi.Sjećao</p>
+<p>se da je počeo da piše zapisnik kada je okrivljeni izvadio iz svog novčanika 10 eura i stavio na mjesto</p>
+<p>suvozača u službeno vozilo.Objasnio je da je on vratio novac na što  mu je okrivljeni  rekao „Evo ti da popiješ</p>
+<p>piće“, a on mu je odgovorio da zadrži novac i da ne želi da ga primi i nastavio da piše zapisnik, međutim</p>
+<p>okrivljeni je tada ponovo onih 10 eura stavio na mjesto suvozača.Tada je shvatio da sa njim nema priče i</p>
+<p>priveo ga je u stanicu.</p>
+<p>Iz službene zabilješke OB B. utvrđeno je da  je ista sačinjena dana 06.10.2006 g. Od strane OPS OB B., <party id="jz" refersTo="#jz" as="#victim">J. Z.</party>,</p>
+<p>povodom privođenja lica <party id="ha" refersTo="#ha" as="#defendant">H. A.</party> zbog krivičnog djela davanja mita.</p>
+<p>Iz potvrde o privremenom oduzimanju predmeta i uvidom u novčanicu u apoenu od 10 eura utvrđeno je da je</p>
+<p>OSL OB B. <party id="jz" refersTo="#jz" as="#victim">J. Z.</party>dana 06.10.2006.g.  od <party id="ha" refersTo="#ha" as="#defendant">H. A.</party> oduzeo novčanicu od 10 eura,ser. br. N14133539199.</p>
+<p>Cijeneći provedene dokaze pojedinačno i u uzajamnoj povezanosti, kao i u odnosu na odbranu okrivljenog,</p>
+<p>sud je bez sumnje utvrdio činjenično stanje opisano u izreci odluke.Krivičnopravno ocijenjujući ovako</p>
+<p>utvrdjeno činjenično stanje, sud je našao da je okr. <party id="ha" refersTo="#ha" as="#defendant">H. A.</party> učinio krivično djelo davanja mita iz <ref href="/krivicni#art_424_para_1">čl.424 st.1 Krivičnog zakonika</ref> Crne Gore,</p>
+<p>Ovo zbog toga što je za ovo djelo potrebno da neko  službenom licu učini ili obeća poklon ili kakvu drugu</p>
+<p>korist da u okviru svog službenog ovlašćenja izvrši službenu radnju koju ne bi smjelo izvršiti ili da ne izvrši ili</p>
+<p>da ne izvrši službenu radnju koju bi moralo izvršiti,pa kako je očigledno da je okrivljeni dana 06. 10. 2006.</p>
+<p>godine u B., ovlašćenom službenom licu OB B. <party id="jz" refersTo="#jz" as="#victim">J. Z.</party>, učinio korist da u okviru svog službenog ovlašćenja ne</p>
+<p>izvrši službenu radnju koju je morao izvršiti, na način što nakon što je <party id="jz" refersTo="#jz" as="#victim">J. Z.</party>, prilikom redovne kontrole</p>
+<p>saobraćaja, utvrdio tehničku neispravnost putničkog vozila marke «Fiat Uno» reg. ozn. .... kojim je upravljao</p>
+<p>osumnjičeni, a prilikom uzimanja podataka u cilju sačinjavanja prekršajne prijave, iz svog džepa izvadio</p>
+<p>novčanicu u apoenu od 10 eura ser. broja M 14133539199, istu stavio na mjesto suvozača u službenom vozilu</p>
+<p>MUP-a govoreći pri tom «Evo ti da popiješ piće»  a potom moleći službeno lice da mu za uzvrat ne piše</p>
+<p>prekršajnu prijavu,  time je ostvario sve bitne elemente bića navedenog krivičnog djela.</p>
+<p>Za sud nije bilo dileme da je okrivljeni učinio navedeno djelo što je jasno proizilazilo iz provedenih dokaza,a</p>
+<p>posebno iz iskaza svjedoka J.Z..Naime svjedok je sudu potvrdio da mu je okrivljeni kritične prilike kada je</p>
+<p>krenuo da piše zapisnik stavio novčanicu od 10 eura na sjedište suvozača u službeno vozilo i rekao da mu je</p>
+<p>to da popije piće, te da mu je on taj novac vratio, ali je okrivljeni ponovo stavio novčanicu na mjesto suvozača</p>
+<p>zbog čega je odlučio da  ga privede u stanicu.Sud je prihvatio iskaz svjedoka jer je isti logičan i saglasan sa</p>
+<p>ostalim pismeno provedenim dokazima, a prije svega sa potvrdom o oduzetim predmetima iz koje je</p>
+<p>utvrđeno da je kritične prilike  od okrivljenog oduzet novac u apoenu od 10 eura. Sud nije prihvatio odbranu</p>
+<p>okrivljenog koji se pravdao da je novac dao jer je htio da plati kaznu na licu mjesta jer je u suprotnosti sa</p>
+<p>iskazom svjedoka kojeg je sud prihvatio u cjelosti i očigledno je smišljena radi izbjegavanje krivice.</p>
+<p>Sud je tako našao da je okrivljeni djelovao umišljajno jer je bio svjestan da navedenim  radnjama čini</p>
+<p>krivično djelo, čije izvršenje je htio.</p>
+<p>Odlučujući o vrsti i visini krivične sankcije  sud je imao u vidu da je za ovo krivično djelo u zakoniku propisana</p>
+<p>kazna zatvora u trajanju od 6 mjeseci do 5 godina.. U konkretnom slučaju sud je okrivljenom izrekao uslovnu</p>
+<p>osudu, smatrajući da će se i ovom sankcijom  ostvariti svrha izricanja,  odnosno da će i prijetnja kazne zatvora</p>
+<p>u trajanju od 3 mjeseca, pri čemu su upotrebljene odredbe čl.45 i 46 Krivičnog zakonika CG, o ublažavanju, za</p>
+<p>vrijeme provjeravanja od jedne godine od dana pravosnažnosti presude, dovoljno vaspitno uticati na</p>
+<p>okrivljenog da u buduće ne čini ovakva i slična krivična djela, kao i na buduće učinioce krivičnih djela.</p>
+<p>Sud je kao olakšavajuću okolnost na strani okrivljenog cijenio to da se korektno ponašao na glavnom</p>
+<p>pretresu, da se radi o mladjoj osobi, a kao naročito olakšavajuću okolnost sud je cijenio to da je okrivljeni</p>
+<p>kritične prilike ipak ponudio samo simboličan iznos u vidu jedne novčanice od 10 eura, kao i činjenicu da</p>
+<p>kritične prilike okrivljeni nije učinio neki teži saobraćajnu prekršaj, već mu nije radilo svjetlo na prednjoj</p>
+<p>strani vozila, zbog čega mu je službeno lice, po mišljenju suda, prestrogo odlučio pisati krivičnu prijavu.</p>
+<p>Otežavajućih okolnosti na strani okrivljenog nije bilo.</p>
+<p>Imajući u vidu napred navedeno, te primjenom čl. <ref href="/krivicni#art_2">2</ref>, <ref href="/krivicni#art_4">4</ref>, <ref href="/krivicni#art_5">5</ref>, <ref href="/krivicni#art_15">15</ref>, <ref href="/krivicni#art_32">32</ref>, <ref href="/krivicni#art_33">33</ref>,<ref href="/krivicni#art_36">36</ref>,<ref href="/krivicni#art_42"> 42,</ref> <ref href="/krivicni#art_45">45</ref>, <ref href="/krivicni#art_46">46</ref>, <ref href="/krivicni#art_52">52</ref>, <ref href="/krivicni#art_53">53</ref> i <ref href="/krivicni#art_54">54</ref> Krivičnog</p>
+<p>zakonika CG, <ref href="/krivicni#art_424_para_1">čl. 424 st.1. KZ CG.</ref> te <ref href="/zkp#art_364">čl.364 ZKP</ref> CG, riješeno je kao u izreci.</p>
+<p>Sud je obavezao okrivljenog na plaćanje  sudskog paušala, koji je odmjeren shodno <ref href="/zkp#art_199">čl.199</ref> i <ref href="/zkp#art_202">202</ref> ZKP CG, a to</p>
+<p>imajući u vidu imovinske prilike okrivljenog, te složenost i trajanje postupka.</p>
+    </arguments>
+
+    <conclusion>
+<p>OSNOVNI SUD U KOTORU</p>
+<p>Dana, 4.03.2008.godine</p>
+<p>ZAPISNIČAR                                                                      PREDSJEDNIK VIJEĆA -SUDIJA</p>
+<p><party id="tnikolic" refersTo="#tnikolic" as="#clerk">Tatjana Nikolić s.r.</ref>                                                                             <party id="vpean" refersTo="#vpean" as="#judge">Vesna Pean s.r.</ref></p>
+<p>PRAVNA POUKA:Protiv ove presude ima se pravo žalbe u roku od 15 dana od dana prijema iste, Višem</p>
+<p>sudu u Podgorici, a preko ovog suda.</p>
+    </conclusion>
+
+  </judgement>
+</akomaNtoso>

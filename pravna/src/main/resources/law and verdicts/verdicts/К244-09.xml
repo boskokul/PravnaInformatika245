@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
+  <judgement>
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>Osnovni sud u Kotoru</FRBRauthor>
+          <FRBRdate date="2009-07-08">2009-07-08</FRBRdate>
+          <FRBRtitle>K 244/2009</FRBRtitle>
+          <FRBRcountry>CG</FRBRcountry>
+        </FRBRWork>
+      </identification>
+      <references>
+        <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Kotor" showAs="Osnovni sud u Kotoru"/>
+        <TLCOrganization eId="odt" href="/ontology/organization/ODT.Kotor" showAs="Osnovno državno tužilaštvo u Kotoru"/>
+        <TLCPerson eId="mmarovic" href="/ontology/person/mmarovic" showAs="Momirka Marović"/>
+        <TLCPerson eId="pmrsulja" href="/ontology/person/pmrsulja" showAs="Petar Mršulja"/>
+        <TLCPerson eId="jraskovic" href="/ontology/person/jraskovic" showAs="Jovo Rašković"/>
+        <TLCPerson eId="apetkovic" href="/ontology/person/apetkovic" showAs="Ana-Marija Petković"/>
+        <TLCPerson eId="jcizmovic" href="/ontology/person/jcizmovic" showAs="Jovanka Čizmović"/>
+        <TLCPerson eId="km" href="/ontology/person/km" showAs="<party id='km' refersTo='#km' as='#defendant'>K. M.</party>"/>
+        <TLCPerson eId="jz" href="/ontology/person/jz" showAs="<party id='jz' refersTo='#jz' as='#victim'>J. Z.</party>"/>
+        <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge"/>
+        <TLCRole eId="jury" href="/ontology/role/jury" showAs="Jury"/>
+        <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk"/>
+        <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff"/>
+        <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant"/>
+        <TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim"/>
+      </references>
+    </meta>
+
+    
+
+  </judgement>
+</akomaNtoso>
