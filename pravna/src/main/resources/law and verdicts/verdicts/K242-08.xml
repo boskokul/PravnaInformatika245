@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
+    <judgement>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Kotoru
+                    </FRBRauthor>
+                    <FRBRdate date="2008-07-10"> 
+                        2008-07-10
+                    </FRBRdate>
+                    <FRBRtitle>                      
+                        K 242/2008
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>                    
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Kotor" showAs="Osnovni sud u Kotoru" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Kotor" showAs="Osnovno državno tužilaštvo u Kotoru" />
+                <TLCPerson eId="vpean" href="/ontology/person/bradovic" showAs="Vesna Pean" />
+                <TLCPerson eId="mpetar" href="/ontology/person/mpetar" showAs="Mršulja Petra" />
+                <TLCPerson eId="bkukalja" href="/ontology/person/bkukalja" showAs="Branka Kukalja" />
+                <TLCPerson eId="tnikolic" href="/ontology/person/tnikolic" showAs="Tatjane Nikolić" />
+                <TLCPerson eId="sm" href="/ontology/person/sm" showAs="S. M." />
+                <TLCPerson eId="ljm" href="/ontology/person/ljm" showAs="Lj. M."/>
+                <TLCPerson eId="mv" href="/ontology/person/mv" showAs="M. V." />
+                <TLCPerson eId="kg" href="/ontology/person/kg" showAs="K.G." />
+                <TLCRole eId="adviser" href="/ontology/role/adviser" showAs="Adviser" />
+                <TLCRole eId="jury" href="#jury" href="/ontology/role/jury" showAs="Jury"/>
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+                <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
+                </references> 
+        </meta>
+        <introduction>
+            <p class="subtitle">
+                U IME NARODA !
+            </p>
+            <p>
+                <organization id="os" refersTo="#os">
+                Osnovni sud u Kotoru
+                </organization>
+                , kao nadležni prvostepeni krivični sud, u vijeću sastavljenom od Predsjednika vijećasudije 
+                 <party id="vpean" refersTo="#vpean" as="#judge">
+                Vesne Pean
+                </party>
+                 i članova vijeća-sudija porotnika <party id="mpetar" refersTo="#mpetar" as="#jury">Mršulja Petra</party>
+                 i <party id="bkukalja" refersTo="#bkukalja" as="#jury">Branka Kukalja</party>, uz učešće zapisničara
+                <party id="tnikolic" refersTo="#tnikolic" as="#clerk">Tatjane Nikolić</party>, u predmetu okr. <party id="sm" refersTo="#sm" as="#defendant">S. M., 
+                zbog krivičnog djela davanja mita iz <ref href="/krivicni#art_424_para_1">čl.424. st.1. Krivičnog zakonika</ref>
+                Crne Gore, koji se vodi po optužnici <organization id="odt" refersTo="#odt"> Kotor</organization>, <ref href="/cg/kt/2008-04-28/88_08"> Kt. br. 88/08 od 28.o4.2oo8.g.</ref>, nakon održanog glavnog i
+                javnog pretresa dana 7.o7.2oo8.g.. u prisustvu okrivljenog i zastupnika tužbe <party id="ljm" refersTo="#ljm" as="#plaintiff">Lj. M.</party> zamjenika <organization id="odt" refersTo="#odt">ODT Kotor</organization>,
+                donio je i javno objavio dana 10.07.2008 godine sledeću,
+            </p>
+        </introduction>
+        <background>
+            <p class="subtitle">
+                P R E S U D U
+            </p>
+            <p>
+                Okr. <party id="sm" refersTo="#sm" as="#defendant">S. M.</party> od oca R. i majke M., rođene K. rodjenog ......g. u C., stalno nastanjenog u T., S. III, Crnogorca,
+                penzionera, sa završenom višom školom, oženjenog, oca troje djece, vojni rok služio u P. 1971. godine,
+                srednjeg imovnog stanja, navodno neosuđivanog, protiv kojeg se navodno ne vodi postupak za drugo
+                krivično djelo
+            </p>
+        </background>
+        <decision>
+            <p class="subtitle">
+            K r i v j e
+            </p>
+            <p>
+                Što je
+                Dana 04.02.2008. godine u B., službenom licu Uprave policije PJ B. <party id="mv" refersTo="#mv" as="#victim">M. V.</party>, zaposlenom na poslovima
+                prekršajne prevencije, ponudio novac u iznosu od 50 €, da u okviru svog službenog ovlašćenja ne izvrši
+                službenu radnju koju bi morao izvršiti, na način što je toga dana pristupio u službene prostorije PJ B., zatražio
+                prijem kod službenog lica <party id="mv" refersTo="#mv" as="#victim">M. V.</mv> i dolaskom u kancelariju istog obratio mu se sa zahtjevom da obustavi
+                prekršajni postupak po prijavi službenih lica Ispostave B. zbog učinjenog saobraćajnog prekršaja od strane
+                njegovog sina S. D., odnosno, da istom po toj prijavi ne izrekne kaznene poene, kada je iz džepa izvadio
+                novčanicu ser.br. ......... u apoenu od 50 €, koju je stavio na sto ispred V., uporno insistirajući da V. uzme ovu
+                novčanicu u tu svrhu.
+                - čime je učinio krivično djelo davanje mita iz čl. <ref href="/krivicni#art_424_para_1">424.st.1.</ref> Krivičnog zakonika.
+                Pa mu sud na osnovu napred navedene krivično pravne odredbe te čl. <ref href="/krivicni#art_2">2</ref>,<ref href="/krivicni#art_4">4</ref>,<ref href="/krivicni#art_5">5</ref>,<ref href="/krivicni#art_15">15</ref>,<ref href="/krivicni#art_32">32</ref>,<ref href="/krivicni#art_33">33</ref>,<ref href="/krivicni#art_36">36</ref>,<ref href="/krivicni#art_42">42</ref>,<ref href="/krivicni#art_45">45</ref>,<ref href="/krivicni#art_56">46</ref>,<ref href="/krivicni#art_52">52</ref>,<ref href="/krivicni#art_53">53</ref> i <ref href="/krivicni#art_54">54</ref>,
+                Krivičnog zakonika CG, te <ref href="/zkp#art_364">čl.364.ZKP</ref> CG,izriče
+            </p>
+            <p class="subtitle">
+                USLOVNU OSUDU
+            </p>
+            <p>
+                Kojom mu sud prthodno utvrđuje kaznu zatvora u trajanju od 3(tri) mjeseca,te se istovremeno
+                određuje da se ista neće izvršiti u koliko okrivljeni za vrijeme od jedne godine od dana pravosnažnosti
+                presude ne učini novo krivično djelo.
+            </p>
+            <p>
+                Dužan je okrivljenu na ime sudskog paušala platiti iznos od 80 eura, u roku od 30 dana od dana
+                pravosnažnosti presude na žiro račun Osnovnog suda Kotor br.832-16-52 pod prijetnjom prinudnog izvršenja
+                Osnovni Sud u Kotoru
+                K 242/2008
+                10. Jul 2008. P
+                rema okrivljenom se shodno čl. <ref href="/krivicni#art_67">67.</ref >i <ref href="/krivicni#art_75">75.</ref> KZ CG, izriče
+            </p>
+            <p class="subtitle">
+                MJERA BEZBJEDNOSTI
+            </p>
+            <p>
+                Oduzimanja predmeta krivičnog djela i to novčanice apoena od 50 eura, ser.broja X .......
+            </p>
+        </decision>
+        <arguments>
+            <p class="subtitle">
+                 O b r a z l o ž e nj e
+            </p>
+            <p>
+            <organization id="odt" refersTo="#odt">
+                ODT iz Kotora </organization> podnijelo je ovom sudu optužnicu protiv
+                <party id="sm" refersTo="#sm" as="#defendant">S. M.</party>, stavljajući mu na teret krivično djelo davanja mita iz <ref href="/krivicni#art_424_para_1">čl.424. st.1Krivičnog zakonika CG.</ref>
+                Zastupnik tužbe je do završetka glavnog pretresa ostala pri podnijetoj optužnici, smatrajući dokazanim
+                krivično djelo koje je okrivljenom stavljeno na teret, što jasno proizilazi iz svih provedenih dokaza. Navela je
+                da je odbrana okrivljenog neprihvatljiva i smišljena na izbjegavanje krivice pa je predložila sudu da ga oglasi
+                krivim i kazni po zakonu.
+            </p>
+            <p>
+                U svojoj odbrani okrivljeni je naveo da je kritičnog dana bio u službene prostorije kod <party id="mv" refersTo="#mv" as="#victim">V. M.</party>, da mu se zahvali
+                jer je pokazao ljudskost i profesinalnost 2oo3.g., kada je njegov tada mal. Sin napravio neki prekršaj. Kada je
+                završen postupak, potražio ga je i ponio flašu rakije, da mu se po običajima zahvali, medjutim na prijavnici su
+                mu rekli da je u K., a nakon toga, kako je nezvanično saznao, se ponovo vratio u B.. Odlučio je da ode kod <party id="mv" refersTo="#mv" as="#victim">V.</party>, a
+                da ne bi nosio flašu i da se to ne bi pogrešno tumačilo, odlučio je da ga počasti sa 5o eura. <party id="mv" refersTo="#mv" as="#victim">V.</party> ga je ljubazno
+                primio i on je nakon što se zahvalio stavio na sto novčanicu, na što je <party id="mv" refersTo="#mv" as="#victim">V.</party> rekao da to nije potrebno i pri tom je
+                bio vrlo ljubazan, pa je tada iskoristio priliku da ga pita za prekršajni postupak koji je vodjen protiv njegovog
+                sina D., tačnije da li je moguće da mu se ne računaju kazneni bodovi. Istakao je da novac koji je dao, se nije
+                odnosio na taj slučaj , već na davno završeni, pa je u tom smislu tvrdio da nije dao mito jer nije toliko
+                neinformisan, ni lud, pa da to napravi u službenim prostorijama, za koje se pretpostavlja da su pod audio i
+                video nadzorom. Smatrao je da je <party id="mv" refersTo="#mv" as="#victim">V.</party> situaciju pogrešno protumačio, pa je pod izgovorom da ide da pita
+                kolege, izašao iz kancelarije, a vratio se nakon nekih pola sata, a zatim je ušao i njegov pretpostavljeni Ć. i
+                pitao ga što novac radi na V. stolu. Potvrdio je da mu je <party id="mv" refersTo="#mv" as="#victim">V.</party> pri izlasku iz kancelarije naglasio da ne želi novac,
+                govoreći da je to zastaralo, a okrivljeni je ponovio da je želio da da mito, da bi ga dao u pravom trenutku i na
+                pravom mjestu, a da se ovdje radilo o zahvalnosti za prethodno učinjeno dobro, a ne o potkupljivanju
+                službenika. Na kraju je izjavio da je novac ponudio iz čisto ljudskih pobuda, te da bi mogao da se zakune na
+                Bibliju da je tačno sve što je govorio.
+            </p>
+            <p>
+                U dokaznom postupku koji je proveden radi rasvjetljenja činjeničnog stanja neposredno su saslušani oštećeni
+                <party id="mv" refersTo="#mv" as="#victim">V.
+                M.</party> i svjedoci Dj. Č. i T. D., a na saglasan predlog stranaka pročitani su pismeni dokazi: Zahjtev za pokretanje
+                prekšrajnog postupka PJ B. UP broj ..../2008 g., zapisnik prijava o izvršenoj kontroli učesnika u saobraćaju i
+                vozila UPPJ B. br. .... od 25.ol.2oo8.g., službena zabilješka UP PJ B. br. ....... od 5.o2.2oo8.g., potvrda o priv.
+                oduzimanju predmeta OB B. br. ...../08 od 4.o2.2oo8.g., službena zabilješka M. V. samostalnog policijskog
+                komesara za PJ B. od 4.o2.2oo8.g., izvod iz KE UP Ispostava C. br. ...... od 11.o4.2oo8.g., te se izvršio uvid u
+                novčanicu ser.broja ..... u apoenu od 50 eura. U dopunu dokaznog postupka sud je odbio predlog okrivljenog
+                da se sasluša u svojstvu svjedoka inspektor N. V., a na okolnost da je <party id="mv" refersTo="#mv" as="#victim">V.</party> tražio da se pocijepa službena
+                zabilješka koju je sačinio, što je sud odbio posebnim rješenjem smatrajući činjenično stanje dovoljno
+                rasvjetljenim.Oštećeni <party id="mv" refersTo="#mv" as="#victim">V. M.</party> je izjavio da do kritičnog dana okrivljenog nije poznavao, da mu je okrivljeni odmah nakon što
+                su se sreli počeo zahvaljivati za neki slučaj od prije 4-5 godina, a kada mu je rekao da mu ispriča zbog čega je
+                došao okrivljeni mu je rekao da bi ga zamolio da se ne računaju, odnosno ne sabiraju kazneni bodovi za
+                njegovog sina, vezano za saobraćajni prekršaj koji je napravio. U tom momentu je izvadio novčanicu od 50
+                eura i stavio je na sto ispred njega, a kada ga je pitao što to znači okrivljeni je odgovorio da je to čast sa
+                njegove strane, te da se nada da će skinuti prijavu protiv njegovog sina. Odgovorio je da ne želi novac, da je
+                to što je napravio krivično djelo, da uzme novac, na što mu je okrivljeni odgovorio da novac neće uzeti, kao i
+                da njemu ne priliči da nosi kese sa poklonima po kancelarijama. Ponovio je okrivljenom da uzme novac, da
+                će u rpotivnom morati da ga prijavi, medjutim okrivljeni je ponovo odbio da uzme novac, pa je morao da
+                obavjesti komandira Ć. D.. Izašao je iz kancelarije, objasnio Komandiru o čemu se radi, nakon čega, su se on i
+                komandir vratili u kancelariju i objašnjavali okrivljenom prirodu počinjenog, odnosno da to predstavlja
+                krivično djelo, i govorili mu da uzme novac nazad, mejdutim okrivljeni je i dalje bio uporan, odbijao je da
+                uzme novac. Na kraju je izjavio da lično smatra da se novac odnosio na aktuelnu prekršajnu prijavu, a ne na
+                neki raniji prekršaj.
+            </p>
+            <p>
+                Imajući u vidu razlike u iskazima okrivljenog i oštećenog, sud je donio rješenje o suočenju, medjutim
+                okrivljeni je ostao pri svojoj odbrani a oštećeni pri datom iskazu.
+                Svjedok Dj. Č.r je izjavio da kancelariju djelu sa kolegom <party id="mv" refersTo="#mv" as="#victim">V.</party> i sjećao se da je kritičnog dana okrivljeni došao u
+                njihovu kancelariju i rekao da želi da sa <party id="mv" refersTo="#mv" as="#victim">V.</party> nasamo popriča, pa je on izašao iz kancelarije , a kada se ponovo
+                vratio <party id="mv" refersTo="#mv" as="#victim">V.</party> je rekao da mu je okrivljeni nudio mito, tačnije 50 eura. Na kraju je izajvio da mu ništa drugo u vezi
+                rpedmetnog dogadjaja nije poznato.
+            </p>
+            <p>
+                Svjedok T. D. je izjavio da mu je poznato da je okrivljeni tražio prijem kod kolege <party id="mv" refersTo="#mv" as="#victim">V.</party>, a kada ga je pitao da li mu
+                može pomoći neko drugi, okrivljeni je izjavio da mora lično da vidi <party id="mv" refersTo="#mv" as="#victim">V.</party>. Nakon dolaska <party id="mv" refersTo="#mv" as="#victim">V.</party>, obavjestio je
+                okrivljenog i pokazao mu put do kancelarije, i nije mu bilo poznato što se dalje dešavalo, osim što je u
+                jutarnjim časovima čuo da je okrivljeni nudio mito kolegi <party id="mv" refersTo="#mv" as="#victim">V.</party>.
+                Iz zahtjeva za pokretanje prekršajnog postupka PJ B. utvrdjeno je da je podnijet dana 6.o2.2oo8.g., protiv S.
+                D. od oca M. iz T., da je počinio prekršaj iz <ref href="/krivicni#art_305_para_1">čl. 3o5. st.1. tač.6.</ref> u vezi <ref href="/krivicni#art_28">čl.28.</ref> ZOBS-a, te da je podnosilac zahtjeva
+                <party id="mv" refersTo="#mv" as="#victim">V. M.</party>.
+            </p>
+            <p>
+                Iz zapisnika- prijava o izvršenoj kontroli učesnika u saobraćaju i vozila, utvrdjeno je da je sačinjen dana
+                25.o1.2oo8.g., na Jadranskom putu u B., povodom učinjenog prekršaja od strane S. D. iz T..
+                Iz službene zabilješke OB B. utvrđeno je da je ista sačinjena dana 4.o2.2oo8.g. od strane OPS- Filijale za
+                suzbijanje privrednog kriminaliteta, u vzei prijavljivanja <party id="mv" refersTo="#mv" as="#victim">V. M.</party>, službenika za pokretanje prekršajnog postupka
+                PJ B., krivičnog djela davanaj mita, izvršenog od strane <party id="sm" refersTo="#sm" as="#defendant">S. M..
+                Iz službene zabilješke M. V., je utvrdjeno da je sastavljena dana 4.o2.2oo8.g., u službenim prostorijama PJ B., a
+                povodom nudjenja mita ( novca u iznosu od 50 eura) od strane <party id="sm" refersTo="#sm" as="#victim">S. M.</party> iz T..
+                Iz potvrde o privremenom oduzimanju predmeta i uvidom u novčanicu u apoenu od 50 eura utvrđeno je da je
+                OSL OB B. od <party id="mv" refersTo="#mv" as="#victim">S. M.</party> oduzeli dana 4.o2.2oo8.g. novčanicu od 50 eura,ser. br. ........
+                Iz izvoda iz KE UP Ispostava C., je utvrdjeno da <party id="sm" refersTo="#sm" as="#defendant">S. M.</party> ranije nije osudjivan.Cijeneći provedene dokaze pojedinačno i u uzajamnoj povezanosti, kao i u odnosu na odbranu okrivljenog,
+                sud je bez sumnje utvrdio činjenično stanje opisano u izreci odluke.Krivičnopravno ocijenjujući ovako
+                utvrdjeno činjenično stanje, sud je našao da je okr. <party id="sm" refersTo="#sm" as="#defendant">S. M.</party> učinio krivično djelo davanja mita iz <ref href="/krivicni#art_424_para_1">čl.424.
+                st.1</ref>Krivičnog zakonika Crne Gore,
+            </p>
+            <p>
+                Ovo zbog toga što je za ovo djelo potrebno da neko službenom licu učini ili obeća poklon ili kakvu drugu
+                korist da u okviru svog službenog ovlašćenja izvrši službenu radnju koju ne bi smjelo izvršiti ili da ne izvrši ili
+                da ne izvrši službenu radnju koju bi moralo izvršiti, pa kako je očigledno da je okrivljeni dana 04.02.2008.
+                godine u B., službenom licu Uprave policije PJ B. <party id="mv" refersTo="#mv" as="#victim">M. V.</party>, zaposlenom na poslovima prekršajne prevencije,
+                ponudio novac u iznosu od 50 €, da u okviru svog službenog ovlašćenja ne izvrši službenu radnju koju bi
+                morao izvršiti, na način što je toga dana pristupio u službene prostorije PJ B., zatražio prijem kod službenog
+                lica <party id="mv" refersTo="#mv" as="#victim">M. V.a</party> i dolaskom u kancelariju istog obratio mu se sa zahtjevom da obustavi prekršajni postupak po
+                prijavi službenih lica Ispostave B. zbog učinjenog saobraćajnog prekršaja od strane njegovog sina S. D.,
+                odnosno, da istom po toj prijavi ne izrekne kaznene poene, kada je iz džepa izvadio novčanicu ser.br. ....... u
+                apoenu od 50 €, koju je stavio na sto ispred V., uporno insistirajući da V. uzme ovu novčanicu u tu svrhu, time
+                je ostvario sve bitne elemente bića navedenog krivičnog djela.
+                Za sud nije bilo dileme da je okrivljeni učinio navedeno djelo što je jasno proizilazilo i iz navoda njegove
+                odbrane i svih provedenih dokaza. Prije svega, V. M. je potvrdio sudu da je okrivljeni S. kritične prilike došao
+                kod njega u službene prostorije, izvadio novčanicu u iznosu od 50 eura i stavio je na sto ispred njega, a kada
+                ga je pitao šta to znači okrivljeni je odgovorio da se nada da će skinuti prijavu protiv njegovog sina. Takodje je
+                objasnio da je kritične prilike okrivljeni zapravo došao kod njega tražeći da se ne sabiraju kazneni bodovi,
+                vezano za saobraćajni prekršaj koji je učini njegov sin, te da je okrivljeni bio kategoričan da ne želi da uzme
+                novac nazad iako mu je on govorio da to što je uradio predstavlja krivično djelo. Sud je prihvatio iskaz V. jer
+                je saglasan sa svim ostalim provedneim dokazima, a prije svega sa iskazima svjedoka Dj. Č. i T. D., koji su
+                takodje potvrdili sudu da je okrivljeni kritičnog dana dolazio u stanicu policije i tražio da razgovara upravo sa
+                V.
+                , te da su kasnije saznali da je okrivljeni nudio mito V., a saglasan je i sa pismeno provedenim dokazima,
+                prvenstveno, sa potvrdom o oduzetim predmetima iz koje se sud uvjerio da je predmetna novčanica oduzeta
+                upravo od okrivljenog, te prekršajne prijave na ime sina okrivljenog. I sam okrivljeni je potvrdio sudu da je
+                kritične prilike u Stanici policije u toku razgovora sa V. M. stavio 50 eura na sto, kao i da V. nije želio da uzme
+                novac, medjutim sud nije prihvatio njegovu odbranu u dijelu kada je objašnjavao da time nije davao mito, te
+                da se novac koji je dao nije odnosio na aktuelan slučaj , tačnije prekršaj koji je počinio njegov sin, već na
+                davno završeni, odnosno da je kritične prilike želio da iskaže zahvalnost za taj ranije završeni slučaj a ne da
+                potkupi službenika, jer je to očigledno smišljeno radi izbjegavanje krivice i u suprotnosti je sa provedneim
+                dokazima, a prije svega iskazom Velimirovića, koji je sud prihvatio. Iz zahtjeva za pokretanje prekršajnog
+                posutpka, sud je utvrdio da je isti pokrenut protiv sina okrivljenog tako da je bilo logično da je okrivljeni u
+                stvari nudjenjem novca u iznosu od 50 eura želio da utiče na V. da ne izvrši slubženu randju koju bi morao
+                izvršiti, odnosno da ne sabira kaznene poene njegovom sinu.
+            </p>
+            <p>
+                <organization id="os" refersTo="#os">Sud</organization> je tako našao da je okrivljeni djelovao umišljajno jer je bio svjestan da navedenim radnjama čini
+                krivično djelo, čije izvršenje je htio.
+            </p>
+                Odlučujući o vrsti i visini krivične sankcije sud je imao u vidu da je za ovo krivično djelo u zakoniku propisana
+                kazna zatvora u trajanju od 6 mjeseci do 5 godina. U konkretnom slučaju sud je okrivljenom izrekao uslovnu
+                osudu, smatrajući da će se i ovom sankcijom ostvariti svrha izricanja, odnosno da će i prijetnja kazne zatvora
+                u trajanju od 3 mjeseca, pri čemu su upotrebljene odredbe <ref href="/krivicni#art_45">čl.45</ref> i <ref href="/krivicni#art_46">46</ref> Krivičnog zakonika CG, o ublažavanju, za
+                vrijeme provjeravanja od jedne godine od dana pravosnažnosti presude, dovoljno vaspitno uticati na
+                okrivljenog da u buduće ne čini ovakva i slična krivična djela, kao i na buduće učinioce krivičnih djela.Sud je kao olakšavajuću okolnost na strani okrivljenog cijenio to da se korektno ponašao na glavnom
+                pretresu, , da je porodičan čovjek, otac troje djece, da je penzioner, a kao naročito olakšavajuću okolnost sud
+                je cijenio činjenicu da okrivljeni nije sklon vršenju krivičnih djela jer ranije nije osudjivan. Otežavajućih
+                okolnosti na strani okrivljenog nije bilo.
+                Imajući u vidu napred navedeno, te primjenom čl. <ref href="/krivicni#art_2">2</ref>, <ref href="/krivicni#art_4">4</ref>, <ref href="/krivicni#art_5">5</ref>, <ref href="/krivicni#art_15">15</ref>, <ref href="/krivicni#art_32">32</ref>, <ref href="/krivicni#art_33">33</ref>,<ref href="/krivicni#art_36">36</ref>, <ref href="/krivicni#art_42">42</ref>, <ref href="/krivicni#art_45">45</ref>, <ref href="/krivicni#art_46">46</ref>, <ref href="/krivicni#art_52">52</ref>, <ref href="/krivicni#art_53">53</ref> i <ref href="/krivicni#art_54">54</ref> Krivičnog
+                zakonika CG, čl. <ref href="/krivicni#art_424_para_1">424 st.1.</ref> KZ CG. te <ref href="/zkp#art_364">čl.364 ZKP CG</ref>, riješeno je kao u izreci.
+                Sud je okrivljenom shodno čl. <ref href="/krivicni#art_67">čl. 67.</ref> i <ref href="/krivicni#art_75">75.</ref> KZ CG, izrekao mjeru bezbjednosti oduzimanja predmeta kriv. djela
+                i to predmetne novčanice od 50 eura.
+                Sud je obavezao okrivljenog na plaćanje sudskog paušala, koji je odmjeren shodno <ref href="/zkp#art_199">čl.199</ref> i <ref href="/zkp#art_202">202 ZKP</ref> CG, a to
+                imajući u vidu imovinske prilike okrivljenog, te složenost i trajanje postupka.
+        </arguments>
+        <conclusion>
+        <organization class="subtitle" id="os" refersTo="#os">
+            OSNOVNI SUD U KOTORU
+        </organization>
+        <p class="subtitle">
+            Dana, 10.07.2008.godine
+        </p>
+        <p>
+            ZAPISNIČAR PREDSJEDNIK VIJEĆA, SUDIJA
+        </p>
+            <party id="tnikolic" refersTo="#tnikolic" as="#clerk">Tatjana Nikolić s.r.</party>, <party id="vpean" refersTo="#vpean" as="#judge">Vesna Pean s.r.</party>+
+        </p>
+        <p class="subtitle">
+            PRAVNA POUKA:Protiv ove presude ima se pravo žalbe u roku od 15 dana od dana prijema iste, Višem
+            sudu u Podgorici, a preko ovog suda.
+        <p>
+        </conclusion>
+    </judgement>
+
+ </acomaNtoso>
+ </xml>
