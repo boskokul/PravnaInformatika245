@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
+    <judgement>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Cetinju
+                    </FRBRauthor>
+                    <FRBRdate date="2008-07-10"> 
+                        2019-05-27
+                    </FRBRdate>
+                    <FRBRtitle>                      
+                        K 99/2018
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>                    
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Cetinje" showAs="Osnovni sud u Cetinju" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Cetinje" showAs="Osnovno državno tužilaštvo u Cetinju" />
+                <TLCPerson eId="mcupic" href="/ontology/person/mcupic" showAs="Mariji Ćupić" />
+                <TLCPerson eId="amartinovic" href="/ontology/person/amartinovic" showAs="Aleksandre Martinović" />
+                <TLCPerson eId="bda" href="/ontology/person/bda" showAs=" B. D. A. " />
+                <TLCPerson eId="nk" href="/ontology/person/nk" showAs=" N. K."/>
+                <TLCPerson eId="sradulovic" href="/ontology/person/sradulovic" showAs=" Sanje Radunović" />
+                <TLCPerson eId="tg" href="/ontology/person/tg" showAs="Tripunović Goranu" />
+                <TLCRole eId="adviser" href="/ontology/role/adviser" showAs="Adviser" />
+                <TLCRole eId="jury" href="#jury" href="/ontology/role/jury" showAs="Jury"/>
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+                <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
+                </references> 
+        </meta>
+        <introduction>
+            <p class="subtitle">
+                        U IME CRNE GORE
+            </p>
+            <p>
+                <organization id="os" refersTo="#os">OSNOVNI SUD U CETINJU,</organization> po sudiji <party id="mcupic" refersTo="#mcupic" as="#judge">Mariji Ćupić,</party> uz sudjelovanje zapisničarke <party id="amartinovic" refersTo="#amartinovic" as="#clerk">Aleksandre Martinović,</party> u
+                krivičnom predmetu optuženog<party id="bda" refersTo="#bda" as="#defendant"> B. D. A.,</ref> iz R. F., iz N., zbog krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_1">člana 424. stav 1.</ref>
+                Krivičnog zakonika Crne Gore, u sticaju sa krivičnim djelom napad na službeno lice u vršenju službene
+                dužnosti iz člana <ref href="/krivicni#art_376_para_3">376. stav 3.</reF> u vezi stava 1. a u <ref href="/krivicni#art_48_para_1">vezi člana 48. stav 1.</ref> Krivičnog zakonika Crne Gore (KZCG), po
+                Optužnici ODT-a u Cetinju Kt.br. 123/18 od 11.10.2018. godine, koju je ovaj sud zaprimio 12.10.2018. godine,
+                nakon održanog glavnog i javnog pretresa od 23.05.2019. godine, u prisustvu zastupnice optužbe, državnog
+                tužioca u Cetinju <party id="sradulovic" refersTo="#sradulovic" as="#plaintiff">Sanje Radunović, optuženog <party id="bda" refersTo="#bda" as="#defendant">B. D. A.</party> i njegovog branioca <party id="nk" refersTo="#nk" as="#lawyer">N. K.,</party> adv. iz P., donio je dana,
+                27.05.2019. godine i javno objavio
+        </introduction>
+        <background>
+                <p class="subtitle">     P R E S U D U</p>
+            <p>
+                Optuženi:
+            </p>
+            </p>
+                <party id="bda" refersTo="#bda" as="#defendant">B. D. A.,</party> od oca A. i majke A., rođene B., rođen .. godine u N., gdje i prebiva, državljanin R.F., srednjeg imovnog
+                stanja, neosuđivan,
+            </p>
+        </background>
+        <decision>
+            <p class="subtitle">
+                            K r i v j e:
+            </p>
+            <p>
+                Što je:
+                Dana, 11.09.2018. godine, oko 16,16 časova, u mjestu zv. “B.“, opština C., svjestan svojih djela, čije je izvršenje
+                htio i svjestan da su njegova djela zabranjena, policijskim službenicima Uprave policije – Odjeljenja
+                bezbjednosti Cetinje, <party id="tg" refersTo="#tg" as="#victim">Tripunović Goranu</party> i Bašanović Zariji, ponudio mito da isti ne izvrše službenu radnju
+                koju bi morali izvršiti, a potom fizički napao policijskog službenika – oštećenog Tripunović Gorana u vršenju
+                poslova redovne kontrole saobraćaja na magistralnom putnom pravcu Cetinje – Podgorica, na način što je,
+                nakon što mu je oštećeni <party id="tg" refersTo="#tg" as="#victim">Tripunović Goran</party> saopštio da je upravljajući putničkim motornim vozilom marke
+                “VW Passat“, reg. oznake PG .., prekoračio dozvoljenu brzinu kretanja i time počinio prekršaj, te da je zbog
+                počinjenog prekršaja, dužan na pošti ili u banci platiti novčanu kaznu u iznosu od 34,00 eura, istome ponudio
+                novac u iznosu od 20,00 eura, sa ciljem da mu policijski službenik oštećeni Tripunović Goran ne napiše
+                prekršajni nalog, te kada je policijski službenik oštećeni <party id="tg" refersTo="#tg" as="#victim">Tripunović Goran</party> odbio novac, istome ponudio još
+                20,00 eura, ostavljajući novac na gepeku službenog vozila, insistirajući da policijski službenik oštećeni
+                Tripunović Goran uzme novac i da njemu i njegovoj majci B. A., koja je bila sa njim u vozilu, dozvoli da nastave
+                kretanje, da bi potom, u momentu kada je policijski službenik oštećeni <party id="tg" refersTo="#tg" as="#victim">Tripunović Goran</party>, odbio da uzme
+                novac i uručio mu prekršajni nalog, te opomenuo njegovu majku B. A., zbog nedozvoljenog snimanja
+                mobilnim telefonom, istoga fizički napao, na način što je desnom rukom odgurnuo oštećenog <party id="tg" refersTo="#tg" as="#victim">Tripunović
+                Gorana,</party> a potom uhvatio istog za lijevu ruku , vukući ga od vozila, da bi u momentu kada ga je oštećeni
+                <party id="tg" refersTo="#tg" as="#victim">Tripunović Goran</party>, uz upotrebu fizičke sile savladao i odveo u službeno vozilo, dok se nalazio u vozilu, svojoj
+                majci B. A., kazao da policijskim službenicima <party id="tg" refersTo="#tg" as="#victim">Tripunović Goranu</party> i Bašanović Zariji ponudi novac u iznosu od
+                100,00 eura, kako bi bio pušten na slobodu,
+            </p>
+            <p>
+                - čime je izvršio krivično djelo davanje mita iz čl. <ref href="/krivicni#art_424_para_1">424. st. 1. KZCG</ref>, u sticaju sa krivičnim djelom napad na
+                službeno lice u vršenju službene dužnosti iz čl. <ref href="/krivicni#art_376_para_3">376. st. 3.</ref> u vezi st. 1. a u <ref href="/krivicni#art_48_para_1">vezi čl. 48. st. 1. KZCG</ref>,
+                Pa mu sud primjenom naprijed navedenih zakonskih odredbi, te odredbi čl.<ref href="/krivicni#art_3"> 3,</ref> <ref href="/krivicni#art_4">4,</ref> <ref href="/krivicni#art_3">5,</ref> <ref href="/krivicni#art_13">13,</ref> <ref href="/krivicni#art_15">15,</ref> <ref href="/krivicni#art_32">32,</ref> <ref href="/krivicni#art_33">33,</ref> <ref href="/krivicni#art_36">36,</ref> <ref href="/krivicni#art_42">42,</ref> <ref href="/krivicni#art_45_para1">45.</ref>
+                st. 1. tačka 3, <ref href="/krivicni#art_65_para_1">46. st. 1. tačke 4. i 5</ref>,<ref href="/krivicni#art_48_para_1"> 48. st. 1.</ref> Krivičnog zakonika Crne Gore, prethodno
+            </p>
+            <p class="subtitle">
+                U T V R Đ U J E
+            </p>
+                za krivično djelo davanje mita iz čl. <ref href="/krivicni#art_424_para_1">424. st. 1. </ref>KZCG, kaznu zatvora u trajanju od 5 (pet) mjeseci, a za krivično
+                djelo napad na službeno lice u vršenju službene dužnosti iz čl. <ref href="/krivicni#art_376_para_3">376. st. 3.</ref> u vezi st. 1 Krivičnog zakonika Crne
+                Gore, kaznu zatvora u trajanju od 3 (tri) mjeseca,
+                Pa ga sud primjenom citiranih zakonskih odredbi, te odredbi čl.<ref href="/krivicni#art_48_para_2"> 48. st. 2. tačka 2.</ref> i<ref href="/krivicni#art_51"> 51.</ref> Krivičnog zakonika
+                Crne Gore, te odredbi čl.<ref href="/zkp#art_226"> 226,</ref> <ref href="/zkp#art_226">229</ref> i <ref href="/zkp#art_374">374.</ref> Zakonika o krivičnom postupku,
+            </p>
+            <p class="subtitle">
+                O S U Đ U J E
+            </p>
+            <p>
+                Na jedinstvenu kaznu zatvora u trajanju od 6 (šest) mjeseci, u koju kaznu mu se ima uračunati vrijeme lišenja
+                slobode počev od 11.09.2018. godine od 16,30 časova do 24.09.2018. godine, dok preostali dio kazne isti ima
+                izdržati po pravosnažnosti ove presude.
+                Obavezuje se optuženi da plati troškove krivičnog postupka na ime vještačenja po vještaku digitalne
+                forenzike mr S. B., iz P. o kojima će sud donijeti posebno rješenje, te iznos sudskog paušala u iznosu od 50,00
+                eura, u korist Budžeta Crne Gore, u roku od 15 dana od dana pravosnažnosti presude pod prijetnjom
+                prinudnim izvršenjem.
+            </p>
+            <p>
+                Troškovi na ime angažovanja sudskog tumača za ruski jezik u iznosu od 596,70 eura,kao i iznos troškova
+                na ime nagrade i naknade troškova stalnom sudskom tumaču za ruski jezik K. S., iz P., za prevođenje na
+                glavnom pretresu održanom dana 21.02.2019.godine, 13.03.2019.godine, 14.04.2019.godine i 23.04.2019.
+                godine o kojima će biti odlučeno posebnim rješenjem,
+            </p>
+        </decision>
+        <arguments>
+            <p class="subtitle">
+                            O b r a z l o ž e nj e
+            </p>
+            <p>
+                Osnovno državno tužilaštvo u Cetinju, podiglo je pred ovim sudom optužnicu Kt.br. 123/18 od 11.10.2018.
+                godine, dana 12.10.2018. godine, protiv optuženog <party id="bda" refersTo="#bda" as="#defendant">B. D. A.,</party> iz R.F., kojom mu je stavilo na teret da je izvršio
+                krivično djelo davanje mita iz čl. <ref href="/krivicni#art_424_para_1">424. st. 1.</ref> KZCG, u sticaju sa krivičnim djelom napad na službeno lice u
+                vršenju službene dužnosti iz čl. <ref href="/krivicni#art_376_para_3">376. st. 3.</ref> u vezi st. 1. a u vezi <ref href="/krivicni#art_48_para_1">čl. 48. st. 1.</ref> KZCG, koja je potvrđena rješenjem
+                krivičnog vijeća ovog suda Kvo.br. 12/18 od 03.12.2018. godine.
+            </p>
+                Zastupnica optužnice je u završnoj riječi, istakla kako cijeni da su provedenim dokazima, u cjelosti potvrđeni
+                navodi optužnice tog tužilaštva Kt.br.123/18 od 11.10.2018. godine i to prevashodno jasnim i uvjerljivim
+                iskazom svjedoka oštećenog Tripunović Gorana, kao i iskazom svjedoka Bašanović Zarije, te uvidom u
+                prekršajni nalog UP OB C. broj 0013444181 od 11.09.2018. godine izdat na ime optuženog B. D. Odbrani
+                optuženog <party id="bda" refersTo="#bda" as="#defendant">B. D. A.,</party> ne treba pokloniti vjeru, jer je ista u suprotnosti sa ostalim pribavljenim dokazima u
+                spisima predmeta, a posebno sa jasnim, uvjerljivim i u svemu saglasnim iskazima oštećenog <party id="tg" refersTo="#tg" as="#victim">Tripunović
+                Gorana</party> i svjedoka Bašanović Zarije. Naime, optuženi je u svojoj odbrani naveo da policijski službenik
+                oštećeni Tripunović Goran nije govorio ruski jezik pa ga iz tog razloga navodno nije razumio, a njegovi navodi
+                su opovrgnuti iskazom svjedoka oštećenog Tripunović Gorana, koji je na glavnom pretresu jasno i
+                razgovjetno na ruskom jeziku ponovio ono što je rekao optuženom kritičnom prilikom, što je potvrdio
+                prisutni prevodilac sa ruskog jezika. Takođe je naveo, da je policijski službenik oštećeni Tripunović Goran u
+                jednom momentu pritrčao vozilu u kojem se nalazila njegova majka i da je uhvatio za ruku, stežući je,
+                pokušavajući da je izvuče iz vozila, što je opovrgnuto fotografijama koje je priložio branilac optuženog, na
+                kojima se vidi oštećena kako sjedi na mjestu suvozača, a pored vozila stoji policijski službenik. Ni na jednoj
+                od tih fotografija se ne vidi da je policijski službenik uhvatio za ruku B. A. i da je vuče iz vozila. Pri tom treba
+                ukazati da je predmetne fotografije napravila svjedokinja B. A., a sasvim sigurno ne fotografiše tako mirno
+                neko koga policajac vuče za ruku da bi je nasilno izvukao iz vozila. Takođe, po mišljenju tužioca ne treba
+                prihvatiti ni iskaz svjedoka B. A., koja je između ostalog navela, da je policijski službenik Tripunović Goran,
+                pritrčao vozilu u kojem je ona sjedjela, te da je pokušavao da otvori vrata od vozila, a policajac je čim je
+                prišao počeo da je vuče za ruku dok su vrata bila otvorena, te da je vukao i za majicu i pokušavao da je izvuče
+                iz vozila. Takođe je navela, da nije vidjela što se u tom momentu dešavalo sa njenim sinom jer je pokušavala
+                da zatvori vrata dok je policijski službenik Tripunović Goran vukao. Ovakvi navodi svjedoka B. A. su u
+                suprotnosti sa iskazom svjedoka oštećenog Tripunović Gorana, kao i sa iskazom svjedoka Bašanović Zarije,
+                kao i sa fotografijama koje je priložio branilac optuženog, a koje je sačinila svjedok B. A., predmetnom
+                prilikom, budući da na tim fotografijama, ne samo da se ne vidi kako policajac oštećeni Tripunović Goran
+                vuče B. A. za majicu i za ruku, već se takav slijed događaja ne može ni naslutiti iz onoga što je snimljeno na
+                tim fotografijama, a isto tako nije logično ni životno prihvatljivo da je predmetne fotografije svjedok B. A.
+                uspjela da snimi ako je policijski službenik Tripunović Goran pritrčao vozilu u kojem se ona nalazila i odmah
+                počeo da je steže za ruku i čupa za majicu, kako bi je nasilno izvukao iz vozila. Sa navedenog, po mišljenju
+                tužioca, sud ne treba prihvatiti iskaz svjedoka B. A., već ga treba cijeniti kao pristrasan i sračunat na pomoć
+                učiniocu u cilju izbjegavanja odnosno ublažavanja njegove krivično pravne odgovornosti za počinjeno
+                krivično djelo. Mišljenja je da su provedenim dokazima u cjelosti potvrđeni navodi optužnog akta tužilaštva
+                Kt.br.123/18 od 11.10.2018. godine i da su se u radnjama optuženog B. D. A., stekla sva bitna obilježja bića
+                krivičnog djela stavljenog mu na teret. Stoga, je ostala pri podnijetom optužnom aktu i predložila sudu da
+                optuženog oglasi krivim i osudi po zakonu,uzimajući u obzir sve olakšavajuće i otežavajuće okolnosti
+                zakonom propisane.Branilac optuženog N. K., adv. iz P., je u završnoj riječi, navela da se ocjenom svih provedenih dokaza,
+                ponaosob i u konstelaciji, jasno i nedvosmisleno dolazi do zaključka da se u radnjama optuženog B. D., nisu
+                stekli elementi bića krivičnih djela koja mu se optužnim aktom stavljaju na teret. Ukazuju na činjenicu da
+                optuženi B. D. kritičnom prilikom nije davao mito ovlašćenom policijskom službeniku, niti je pokušao to da
+                uradi, niti je imao namjeru da uradi tako nešto. Ovo se prije svega može zaključiti iz odbrane optuženog, ali
+                dijelom i iz iskaza svjedoka Tripunović Gorana i Bašanović Zarije. Iz svih tih iskaza proizilazi da, zbog jezičke
+                barijere i činjenice da B. D. ne govori crnogorski jezik, isti nije mogao u dovoljnoj mjeri da razumije ono što su
+                mu govorili ovlašćeni policijski službenici o plaćanju novčane kazne. Da je tako, proizilazi i iz iskaza svjedoka
+                Tripunović Gorana, koji je po svom sopstvenom kazivanju, optuženom na prednjoj strani naloga upisao cifru
+                34, a na poleđini prekršajnog naloga nacrtao put do najbliže pošte. Optuženi je shvatio da se kazna od 50,00
+                eura umanjuje za 34,00 eura i policajcu ponudio na licu mjesta novčanicu u iznosu od 20,00 eura, kako bi
+                odmah platio kaznu, Novac nije nudio sa namjerom da spriječi službeno lice da vrši službenu radnju koju bi
+                morao da izvrši, već sa namjerom da plati izrečenu novčanu kaznu i postupi po prekršajnom nalogu.
+                Indikativno je da od optuženog kitičnom prilikom nije oduzeta nikakva novčanica koju je navodno nudio
+                službenom licu. Stoga, više je nego jasno da se u radnjama optuženog B. D. nisu stekli elementi bića krivičnog
+                djela iz čl. 424. st. 1. KZCG. Takođe, optuženi kategorički poriče i da je kritičnom prilikom primjenjivao bilo
+                kakvu silu, napadao ili prijetio da će napasti službeno lice u vršenju službene dužnosti. To jasno proizilazi iz
+                njegovog iskaza i vizuelnog zapisa koji je njegova majka sačinila na licu mjesta. Iz istih proizilazi i da je istinit
+                njegov iskaz kada govori o ponašanju ovlašćenog policijskog službenika prema njegovoj majci, B. A., ali i
+                prijetnji upotrebe sredstava za vezivanje. Takvo ponašanje policijskog službenika nije ničim bilo izazvano i
+                smatra da nije bilo u skladu sa zakonom. Iskazu svjedoka – oštećenog Tripunović Gorana o navodnom
+                napadu, koji je prema njemu provodio B. D., ne može se pokloniti vjera. Naime, iskaz svjedoka nije u tome
+                dijelu istinit, logičan, ni ubjedljiv, a ne podržava ga ni vizuelni zapis, niti iskazi svjedoka Bašanović Zarije i B.
+                A. Smatra da treba odgledati snimak i odgovoriti na pitanja šta policijski službenik traži otvarajući vrata
+                suvozača i prinoseći sredstva za vezivanje suvozaču. Pozicija i ponašanje optuženog B. D. prema policijskom
+                službeniku nije napadačka, već suprotno. Kod optuženog je bio prisutan strah da će neko povrijediti njegovu
+                majku. Koliko su shvatili, svjedok – oštećeni Tripunović Goran, stava je da je B. A., majka optuženog, sačinila
+                zapis kako bi “ucjenjivala policajce“. Ovom prilikom bi istakli da je majka optuženog odlučila da slika
+                registarske tablice službenog vozila jer je tako nešto dozvoljeno raditi u Ruskoj Federaciji, (saglasno
+                odredbama Saveznog zakona o policiji, No3-FZ od 07.02.2011. godine, Saveznog zakona o borbi protiv
+                korupcije No273-FZ od 25.12.2018. godine, naredbe Ministarstva unutrašnjih poslova R.F. o izvršavanju
+                državnih funkcija kontrole i nadzora za pridržavanje učesnika u saobraćaju zahtjeva iz oblasti bezbjednosti na
+                putevima). Upravo je članom 25. tog akta zabranjeno policijskim službenicima koji vrše kontrolu
+                bezbjednosti saobraćaja na putevima da na bilo koji način ometaju upotrebu opreme za snimanje. Pita se
+                zbog čega bi bilo kom ovlašćenom policijskom službeniku koji radi svoj posao u skladu sa zakonom i poštuje
+                ličnost i dostojanstvo lica koja učestvuju u saobraćaju, smetalo da ga bilo ko snimi i zbog čega bi mislio da
+                neko tim snimkom može da ga ucjenjuje. Proizilazi da nema dokaza da je optuženi izvršio krivično djelo iz čl.
+                376. st. 3. u vezi st. 1. KZCG. Imajući prednje iznijeto u vidu, predlažu da sud donese presudu kojom se
+                optuženi B. D. oslobađa od optužbe. Posebno bi ukazali sudu na činjenicu da optuženi B. D. za svojih 25
+                godina nikada nije kažnjavan, da je bio uzoran građanin, da nije sklon nasilju, da na njegovoj strani postoje
+                teške porodične prilike jer je njegova majka koja ima samo njega, teško bolesna i da o njoj nema ko drugi da
+                brine, da se korektno držao na glavnom pretresu. Neko takav zaista nije predisponiran da izvrši krivično djelo
+                i da izlaže sebe i svoju majku neprijatnostima. Ako se optuženi cio svoj život ponašao u skladu sa regulama
+                društva i iste strogo poštovao, onda ni prilikom turističke posjete Crnoj Gori, nije imao nikakvog razloga da
+                odstupi od svog ranijeg ponašanja.Optuženi B. D. A. je, u svojoj odbrani, u bitnom naveo, da je, u odnosu na krivično djelo koje mu se stavlja na
+                teret, on zaista samo htio da plati kaznu policajcima i ništa drugo, a kada se policajac obratio njegovoj majci
+                on je želio da smiri situaciju, nikakve zle namjere nije bilo u njegovom ponašanju, niti u njegovom
+                postupcima. U Rusiji je zakonito da se kazna plaća policiji na licu mjesta i on je upravo tako postupio i ovdje.
+                Misli da se nijesu razumjeli jer policija nije pričala ni ruski ni engleski. Žao mu je mnogo zbog što se ovo desilo
+                i bio je veliki nesporazum. Sve je počelo od toga da su ih dana, 11.09.2018. godine, oko 16,00 časova,
+                zaustavili policijski službenici nakon čega su zahtijevali da im dâ dokumenta, odnosno vozačku dozvolu, što
+                je on i uradio, a zatim je čekao što će dalje da urade. Nijesu mu objasnili zbog čega su uzeli njegova
+                dokumenta, već su uzeli ista i udaljili se prema službenom vozilu. Nakon nekoliko minuta pošao je prema
+                njiihovom vozilu da vidi što se dešava. Njegova majka je bila sa njim u vozilu i ona je ostala u vozilu. Bio je
+                nesporazum zbog jezika, ali je konačno shvatio da mu pišu kaznu. Policajci nisu znali ni ruski ni engleski. On
+                je pitao o čemu se radi, a jedan policajac je pokazao na formularu cifru od 50,00 eura. On je pitao da li treba
+                da plati, na licu mjesta, ali kako nije dobio odgovor, vratio se prema svom vozilu da uzme novac i plati na licu
+                mjesta kaznu. On je donio 20,00 eura i stavio na gepek službenog policijskog vozila. Policajac nije htio da
+                primi taj novac i vratio mu ga je, tačnije odgurnuo je novac. On nije shvatio o čemu se radi, jer se kod njih u
+                Rusiji kazna može platiti na licu mjesta. Policajac mu je uzeo vozačku dozvolu i dao mu je hrpu papira, a
+                nakon toga je rukom pokazao smjer prema gradu. Kako su mu uzeli dokumenta pitao je više puta kako će da
+                vozi bez vozačke dozvole, a u tom trenutku je njegova majka odlučila da fotografiše tablice službenog vozila
+                kako bi znali kod koga su ostala njegova dokumenta. To je i uradila zato što se policijski službenici nijesu
+                legitimisali, iako je on to od njih tražio. Tražio je to i na engleskom i na ruskom jeziku. Čim je policajac
+                primijetio da majka snima na telefon, on je dotrčao do njihovog vozila u kojem je njegova majka sjedjela i
+                pokušavao da otvori vrata sa suvozačeve strane. Pri tome je uhvatio za ruku njegovu majku i stegao je,
+                odnosno pokušavao je da je izvuče iz vozila. Kada je shvatio da prema njegovoj maci primjenjuje silu, shvatio
+                je da mora da zaštiti majku i da nešto preduzme. Htio je da pozove jednog njihovog prijatelja u Crnoj Gori,
+                kod kojeg su rentirali auto. Policajac nije reagovao na njegove molbe da se okane njegove majke, već je
+                nastavio da je cima, pri tome joj je razvukao majicu. On je odlučio da nekako stane između policajca i svoje
+                majke kako bi je zaštitio. Pokušavao je da stane između njih dvoje. Čim je policajac primijetio tu njegovu
+                namjeru uzeo je lisice, zavrnuo mu ruke iza leđa i stavio mu lisice. On nije imao namjeru da ga spriječi u
+                njegovoj radnji, on je samo vikao: „Stanite, stanite!“ i razdvajao ih rukama, pri tome nije upotrebljavao silu.
+                Nije odgurnuo policajca već ih samo razdvajao i stalno je govorio: “Stani, stani“. Nakon što su mu stavili lisice
+                ubacili su ga u službeno vozilo. Ni u jednom momentu nije iskazao suprotstavljanje. Kada su ga stavili na
+                zadnje sjedište službenog vozila, čekao je što će se dalje desiti. Došlo je još jedno službeno vozilo i oni su
+                između sebe razgovarali. Tražili su mu ključ od vozila, pokretom ruke i on je dao ključeve jednom policajcu.
+                Nakon toga njega su odvezli u policijsku stanicu. U policijskoj stanici razgovor sa njim je nastavio isti policajac
+                koji ga je zaustavio na putu. Sve radnje koje je prethodno opisao su se dešavale sa ovim policijskim
+                službenikom. Taj policajac je bio prosijede kratke kose, tamnog tena, bio je u uniformi i na njegovim
+                nadlakticama su bile oznake, kao kod policajca, koji je sada prisutan prilikom ovog saslušanja. Kada su počeli
+                razgovor u policijskoj stanici on je pozvao neku ženu koja je prevodilac. Došao je sa majkom u Crnu Goru,
+                09.09.2018. godine, samo turistički i namjeravali su da ostanu do 13.09.2018. godine, kada su trebali da se
+                vrate u Rusiju. Kupili su povratne karte. On nije tačno mogao da pročita koji je iznos bio u pitanju, jer je bilo
+                nečitko napisano, razumio je samo da su u pitanju euri. Pitao je na engleskom koliko treba da plati, ali je
+                policajac odgovorio da ne razumije engleski jezik. Nakon što je policajac prvi put odbio novac, samo je pitao
+                koliko novca, a nije vadio više ni jednu novčanicu iz novčanika. Kada je pokušavao da razdvoji policajca od
+                svoje majke, njegova lijeva ruka je bila na vozilu, a desna ruka je bila na ramenu policajca, pri tom ga nije
+                odgurnuo. Dok je on sjedio sa lisicama u službenom vozilu vidio je da je ovaj isti policajac nogom udario o
+                vrata njegovog vozila sa strane, gdje je sjedjela njegova majka. Njegovo vozilo je bilo parkirano na proširenju
+                pored puta, okrenuto u pravcu Podgorice, a službeno vozilo je bilo malo sakriveno na jednoj uzbrdici, na
+                udaljenosti od 5-6 metara. Njegova majka je izašla iz vozila kada su mu stavili lisice i pitala ovog istogpolicajca što se dešava na ruskom jeziku. Dok su mu stavljali lisice i kazali mu da stavi glavu na svoje vozilo,
+                njegova majka je i dalje pokušavala da snima. On je pitao, ako nije dovoljno 20,00 eura, koliko treba još. Nije
+                pominjao iznos od 100,00 eura, niti vadio novčanicu od 100,00 eura, samo je pitao koliko treba još. Vozilo
+                kojim je upravljao je renta-car vozilo, imao je zapisano ime i prezime kontakt lica. Policajac mu je samo dao
+                tu hrpu papira i pokazao mu smjer prema gradu, nije pravio nikakvu skicu prema gradu. Nije ga niko od
+                policajaca upozorio, kada je dao novac da je to krivično djelo, a sve i da su rekli on to ne bi razumio. Ovaj
+                drugi policajac se nije miješao u njihov razgovor, već je stajao pored radara i radio svoj posao, tek su počeli da
+                razgovaraju, kada ga je prvi policajac smjestio u službeno vozilo. On nije prilazio njegovom vozilu. Na
+                glavnom pretresu je istakao da je dana, 11.09.2018. godine, oko 16,00 časova, na putu od Cetinja prema
+                Podgorici on i njegova majka bili su zaustavljeni od strane dva policajca. Policajci su zatražili dokumenta bez
+                objašnjavanja razloga zašto to rade, poslije čega je on njima odmah dao dokumenta. Policajac, koji ih je
+                zaustavio, uzeo je ta dokumenta i predao drugom policajcu, nakon čega je onaj drugi policajac izašao iz
+                službenog vozila i krenuo prema gepeku službenog vozila da bi se raspitao šta je razlog zaustavljanja i o čemu
+                se uopšte radi. Policajac je pokazao neki papir koji je popunjavao. Iz svog vozačkog iskustva shvatio je da je
+                razlog zaustavljanja neki prekršaj i da njemu pišu kaznu. On je pokušavao da se interesuje na ruskom i
+                engleskom jeziku koliko iznosi kazna i može li da je plati na licu mjesta, ali policajac vjerovatno, ne razumijući
+                što on pita, ga je ignorisao. Nakon toga se vratio prema svom automobilu, uzeo 20,00 eura i stavio taj novac
+                pored policajca na gepek službenog vozila, predlažući taj novac kao uplatu u korist kazne. Policajac je nešto
+                rekao, odbio novac. Poslije čega je on uzeo novac, stavio u džep, uzeo od ovoga papir sa kaznom, svoja
+                dokumenta i vratio se prema svom automobilu. Pitao je što da radi dalje, policajac mu je pokazao gestovima
+                u pravcu Cetinja i rekao: “Pošta, banka” iz čega je on shvatio da treba da pođe na C. i nađe neku banku i tamo
+                plati kaznu. On je saopštio svoju namjeru majci poslije čega je ona odlučila da snimi na telefon tablice
+                službenog vozila jer se policajci nijesu predstavili, iako je on to više puta od njih tražio. Informacije koje su
+                imali na uniformama on nije apsolutno mogao da pročita kao ruski građanin. Kada je policajac primijetio da
+                majka snima telefonom, ovaj je odmah otrčao do nje, otvorio vrata sa njene strane i počeo da zahtijeva da mu
+                ona preda telefon, istovremeno čupajući je za ruku i garderobu. Takođe je pripremio lisice i već je bio stavio
+                njoj jedan dio lisica na desnu ruku. Cijelo to vrijeme se nalazio pored vozila i policajaca i posmatrao svu tu
+                situaciju, vadeći istovremeno svoj telefon i pokušavajući da dobije jednog svog poznanika u Crnoj Gori, koji
+                vlada ruskim jezikom. On je zvao N., ali se javio M., pitao ga je kako se ovdje plaća kazna, ali obrativši pažnju
+                na to da policajac povećava glas i sve jače cima majku, on je stavio lijevu ruku naprijed da bi ogradio majku.
+                Kako je u desnoj ruci držao telefon, tako je lijevom rukom razdvojio majku i policajca, odnosno nije
+                pokušavao da ih razdvoji, samo je stavio ruku između njih, jer je policajac svoju desnu ruku stisnuo u pesnicu,
+                kao da je već imao namjeru da udari majku. Policajac je odmah reagovao uhvativši ga prvo za lijevu ruku i
+                zavrnuvši je iza leđa, a isto to je i uradio sa desnom rukom u kojoj je držao telefon, nakon čega je stavio lisice i
+                oduzeo mu telefon i pritisnuo ga uz auto. Poslije toga su ga odveli u službeno vozilo gdje su ga ostavili na
+                zadnje sjedište, gdje je čekao dolazak još nekog automobila sa policajcima i čekao je da ga odvezu u
+                policijsku stranicu, gdje se i nalazio naredna tri i po dana. Prije prvog dolaska u tužilaštvo on je tri i po dana
+                bio u policijskoj stanici u potpunoj tami i hladnoći, bez hrane i bez vode, ali nakon isteka čitavog ovog
+                perioda on je uspio u svom sjećanju da obnovi svu hroniku događaja. Izvinio se i dodao da je tačno da je prvi
+                iskaz dao 12.09.2018. godine, ali dovoljno je bilo tog jednog dana i prenesenog šoka, da bi on tako zbunjen
+                dao iskaz. Njegovo auto je stajalo na proširenju pored puta prema Podgorici, a policijski automobil se nalazio
+                pod pravim uglom sa desne strane na rastojanju 5–6 metara od njegovog vozila. Pošto je prvi policajac koji ih
+                je zaustavio i uzeo dokumenta pošao u smjeru gepeka službenog vozila i počeo tamo da piše kaznu koristeći
+                gepek kao radnu površinu, odnosno kao sto. Policajac kada je pisao kaznu je njemu pokazao brojku 50,00 na
+                papiru na kojem je pisao kaznu, ali je tu spomenuo popust ili umanjenje, diskont i u jednom ćošku papira je
+                napisao iznos 34. Pošto je on shvatio da je popust 34,00 eura, on je shvatio da kazna iznosi 16,00 eura, ako se
+                plati odmah, a dao je 20,00 eura jer nije imao sitno. Takva praksa mu je poznata iz Rusije gdje takođe postoje
+                popusti ako se plaća na licu mjesta. Apsolutno tvrdi da na ruskom i engleskom jeziku niti jedne riječi nije biloupućeno od strane policijskih službenika. O davanju mita njega uopšte nije upozoravao, sem što je odbio
+                novac, a policijski službenik mu nije nacrtao put do pošte na poleđini naloga. Pojašnjava da prvi put nije
+                dobro shvatio pitanje i njegov komentar nečitko napisanom broju odnosi se na broj 34, u vezi toga on je
+                nekoliko puta pitao policajca što piše da bi mu po ciframa rekao 3–4.
+            </p>
+            <p>
+                Optuženi je u cjelosti prihvatio završnu riječ svoga branioca i dodao da je situacija koja se stvorila za njega
+                kao i za njegovu porodicu veliki udarac u finansijskom smislu i zdravstvenom stanju njegove majke. Nije imao
+                zlih namjera prema policijskim službenicima, niti prema ovoj državi, a žao mu je što se vodio ovaj postupak.
+                Radi razjašnjenja ove krivično pravne stvari sud je u dokaznom postupku proveo sljedeće dokaze: saslušao
+                svjedoka – oštećenog <party id="tg" refersTo="#tg" as="#victim">Tripunović Gorana</party>, svjedoka Bašanović Zariju, na saglasan predlog stranaka umjesto
+                neposrednog saslušanja pročitao iskaz svjedoka B. A., pročitao prekršajni nalog Uprave Policije OB C. broj
+                0013444181 od 11.09.2018. godine izdat na ime optuženog <party id="bda" refersTo="#bda" as="#defendant">B. D. A.,</party> zbog počinjenog prekršaja iz člana 323.
+                stav 1. tačka 5. Zakona o bezbjednosti saobraćaja na putevima, sa nalogom platioca od 11.09.2018.
+                godine;kao i prekršajni nalog Uprave Policije OB C. broj 0013444181 od 11.09.2018. godine izdat na ime
+                optuženog B. D.,koji je lično njemu predat dana 11.09.2018.godine od strane ovlašćenih policijskih
+                službenika, pročitao nalaz i mišljenje sudskog vještaka iz oblasti digitalne forenzike S. B. od 03.05.2019.
+                godine i izvršio uvid u 11 fotografija koje su dostavljne sudu, dana 05.04.2019. godine, od strane branioca
+                optuženog.
+            </p>
+            <p>
+                Sud je rješenjem na glavnom pretresu od 14.05.2019. godine, odbio predlog odbrane da se u svojstvu
+                svjedoka sasluša izvjesni M., zaposlen u privrednom društvu „R. c.“ d.o.o. B., na okolnosti razgovora sa
+                optuženim kritične prilike, obzirom da po mišljenju suda saslušanje predloženog svjedoka, koji nije bio
+                neposredni očevidac konkretnog događaja ne može doprinijeti rasvjetljenju predmetne krivično pravne
+                stvari, pa bi saslušanje istog vodilo samo odugovlačenju postupka.
+            </p>
+            <p>
+                Iz iskaza svjedoka – oštećenog <party id="tg" refersTo="#tg" as="#victim">Tripunović Gorana</party>, proizilazi da je navedenog dana vršio redovnu patrolnu
+                djelatnost na magistralnom putnom pravcu C. – Podgorica u mjestu B., a između ostalog i radarsku kontrolu,
+                zajedno sa kolegom Bašanović Zarijom. U 16,16 časova zaustavili su putničko motorno vozilo “VW Passat”,
+                reg. oznaka PG .., koje se kretalo brzinom 80 km/h, na dijelu puta gdje je brzina ograničena saobraćajnim
+                znakom na 50 km/h. Tom prilikom je ustanovljeno da istim upravlja ruski državljanin –ovdje optuženi . Istome
+                je od strane policijskog službenika Bašanovoć Zarije, koji ga je i zaustavio, ponuđeno da pogleda snimak
+                prekoračenja brzine s tim što će izaći iz vozila, ali je isti to odbio. Protiv navedenog lica je započet postupak
+                podnošenja prekršajnog naloga zbog počinjenog prekršaja. On je počeo da piše prekršajni nalog. Lice B. D. A.
+                je u jednom trenutku izašao iz vozila, krenuo prema službenom vozilu i prišao njemu. Istome je objasnio na
+                ruskom jeziku, da je počinio prekršaj prekoračenja brzine od 30 km/h i da je za taj prekršaj predviđena
+                novčana kazna u rasponu od 50,00 do 120,00 eura, s tim što se za navedeni prekršaj piše kazna u iznosu od
+                50,00 eura, a da se ista plaća u pošti ili banci. Takođe, je odlukom Vlade utvrđeno da se plaća dvije trećine
+                kazne što iznosi 34,00 eura. B. D. je u tom momentu zahtijevao da kaznu ne plati u pošti već mu je ponudio
+                iznos od 20,00 eura i da ga puste da nastavi kretanje. Oni su razgovarali kod zadnjeg dijela vozila. Njegov
+                kolega Bašanović Zarija je bio udaljen 5–6 metara, ali ne zna da li od vozila koja su prolazila, mogao čuti
+                razgovor. B. D. je saopštio da novac vrati nazad, jer je to ovdje zabranjeno i da pođe u poštu da uplatinavedeni iznos kazne. Nakon toga lice B. D. iz novčanika vadi još 20,00 eura, tražeći od njega da ih uzme i da
+                ih pusti kako bi nastavili kretanje on i ženska osoba koja je bila sa njim u vozilu, a novac je stavio na gepek
+                vozila. Navedeni iznos je takođe odbio i licu uručio prekršajni nalog, a prethodno je na poleđini istog nacrtao
+                put do pošte, kako bi se lakše snašao. Saopštio mu je da vozačka dozvola ostaje kod njih do uplate novčane
+                kazne i donošenja uplatnice, kao dokaza da je navedeni iznos uplaćen. Kad je rekao ovom licu da uzme novac
+                i da mora da ide u poštu da uplati iznos kazne, on je počeo da govori na engleskom praveći se da ne zna ruski
+                pa ga je upitao zašto sad govori engleskim jezikom kada je ruski državljanin. On je onda počeo ponovo da
+                priča na ruskom. Ovo lice je pokupilo svoj novac sa gepeka vozila i prekršajni nalog koji mu je uručio, a zatim
+                se udaljio prema svom vozilu. U tom momentu kolega Bašanović mu je rekao da je žensko lice iz vozila čitavo
+                vrijeme fotografisalo njih i snimalo. Nakon toga on se uputio prema ovom vozilu i dok su suvozačeva vrata
+                bila otvorena, rekao je ženskoj osobi koja je sjedjela na mjestu suvozača, da ne može da ih snima i
+                fotografiše, te da je to zabranjeno. Ista je zalupila vrata vozila koja je on ponovo otvorio i ponovio joj isto.
+                Prethodno je B. D. nekoga zvao na telefon i razgovarao, a u momentu kada je on otvorio vrata vozila on ga je
+                desnom rukom odgurnuo u predjelu ramena lijeve ruke i uhvatio za lijevu ruku, vukući ga od vozila. Tada je
+                on, uz upotrebu fizičke sile savladao ovo lice i istome stavio sredstva za vezivanje, a zatim ga odveo u
+                službeno vozilo. Dok se nalazio u vozilu rekao je ovoj ženskoj osobi da im ponudi iznos od 100,00 eura, kako
+                bi bio pušten na slobodu. On je u međuvremenu pozvao komandira Nenada Jokića, koji je došao. Nakon toga
+                su lica priveli u OB C.. Ističe da se ova ženska osoba ponašala veoma drsko i bezobrazno. Niije htjela u
+                početku da im dozvoli da uđu u njihovo vozilo, tek kasnije je na to pristala, pa su vozilo odvezli na parking
+                ispred OB C. da bi bilo bezbjedno. Ista nije htjela da ga ostavi na licu mjesta, a nije htjela ni da ga vozi. On ovo
+                žensko lice nije čupao za garderobu, niti vukao, tako da njen sin, optuženi, nije imao razlog da ovako postupi.
+                Razumije i govori ruski jezik dovoljno da može da se sporazumije. Na glavnom pretresu pojasnio je na ruskom
+                jeziku kako se obratio optuženom. On prema B. A. nije primjenjivao fizičku silu ili sredstva za vezivanje, jer za
+                tim nije bilo potrebe. B. D. je pozvao nekoga, ali nije čuo sadržinu razgovora, jer nije ni obraćao pažnju što isti
+                govori jer je razgovarao sa njegovom majkom. Čitavo vrijeme je B. A. držala telefon i istim je snimala u pravcu
+                radara i kolege Bašanović Zarije, kao i prema njenom sinu i njemu. Da bi neko snimao ovlašćenog policijskog
+                službenika u vršenju javnih ovlašćenja on mora da ima odobrenje nadležnog starješine, ukoliko se ne radi o
+                mjerama tajnog nadzora. Nijesu oduzeli mobilni telefon B. A. jer bi morao primijeniti sredstva prinude i
+                fizičku snagu jer nije davala telefon, a pri tome se zatvorila u vozilu. On nema ništa protiv da se dostave
+                fotografije koje su sačinjene od strane B. A. sa mobilnog telefona, ali da se dostave kompletne fotografije
+                obzirom da je ista tvrdila da je izbrisala fotografije, kako bi pustili njenog sina. Uobičajna je praksa da
+                službenu zabilješku sačinjavaju sva lica koja su tu prisustvovala. Što se tiče snimanja, ukoliko je neko u
+                prolazu može da se snima određeni dio prirode, objekti i slično, ali ukoliko stojite na jednom mjestu i
+                direktno kameru, odnosno u ovom slučaju kameru telefona okrenete prema osobi i snimate kompletan
+                događaj sa poznatom namjerom da to iskoristite u negativne svrhe ili podrugljive, onda je to privatni život
+                nekoga, koji mogu da iznesu na društvene mreže i da ima znatno veće posljedice nego što se misli. Pridružuje
+                se krivičnom gonjenu protiv optuženog ,a ne postavlja imovinsko pravni zahtjev.
+            </p>
+            <p>
+                Iz iskaza svjedoka Bašanović Zarije, proizilazi da su navedenog dana vršeći redovnu patrolnu djelatnost na
+                magistralnom putnom pravcu C. - Podgorica u mjestu B., a između ostalog i radarsku kontrolu, on i kolega
+                <party id="tg" refersTo="#tg" as="#victim">Tripunović Goran</ref>. U 16,16 časova zaustavili su putničko motorno vozilo “VW Passat”, registarskih oznaka PG
+                .., koje se kretalo brzinom 80 km/h, na dijelu puta gdje je brzina ograničena saobraćajnim znakom na 50
+                km/h. Tom prilikom on je prišao vozilu i tražio dokumenta ovom licu koje je upravljalo vozilom i saopštio mu
+                na engleskom jeziku koji je prekršaj počinio i da, ako želi priđe radaru i sam se uvjeri da je počinio prekršaj.
+                Jasno je zaključio da su ga optuženi i žensko lice koje je sjedjelo u vozilu razumjeli jer su prstom odmahnuli u
+                smislu da neće da priđu radaru. Uvidom u dokumenta koja mu je dao utvrdio je da je vozilom upravljao ruski
+                državljanin B. D. od oca A., rođen .. godine u K. o., nastanjen u N., R. On je dokumenta predao kolegiTripunović Goranu, koji je počeo da piše prekršajni nalog, a on se vratio kod radara. Ubrzo je iz vozila izašao
+                vozač i prišao kolegi Tripunoviću koji je počeo sa ovim licem da razgovara na ruskom jeziku. On nije razumio
+                što mu je policijski službenik Tripunović govorio jer ne zna ruski, ali je shvatio da ga je uputio da plati kaznu u
+                poštu jer mu je pokazivao rukom prema gradu. On nije mogao da vidi moment kada je vozač vadio novac i
+                ponudio ga kolegi Tripunoviću, ali je vidio da ženska osoba iz vozila čitavo vrijeme snimala i njega i njih
+                dvojicu. U jednom momentu vozač se vratio prema svom vozilu i on je tada kolegi Tripunoviću rekao da je
+                ženska osoba iz vozila cijelo vrijeme snimala. Tripunović je prišao vozilu i obratio se ovoj ženskoj osobi na
+                ruskom jezniku, a i on je prišao i rekao istima na engleskom jeziku da snimanje i fotografisanje nije
+                dozvoljeno. Siguran je da su ih oboje razumjeli. Ova žena je jako povukla vrata vozila i zalupila ih, pa čak misli
+                da je kolegu vratima udarila, kolegu Tripunovića, pa je on otvorio vrata vozila i ponovo je rekao da ona treba
+                da izbriše snimke. U tom momentu je prišao vozač i desnom rukom odgurnuo kolegu Tripunovića u predjelu
+                ramena lijeve ruke i uhvatio za lijevu ruku, vukući ga od vozila prema sebi. Tripunović se malo zateturao i
+                pridržao se za vozilo. Za to vrijeme žena je bila u vozilu. Tada je kolega Tripunović uz upotrebu fizičke sile
+                savladao ovo lice i istome stavio sredstva za vezivanje, a zatim ga odveo u službeno vozilo. Čitavo vrijeme,
+                dok je ovo trajalo žena iz vozila je snimala telefonom i kada je kolega Tripunović odveo vozača u službeno
+                vozilo on je ostao i molio ovu ženu da prestane da snima i da je to zabranjeno. Ona nije ništa odgovarala. Dok
+                se vozač nalazio u službenom vozilu, rekao je ovoj ženskoj osobi da im ponudi iznos od 100,00 eura, kako bi
+                bio pušten na slobodu. Čim je to ona rekla kolega Tripunović mu je to preveo, a zatim je rekao da mu je ovaj
+                mladić, dok je pisao prekršajni nalog, nudio u dva navrata po 20,00 eura. U međuvremenu su pozvali
+                dežurnog starješinu Nenada Jokića, koji je došao zajedno sa kolegom Đuranović Darkom. Dok su oni bili tu
+                prisutni ova žena ih je čitavo vrijeme ucjenjivala govoreći im da će izbrisati snimke, ako skinu lisice njenom
+                sinu i ako ih puste da nastave slobodno kretanje. Kada su im objasnili da treba da budu privedeni u OB C. ova
+                žena nije htjela da otvori vrata vozila, bukvalno ih je držala rukom i tek kada je došao dežurni starješina
+                Nenad Jokić ona je dozvolila da uđe u vozilo. On ovo žensko lice nije čupao za garderobu, niti vukao, tako da
+                njen sin nije imao razlog da ovako postupi. Razumije i govori engleski jezik dovoljno da može da se
+                sporazumije, čak je sa ovim momkom čitavo vrijeme razgovarao na engleskom kada je bio priveden u OB C..
+                Pojasnio je da dok ga je B. A. snimala telefonom jeste mu bilo neprijatno da ih snima, a redovno su obavljali
+                službenu dužnost. Kritičnom prilikom nije primjenjivao sredstva za vezivanje ili fizičku silu prema B. A. i B. D.,
+                ni jedno ni drugo. Ovlašćeni policijski službenik primijenio je prema vozaču “polugu” – “ključ na lakat”, dok
+                mu je stavljao lisice, ali silu nije nikakvu. Mogao bi da vidi, za slučaj da je policijski službenik Tripunović,
+                stavio lisicu na desnu ruku B. A., jer je cijelo vrijeme bio tu pored njega. B. A. kritičnom prilikom nije oduzet
+                mobilni telefon, jer ga ona nije dala, a nije ni dozvoljavala da se uđe u vozilo. B. D. jeste pozivao nekoga
+                kritičnom prilikom, ali ne razumije ruski, jer je ovaj na ruskom razgovarao. Ne priča tečno engleski, ali govori
+                toliko da mogu da ga shvate u dijelu posla koji obavlja i oni su ga dobro razumjeli. Majka optuženog ih je
+                bukvalno bojkotovala, odnosno govorila je da poznaje četiri jezika, te kada bi oni govorili na ruskom, onda su
+                ovi govorili na engleskom. Kada on počne engleski, ovi bi počeli na ruskom, ili čak na nekom drugom jeziku,
+                jednostavno nijesu sarađivali. Saglasan je i nema nikakav problem da se dostave fotografije koje je
+                sačinjavala B. A. i da se u njih izvrši uvid. Razumije engleski u onom dijelu koji je njemu potreban za poslove
+                koje obavlja s tim što je optuženi pričao da radi na brodu i slično, ali to nije razumio.
+                Iz iskaza svjedokinje B. A., proizilazi da je dana, 11.09.2018. godine, njen sin upravljao vozilom renta-car i
+                kretali su se iz pravca Njeguša u pravcu Podgorice. Oko 16,00 časova zaustavila su ih dva policajca na putu od
+                Cetinja prema Podgorici i jedan od njih je zamolio da mu daju dokumenta. Oni su to i uradili i on je ista odnio
+                do službenog vozila. Onda se vratio nazad i njoj je rekao da su prekoračili brzinu. Kako je kod njih običaj, da
+                ukoliko nije velika kazna, istu mogu platiti na licu mjesta, rekla je sinu da plate kaznu na licu mjesta, ako je to
+                ovdje praksa. Policajac je njenom sinu dao neki formular na kojem nije bilo iznosa kolika je kazna, niti je bilo
+                naznačeno gdje treba da plate, takođe nije bilo nikakvih identifikacionih podataka za policajce. Pokušala jeda razgovara sa policajcem koji je bio kod radara, ali je on nije razumio. Počela je da brine gdje će, jer su
+                počeli da sklapaju radar, nije znala gdje će da traže dokumenta, pa je odlučila da slika registarske tablice, što
+                je u Rusiji dozvoljeno. To se nije dopalo onom policajcu koji se nalazio u vozilu, pa je potrčao ka vozilu u
+                kojem je ona sjedjela, a za njim je prišao i njen sin. Ona je pokušavala da zatvori vrata od vozila, a policajac je
+                čim je prišao počeo da je vuče za ruku dok su vrata bila otvorena. Vukao je i za majicu i pokušavao da je
+                izvuče iz vozila i ostale su joj modrice na desnoj ruci. On je htio da dohvati njen mobilni telefon. Nije vidjela
+                što se u tom momentu dešavalo sa njenim sinom jer je pokušavala da zatvori vrata, dok je policajac vukao.
+                Ona je zatvorila vrata od vozila, a on je zlobno počeo da udara o vrata vozila. On je već držao lisice u rukama i
+                pretpostavlja da je htio njoj da ih stavi, ali je utoliko prišao njen sin i ovaj je njemu stavio lisice. Ne zna iz kojeg
+                razloga je stavio njenom sinu lisice, ali ima osjećaj da su bile pripremljene, a on je bio agresivan od početka i
+                iz toga razloga njemu stavio lisice. Ovaj prvi policajac koji je bio agresivan je pozivao policajca koji je stajao
+                pored radara da donese svoje lisice, međutim, ovaj drugi je pokušavao da smiri prvog policajca i nije prilazio.
+                Njenog sina su sa lisicama odveli i sjeli su u službeno vozilo i ona je tada izašla iz njihovog vozila. Oduzeli su
+                mu telefon i zatvorili staklo, tako da nijesu mogli da komuniciraju. Ona je pokušavala da kaže da se nijesu
+                razumjeli i pokušala je da se razumije sa njim, ali nije uspjela. Sjeća se da je sinu ona lično dala novčanicu od
+                20,00 eura da plati kaznu. Računala je da je toliko dovoljno. Nije vidjela kako je policajac reagovao kada mu je
+                njen sin dao novčanicu od 20,00 eura zbog položaja vozila. Njihovo vozilo je bilo pored puta parkirano, pa
+                radar, a dalje je bilo parkirano službeno vozilo. Imala je kod sebe novca, ali joj sin ni u jednom momentu nije
+                rekao da da policajcu 100,00 eura kako bi ga pustio. Sve je to veoma kratko trajalo. Ubrzo su došla još dva
+                policajca i ona je pokušala sa nekim da razgovara na ruskom jeziku, ali je niko nije razumio. Njen sin nije
+                gurnuo niti povukao policajca. Sve to nije bilo fizički izvodljivo jer se sve dešavalo duž jednih vrata. Zašto bi
+                on gurao naoružanog policajca u tuđoj zemlji. Vaspitan je tako da se sa poštovanjem ophodi prema
+                službenom licu. U Crnu Goru su došli 08.09.2018. godine, a trebali su da napuste Crnu Goru 13.09.2018.
+                godine.
+            </p>
+            <p>
+                Iz prekršajnog naloga Uprave Policije, OB C. broj 0013444181 od 11.09.2018. godine izdat na ime B. D. A.,
+                proizilazi da je optuženi <party id="bda" refersTo="#bda" as="#defendant">B. D. A.,</party> JMBG .., broj saobraćajne dozvole 113992277, broj vozačke dozvole 471192,
+                iz R., dana 11.09.2018. u 16,16 časova, upravljao putničkim motornim vozilom marke “VW Pasat“, registarskog
+                broja PG .., u javnom saobraćaju iz pravca Cetinja prema Podgorici brzinom od 80 km/h, u naseljenom mjestu
+                B., Opština C., gdje je brzina kretanja vozilom saobraćajnim znakom ograničena na 50 km/h, koji prekršaj je
+                utvrđen radarom br. 003139 i istom je shodno članu 323. st. 1. tačka 5. ZOBS-a, izrečena jedinstvena novčana
+                kazna u iznosu od 50,00 eura, dok je propisana kazna od 50-120,00 eura.Na primjerku koji je uručen
+                optuženom od starne ovlašćenih policijskih službenika ispod upisanog iznosa kazne od 50,00 eura, nalazi se
+                upisan iznos 34,00 eura, koji je zaokružen i predstavlja puni iznos kazne umanjen za jednu trećinu. Optuženi
+                je prihvatio odgovornost za prekršaj i odrekao se prava na sudsko odlučivanje. Potpisao je prekršajni nalog i
+                primio ga je na licu mjesta. Prekršajni nalog potpisali su i ovlašćeni policijski službenici Tripunović Goran,
+                broj sl.značke 706 i Bašanović Zarija, broj sl.značke 1058. Iz naloga platioca, proizilazi da je B. D., na račun
+                Uprave policije Crne Gore, platio kaznu po prekršajnom nalogu u iznosu od 33,50 eura, dana, 11.09.2018.
+                godine.
+            </p>
+            <p>
+                Iz nalaza i mišljenja sudskog vještaka iz oblasti digitalne forenzike S. Balše od 03.05.2019. godine, proizilazi
+                da je vještak pristupio vještačenju mobilnog telefona “Iphone 7“, IMEI broja 353825208989277, pomoću
+                forenzičkog softvera za mobilne telefone “UFED“. Vještačenje je urađeno pomoću metoda “Advanced logical“.
+                Na telefonu je pronađen snimak pod imenom “IMG_3632. MOV“, koji je na osnovu meta podataka nastao
+                11.09.2018. u 16:24:50 časova. Ekstenzija snimka je .mov i njegova dužina je 9 sekundi. UFED softver je očitaosljedeće meta podatke: Latitudu i longitudu koji pokazuju da je ovaj snimak nastao na magistralnom putu
+                Podgorica – C., na samom ulazu u C., što je prikazano na slici 1, koja je nastala pomoću open sourve
+                aplikacije “Google Earth“. Snimak je nastao na uređaju “Iphone 7“, model kamere koja je načinila snimak je
+                Apple. Predmetni video fajl je smješten na putanji: ./var/mobile/Media/DCIM/103APPLE/IMG_3632.MOV, što je
+                lokacija gdje po fabričkim podešavanjima sam telefon smješta fajlove koji su snimljeni na njemu. Sve
+                navedeno pokazuje da je snimak autentičan i da je nastao na ovom telefonu, te da na njemu nisu rađene
+                nikakve izmjene (jer bi na to ukazali meta podaci) i u potpunosti isključuje mogućnost fotomontaže.
+                Uvidom u 11 fotografija koje su dostavljene sudu, dana, 05.04.2019. godine, od strane branioca optuženog,
+                proizilazi izgled automobila sa otvorenim vratima mjesta suvozača na kojem sjedi jedno lice, dok policijski
+                službenik u uniformi, stoji izvan vozila, odmah pored, držeći u lijevoj ruci sredstva za vezivanje. Na
+                fotografijama se ne vidi izgled lica policijskog službenika, dok je njegova pozicija takva da je upravljen prema
+                automobilu i putniku, desnom rukom isprva povijenom u laktu, a potom ispruženom u pravcu suvozača. Pri
+                ovome je šaka desne ruke policijskog službenika otvorena, dok su mu sredstva za vezivanje u lijevoj ruci.
+                Takođe, proizilazi djelimično izgled policijskog službenika, u uniformi sa ispruženom desnom rukom prema
+                jednom licu, dok ga za lijevu ruku hvata drugo lice.
+            </p>
+            <p>
+                Utvrđujući činjenice radi pravilnog utvrđenja materijalno pravnog odnosa u predmetnoj krivično pravnoj
+                stvari, sud je nesumnjivo utvrdio da je optuženi <party id="bda" refersTo="#bda" as="#defendant">B. D. A.</party> dana, 11.09.2018. godine, oko 16,16 časova, u mjestu
+                zv. “B.“, opština C., svjestan svojih djela, čije je izvršenje htio i svjestan da su njegova djela zabranjena,
+                policijskim službenicima Uprave policije – Odjeljenja bezbjednosti C., Tripunović Goranu i Bašanović Zariji,
+                ponudio mito da isti ne izvrše službenu radnju koju bi morali izvršiti, a potom fizički napao policijskog
+                službenika – oštećenog <party id="tg" refersTo="#tg" as="#victim">Tripunović Gorana</party> u vršenju poslova redovne kontrole saobraćaja na magistralnom
+                putnom pravcu C. – Podgorica, na način što je, nakon što mu je oštećeni <party id="tg" refersTo="#tg" as="#victim">Tripunović Goran</party> saopštio da je
+                upravljajući putničkim motornim vozilom marke “VW Passat“, reg. oznake PG .., prekoračio dozvoljenu brzinu
+                kretanja i time počinio prekršaj, te da je zbog počinjenog prekršaja, dužan na pošti ili u banci platiti novčanu
+                kaznu u iznosu od 34,00 eura, istome ponudio novac u iznosu od 20,00 eura, sa ciljem da mu policijski
+                službenik oštećeni <party id="tg" refersTo="#tg" as="#victim">Tripunović Goran</party> ne napiše prekršajni nalog, te kada je policijski službenik oštećeni
+                Tripunović Goran odbio novac, istome ponudio još 20,00 eura, ostavljajući novac na gepeku službenog vozila,
+                insistirajući da policijski službenik oštećeni Tripunović Goran uzme novac i da njemu i njegovoj majci B. Alli,
+                koja je bila sa njim u vozilu, dozvoli da nastave kretanje, da bi potom, u momentu kada je policijski službenik
+                oštećeni Tripunović Goran, odbio da uzme novac i uručio mu prekršajni nalog, te opomenuo njegovu majku
+                B. A., zbog nedozvoljenog snimanja mobilnim telefonom, istoga fizički napao, na način što je desnom rukom
+                odgurnuo oštećenog <party id="tg" refersTo="#tg" as="#victim">Tripunović Gorana</party>, a potom uhvatio istog za lijevu ruku , vukući ga od vozila, da bi u
+                momentu kada ga je oštećeni <party id="tg" refersTo="#tg" as="#victim">Tripunović Goran</party>, uz upotrebu fizičke sile savladao i odveo u službeno vozilo,
+                dok se nalazio u vozilu, svojoj majci B. A., kazao da policijskim službenicima Tripunović Goranu i Bašanović
+                Zariji ponudi novac u iznosu od 100,00 eura, kako bi bio pušten na slobodu.
+                Naprijed navedene odlučne činjenice sud je utvrdio na osnovu sljedećih dokaza: iskaza svjedoka – oštećenog
+                <party id="tg" refersTo="#tg" as="#victim">Tripunović Gorana</party> i svjedoka Bašanović Zarije, te prekršajnog naloga Uprave policije – OB C. broj 0013444181
+                od 11.09.2018. godine, izdatog na ime optuženog <party id="bda" refersTo="#bda" as="#defendant">B. D.</party> zbog počinjenog prekršaja iz čl. 323. st. 1. tačka 5.
+                Zakona o bezbjednosti saobraćaja na putevima, sa nalogom platioca od 11.09.2018. godine, kao i
+                prekršajnog naloga koji je uručen optuženom,te dovođenjem ovih dokaza u vezu sa odbranom optuženog <party id="bda" refersTo="#bda" as="#defendant">B.
+                D. A.</party>Sud je cijenio i druge materijalne dokaze i to: 11 fotografija dostavljenih od strane branioca optuženog i nalaz
+                i mišljenje sudskog vještaka iz oblasti digitalne forenzike S. B. od 03.05.2019. godine, ali je našao da isti ne
+                mogu sudu pomoći u rasvjetljenju ove krivično pravne stvari, jer se iz priloženih fotografija, iako su
+                autentične, ne može utvrditi jasan i kompletan izgled učesnika kritičnog događaja, pa se iz njih ne mogu
+                utvrditi odlučne činjenice za utvrđivanje krivice optuženog.
+            </p>
+            <p>
+                Naime, iz iskaza svjedoka – oštećenog <party id="tg" refersTo="#tg" as="#victim">Tripunović Gorana</party>, sud je utvrdio da je kritičnog dana vršio redovnu
+                patrolnu djelatnost na magistralnom putnom pravcu C. – Podgorica u mjestu B., a između ostalog i radarsku
+                kontrolu, zajedno sa kolegom Bašanović Zarijom. U 16,16 časova zaustavili su putničko motorno vozilo “VW
+                Passat”, reg. oznaka PG .., koje se kretalo brzinom 80 km/h, na dijelu puta gdje je brzina ograničena
+                saobraćajnim znakom na 50 km/h. Tom prilikom je ustanovljeno da istim upravlja ruski državljanin, ovdje
+                optuženi. Istome je od strane policijskog službenika Bašanovoć Zarije, koji ga je i zaustavio, ponuđeno da
+                pogleda snimak prekoračenja brzine s tim što će izaći iz vozila, ali je isti to odbio. Protiv navedenog lica je
+                započet postupak podnošenja prekršajnog naloga zbog počinjenog prekršaja i on je počeo da piše prekršajni
+                nalog. Optuženi je u jednom trenutku izašao iz vozila, krenuo prema službenom vozilu i prišao mu. Istome je
+                objasnio na ruskom jeziku, da je počinio prekršaj prekoračenja brzine od 30 km/h i da je za taj prekršaj
+                predviđena novčana kazna u rasponu od 50,00-120,00 eura, s tim što se za navedeni prekršaj piše kazna u
+                iznosu od 50,00 eura, a da se ista plaća u pošti ili banci. Takođe, je odlukom Vlade utvrđeno da se plaća dvije
+                trećine kazne što iznosi 34,00 eura. Optuženi je u tom momentu zahtijevao da kaznu ne plati u pošti već mu je
+                ponudio iznos od 20,00 eura, da ga puste da nastavi kretanje. Razgovarali su kod zadnjeg dijela vozila, a
+                njegov kolega Bašanović Zarija je bio udaljen 5–6 metara, pa ne zna da li je od vozila koja su prolazila, mogao
+                čuti razgovor. Optuženom je saopštio da novac vrati nazad, jer je to ovdje zabranjeno i da pođe u poštu da
+                uplati navedeni iznos kazne. Nakon toga optuženi je iz novčanika izvadio još 20,00 eura, tražeći od njega da ih
+                uzme i da ih pusti kako bi nastavili kretanje on i ženska osoba koja je bila sa njim u vozilu, a novac je stavio na
+                gepek vozila. Navedeni iznos je takođe odbio i optuženom uručio prekršajni nalog, a prethodno je na poleđini
+                istog nacrtao put do pošte, kako bi se lakše snašao. Saopštio mu je da vozačka dozvola ostaje kod njih do
+                uplate novčane kazne i donošenja uplatnice, kao dokaza da je navedeni iznos uplaćen. Kad je rekao
+                optuženom da uzme novac i da mora da ide u poštu da uplati iznos kazne, ovaj je počeo da govori na
+                engleskom praveći se da ne zna ruski pa ga je upitao zašto sad govori engleskim jezikom kada je ruski
+                državljanin, pa je onda počeo ponovo da priča na ruskom. Optuženi je pokupio svoj novac sa gepeka vozila i
+                prekršajni nalog koji mu je uručio, a zatim se udaljio prema svom vozilu. U tom momentu njegov kolega
+                Bašanović mu je rekao da je žensko lice iz vozila čitavo vrijeme fotografisalo njih i snimalo. Nakon toga on se
+                uputio prema ovom vozilu i dok su suvozačeva vrata bila otvorena, rekao je ženskoj osobi koja je sjedjela na
+                mjestu suvozača, da ne može da ih snima i fotografiše, te da je to zabranjeno. Ista je zalupila vrata vozila koja
+                je on ponovo otvorio i ponovio joj isto. Prethodno je optuženi nekoga zvao na telefon i razgovarao, a u
+                momentu kada je on otvorio vrata vozila on ga je desnom rukom odgurnuo u predjelu ramena lijeve ruke i
+                uhvatio za lijevu ruku, vukući ga od vozila. Tada je on, uz upotrebu fizičke sile savladao ovo lice i istome stavio
+                sredstva za vezivanje, a zatim ga odveo u službeno vozilo. Dok se nalazio u vozilu rekao je ovoj ženskoj osobi
+                da im ponudi iznos od 100,00 eura, kako bi bio pušten na slobodu. On je u međuvremenu pozvao komandira
+                Nenada Jokića, koji je došao. Nakon toga su lica priveli u OB C. Ova ženska osoba se ponašala veoma drsko.
+                Niije htjela u početku da im dozvoli da uđu u njihovo vozilo, tek kasnije je na to pristala, pa su vozilo odvezli
+                na parking ispred OB C. da bi bilo bezbjedno. Ista nije htjela da ga ostavi na licu mjesta, a nije htjela ni da ga
+                vozi. On ovo žensko lice nije čupao za garderobu, niti vukao, tako da optuženi, nije imao razlog da ovako
+                postupi. Razumije i govori ruski jezik dovoljno da može da se sporazumije. On prema B. A. nije primjenjivao
+                fizičku silu ili sredstva za vezivanje, jer za tim nije bilo potrebe. Optuženi je pozvao nekoga, ali nije čuosadržinu razgovora, jer nije ni obraćao pažnju što isti govori jer je razgovarao sa njegovom majkom. Čitavo
+                vrijeme je B. A. držala telefon i istim je snimala u pravcu radara i kolege Bašanović Zarije, kao i prema njenom
+                sinu i njemu. Nijesu oduzeli mobilni telefon B. A. jer bi morao primijeniti sredstva prinude i fizičku snagu jer
+                nije davala telefon, a pri tome se zatvorila u vozilu.
+            </p>
+            <p>
+                Ovaj iskaz je u saglasju sa iskazom svjedoka Bašanović Zarije, iz kojeg je sud utvrdio da su navedenog dana
+                vršeći redovnu patrolnu djelatnost na magistralnom putnom pravcu C. - Podgorica u mjestu B., a između
+                ostalog i radarsku kontrolu, on i njegov kolega Tripunović Goran, u 16,16 časova zaustavili putničko motorno
+                vozilo “VW Passat” registarskih oznaka PG .., koje se kretalo brzinom 80 km/h, na dijelu puta gdje je brzina
+                ograničena saobraćajnim znakom na 50 km/h. Tom prilikom on je prišao vozilu i tražio dokumenta
+                optuženom koji je upravljalo vozilom i saopštio mu na engleskom jeziku koji je prekršaj počinio i da, ako želi
+                priđe radaru i sam se uvjeri da je počinio prekršaj. Jasno je zaključio da su ga optuženi i žensko lice koje je
+                sjedjelo u vozilu razumjeli jer su prstom odmahnuli u smislu da neće da priđu radaru. Uvidom u dokumenta
+                koja mu je dao utvrdio je da je vozilom upravljao ruski državljanin ovdje optuženi. On je dokumenta predao
+                kolegi oštećenom Tripunović Goranu, koji je počeo da piše prekršajni nalog, a on se vratio kod radara. Ubrzo
+                je iz vozila izašao optuženi i prišao oštećenom Tripunoviću koji je počeo sa ovim licem da razgovara na
+                ruskom jeziku. On nije razumio što mu je policijski službenik Tripunović govorio jer ne zna ruski, ali je shvatio
+                da ga je uputio da plati kaznu u poštu jer mu je pokazivao rukom prema gradu. Nije mogao da vidi moment
+                kada je optuženi vadio novac i ponudio ga oštećenom Tripunoviću, ali je vidio da ženska osoba iz vozila
+                čitavo vrijeme snimala i njega i njih dvojicu. U jednom momentu optuženi se vratio prema svom vozilu i tada
+                je oštećenom Tripunoviću rekao da je ženska osoba iz vozila cijelo vrijeme snimala. Oštećeni je prišao vozilu i
+                obratio se ovoj ženskoj osobi na ruskom jezniku, a i on je prišao i rekao istima na engleskom jeziku da
+                snimanje i fotografisanje nije dozvoljeno, a siguran je da su ih oboje razumjeli. Ova žena je jako povukla vrata
+                vozila i zalupila ih, pa čak misli da je oštećenog vratima udarila, pa je on otvorio vrata vozila i ponovo je rekao
+                da ona treba da izbriše snimke. U tom momentu je prišao optuženi i desnom rukom odgurnuo oštećenog u
+                predjelu ramena lijeve ruke i uhvatio za lijevu ruku, vukući ga od vozila prema sebi. Oštećeni se malo
+                zateturao i pridržao se za vozilo. Za to vrijeme žena je bila u vozilu. Tada je oštećeni uz upotrebu fizičke sile
+                savladao ovo lice i istome stavio sredstva za vezivanje, a zatim ga odveo u službeno vozilo. Čitavo vrijeme,
+                dok je ovo trajalo žena iz vozila je snimala telefonom i kada je oštećeni odveo optuženog u službeno vozilo
+                on je ostao i molio ovu ženu da prestane da snima i da je to zabranjeno, dok ona nije ništa odgovarala. Dok se
+                optuženi nalazio u službenom vozilu, rekao je ovoj ženskoj osobi da im ponudi iznos od 100,00 eura, kako bi
+                bio pušten na slobodu. Čim je to ona rekla oštećeni mu je to preveo, a zatim je rekao da mu je optuženi, dok
+                je pisao prekršajni nalog, nudio u dva navrata po 20,00 eura. U međuvremenu su pozvali dežurnog starješinu
+                Nenada Jokića, koji je došao zajedno sa kolegom Đuranović Darkom. Dok su oni bili tu prisutni ova žena ih je
+                čitavo vrijeme ucjenjivala govoreći im da će izbrisati snimke, ako skinu lisice njenom sinu i ako ih puste da
+                nastave slobodno kretanje. Kada su im objasnili da treba da budu privedeni u OB C. ova žena nije htjela da
+                otvori vrata vozila, bukvalno ih je držala rukom i tek kada je došao dežurni starješina Nenad Jokić ona je
+                dozvolila da uđe u vozilo. Ovo žensko lice nije čupao za garderobu, niti vukao, tako da njen sin – ovdje
+                optuženi nije imao razlog da ovako postupi. Razumije i govori engleski jezik dovoljno da može da se
+                sporazumije, čak je sa optuženim čitavo vrijeme razgovarao na engleskom kada je bio priveden u OB C..
+                Kritičnom prilikom nije primjenjivao sredstva za vezivanje ili fizičku silu prema B. A. i optuženom. Ovlašćeni
+                policijski službenik primijenio je prema vozaču “polugu” – “ključ na lakat”, dok mu je stavljao lisice, ali silu
+                nije primjenio. Mogao bi da vidi, za slučaj da je oštećeni, stavio lisicu na desnu ruku B. A., jer je cijelo vrijeme
+                bio tu pored njega. B. A. kritičnom prilikom nije oduzet mobilni telefon, jer ga ona nije dala, a nije ni
+                dozvoljavala da se uđe u vozilo. Optuženi je pozivao nekoga kritičnom prilikom, ali je na ruskom razgovarao.
+                Ne priča tečno engleski, ali govori toliko da mogu da ga shvate u dijelu posla koji obavlja i oni su ga dobro
+                razumjeli. Majka optuženog ih je bukvalno „bojkotovala“, odnosno govorila je da poznaje četiri jezika, te kadabi oni govorili na ruskom, onda su ovi govorili na engleskom. Kada on počne engleski, ovi bi počeli na
+                ruskom, ili čak na nekom drugom jeziku, jednostavno nijesu sarađivali.
+            </p>
+            <p>
+                Navedeni personalni dokazi koherentni su i sa materijalnim dokazima i to: prekršajnim nalogom Uprave
+                policije – OB C. broj 0013444181 od 11.09.2018. godine, izdat na ime optuženog B. D. zbog počinjenog
+                prekršaja iz čl. 323. st. 1. tačka 5. Zakona o bezbjednosti saobraćaja na putevima, sa nalogom platioca od
+                11.09.2018. godine, iz kojih je sud utvrdio da da je optuženi B. D. A., JMBG .., broj saobraćajne dozvole
+                113992277, broj vozačke dozvole 471192, iz R., dana 11.09.2018. u 16,16 časova, upravljao putničkim
+                motornim vozilom marke “VW Pasat“, registarskog broja PG .., u javnom saobraćaju iz pravca Cetinja prema
+                Podgorici brzinom od 80 km/h, u naseljenom mjestu B., Opština C., gdje je brzina kretanja vozilom
+                saobraćajnim znakom ograničena na 50 km/h, koji prekršaj je utvrđen radarom br. 003139 i istom je shodno
+                članu 323. st. 1. tačka 5. ZOBS-a, izrečena jedinstvena novčana kazna u iznosu od 50,00 eura, dok je
+                propisana kazna od 50-120,00 eura.Na primjerku prekršajnog naloga koji je uručen optuženom Ispod
+                upisanog iznosa kazne od 50,00 eura, nalazi se iznos 34,00 eura, koji je zaokružen i predstavlja puni iznos
+                kazne umanjen za jednu trećinu,a oštećeni Tripunović Goran je potvrdio da se radi o primjerku prekršajnog
+                naloga koji je on dao optuženom i na tom primjerku ispisao iznos od 34,00 eura koji je optuženi trebao
+                uplatiti,a sve iz razloga da ne bi u Pošti došlo do greške ,odn.da optuženi ne bi uplatio 50,00 eura,što se često
+                dešava,a sam prekršajni nalog koji je predao optuženom treba da prate dvije kopije za njega i na jednom
+                primjerku od tih kopija na poleđini je optuženom nacrtao put do pošte gdje treba da pođe i da uplati.
+                Optuženi je prihvatio odgovornost za prekršaj i odrekao se prava na sudsko odlučivanje. Potpisao je
+                prekršajni nalog i primio ga je na licu mjesta. Prekršajni nalog potpisali su i ovlašćeni policijski službenici
+                Tripunović Goran, broj sl.značke 706 i Bašanović Zarija, broj sl.značke 1058. Iz naloga platioca, utvrđeno je da
+                je optuženi B. D., na žiro-račun Uprave policije Crne Gore, platio kaznu po prekršajnom nalogu u iznosu od
+                33,50 eura, dana 11.09.2018. godine.
+            </p>
+            <p>
+                Sud je cijenio i iskaz svjedokinje B. A., ali je ocijenio da je ovaj iskaz u koliziji sa provedenim materijalnim i
+                personalnim dokazima. Naime, ova svjedokinja tvrdi da je policijski službenik dao njenom sinu – optuženom
+                formular, na kojem nije bilo iznosa kolika je kazna, niti šta treba da plate, kao što nije bilo nikakvih
+                identifikacionih podataka za policijske službenike. Ovaj dio navoda svjedokinje je u kontradiktornosti sa
+                prekršajnim nalogom Uprave policije – OB C. broj 0013444181 od 11.09.2018. godine, izdat na ime optuženog
+                zbog počinjenog prekršaja iz čl. 323. st. 1. tačka 5. Zakona o bezbjednosti saobraćaja na putevima, iz kojeg
+                jasno proizilazi kolika je visina novčane kazne za učinjeni prekršaj jer je taj iznos upisan na prekršajnom
+                nalogu, kao i to koliko se umanjuje novčana kazna ukoliko se odmah plati, te imena i prezimena ovlašćenih
+                policijskih službenika, sa oznakama brojeva njihovih službenih znački. Uostalom, ovaj umanjeni iznos od
+                34,00 eura, optuženi je uplatio dana, 11.09.2019. godine, što se utvrđuje uvidom u nalog platioca, što znači da
+                je optuženi jasno razumio koliko treba da plati kaznu, gdje treba i na koji žiro račun da uplati novčanu kaznu
+                za učinjeni prekršaj, pa je nelogičan zaključak svjedokinje da optuženi nije razumio ovlašćene policijske
+                službenike gdje treba da plati i kolika mu je izrečena kazna, jer je sve to bilo napisano u prekršajnom nalogu.
+                Nelogično je mišljenje svjedokinje da je mislila da je dovoljno da plate 20,00 eura, jer je jasno upisan i
+                zakonski raspon novčane kazne i izrečena novčana kazna, a opštepoznato je da u pravnoj državi učinioci
+                prekršaja plaćaju onaj iznos koji je zakonom propisan i koji je izrečen na prekršajnom nalogu, a ne onoliko
+                koliko smatraju da je dovoljno da plate. Uostalom, je i nerealno da optuženi ovlašćenim policijskih
+                službenicima u, za njega, stranoj državi, nudi novčanicu od 20,00 eura, u namjeri da plati novčanu kaznu, koja
+                je, sve i da nije znao gdje treba da je plati, veća od iznosa koji je dao policijskim službenicima, te da je nakon
+                odbijanja, ostavlja na gepeku službenoh vozila, čime je njegova namjera, po mišljenju suda, bila očiglednousmjerena, ne na plaćanje novčane kazne, već naprotiv, na izbjegavanje plaćanja pune novčane kazne i
+                podmićivanje službenih lica, kako bi što prije napustio mjesto na kojem je bilo zaustavljeno putničko
+                motorno vozilo kojim je upravljao. Svjedokinja, nadalje, ističe da je jedan od policijskih službenika, vukao za
+                ruku, da su joj ostale modrice na desnoj ruci, da je vukao i za majicu, kako bi je izvukao iz vozila, koji navodi
+                su opovrgnuti iskazima policijskih službenika svjedoka Bašanović Zarije i oštećenog <party id="tg" refersTo="#tg" as="#victim">Tripunović Gorana</party>, koji
+                su istakli da prema oštećenoj ni u jednom momentu nijesu koristili prinudu ili silu, niti su joj stavljali sredstva
+                vezivanja, već da se ona zatvorila u putničkom motornom vozilu, da je bila jako drska prema njima, te da je
+                odbijala da sarađuje. Svjedokinja, navodi da su sredstva za vezivanje – lisice bile pripremljene za nju, ali da su
+                iste stavljene njenom sinu – ovdje optuženom B. D., a pri tome svjesno izbjegava da sudu predoči da su
+                sredstva za vezivanje – lisice, stavljene na ruke njenog sina, zbog fizičkog nasrtaja na policijskog službenika,
+                što su sudu posvjedočili i oštećeni Tripunović Goran i svjedok Bašanović Zarija. Uprkos tome, svjedokinja
+                svjedoči da njen sin, ovdje optuženi, nije napadao nijednog od policijskih službenika. Nasuprot iskazima ovih
+                svjedoka, svjedokinja tvrdi i da joj sin ni u jednom trenutku nije rekao da dâ policijskom službeniku 100,00
+                eura, da bi ga pustio, koji navod je u koliziji sa iskazima saslušanih svjedoka. Dakle, očigledno je da su svi
+                navodi svjedokinje B. A., bili sračunati na pomoć optuženom B. D. u izbjegavanju njegove krivice i krivično
+                pravne odgovornosti za učinjeno krivično djelo, koje mu se optužnicom stavlja na teret, zbog čega sud njen
+                iskaz nije prihvatio kao vjerodostojan i istinit.
+                Sud se osvrnuo i na navode odbrane optuženog B. D., skopčane sa navodima njegovog branioca K. N., adv. iz
+                P.
+            </p>
+            <p>
+                Naime, optuženi u svojoj odbrani na sasvim drukčiji način predstavlja sudu predmetni događaj, a njegovi
+                navodi odbrane ne korespondiraju sa ostalim provedenim dokazima u ovom postupku. Optuženi
+                prvenstveno tvrdi da je kritične prilike postojala jezička barijera u njegovoj komunikaciji sa ovlašćenim
+                policijskim službenicima i da se sa njima nije mogao sporazumjeti ni na ruskom ni na engleskom jeziku. Ovi
+                navodi odbrane obesmišljeni su iskazima oštećenog Tripunović Gorana i Bašanović Zarije, koji su sudu
+                objasnili kojim stranim jezicima su se koristili prilikom komunikacije sa optuženim. Oštećeni Tripunović
+                Goran je, čak pred sudom na ruskom jeziku, predočio kako se obratio optuženom i kako mu je objasnio gdje
+                treba da uplati novčanu kaznu i koliki je njen iznos, a sudski tumač za ruski jezik S. K., je sudu potvrdila da je
+                njegov govor na ruskom jeziku ispravan, što opovrgava navode odbrane da oštećeni Tripunović Goran ne zna
+                ruski jezik i da ga optuženi nije mogao razumjeti kako mu objašnjava plaćanje kazne. Takođe i svjedok –
+                policijski službenik Bašanović Zarija, a nasuprot navodima odbrane, tvrdi da se on obraćao optuženom na
+                engleskom jeziku i da ga je optuženi razumio, te da je optuženi u momentu kada bi on govorio engleskim
+                jezikom, počinjao da priča ruski jezik, a kada je njegov kolega pričao na ruskom jeziku, on bi opet počeo da
+                razgovara na engleskom jeziku, jer nije htio da sarađuje sa njima. Optuženi dalje, tvrdi da ga je policijac
+                ignorisao, kada ga je pitao kolika je kazna, a pretpostavio je da je u pitanju neki prekršaj u saobraćaju, da bi
+                kasnije prilagodio svoju odbranu i kazao da mu je policajac pokazao na formularu cifru od 50,00 eura, pa je
+                on donio 20,00 eura da plati i stavio ih na gepek vozila, da bi još jednom mijenjao odbranu i kazao da se, kada
+                mu se osvježilo sjećanje, sjetio da je shvatio da je novčana kazna 50,00 eura, te da se umanjuje za 34,00 eura,
+                pa je donio 20,00 eura da plati jer nije imao sitno. Ovi navodi su u kontradiktornosti sa navodima svjedokinje
+                B. A., koja je tvrdila da je sinu – ovdje optuženom dala iznos od 20,00 eura, jer je ona smatrala da je toliko
+                dovoljno da se plati novčana kazna, ali i sa navodima oštećenog Tripunović Gorana, koji je rekao da je
+                objasnio optuženom kolika je novčana kazna i gdje treba da je plati a da mu je ovaj nudio 20,00 eura da ga
+                pusti, te kada je odbio da primi 20,00 eura i rekao mu da je to zabranjeno, da je novčanicu od 20,00 eura
+                stavio na gepeku službenog auta. Takođe su ovi navodi kontradiktorni i sa podacima iz prekršajnog naloga i
+                to primjerka koji je predat optuženom, u kojem je jasno napisano kolika je zaprijećena, izrečena, a koliko
+                umanjena kazna. Uostalom, u uređenom pravnom sistemu, novčana kazna se plaća u skladu sa pravnim
+                propisima i instrukcijama ovlašćenih službenih lica, a nikako ostavljanjem novčanica na gepeku policijskog
+                vozila, kao što je u konkretnom bio slučaj, pa se optuženi B. D. ne može pozivati na pravnu zabludu, jer mu jejasno i razumljivo na njegovom maternjem jeziku objašnjeno kako treba, gdje treba i u kom iznosu da plati
+                novčanu kaznu, te da je zabranjeno istu plaćati neposredno službenom licu, zbog čega sud izvodi logičan
+                zaključak da je ova konkludentna radnja optuženog bila usmjerena na to da ovlašćeno službeno lice ne
+                preduzme službenu radnju koju je dužan da preduzme, već da optuženog i njegovu majku pusti sa lica
+                mjesta, sa ličnim dokumentima, sa ciljem da mu se ne napiše prekršajni nalog, odnosno kasnije da bez
+                plaćanja punog iznosa novčane kazne za učinjeni prekršaj napusti lice mjesta i da ne bude priveden zbog
+                napada na službeno lice. Navodi odbrane optuženog se mimoilaze sa navodima oštećenog Tripunović
+                Gorana i svjedoka Bašanović Zarije i u dijelu u kome optuženi tvrdi da je jedan od policijskih službenika
+                njegovu majku B. A. uhvatio za ruku, da joj je razvukao majicu, da je nogom udario u vrata vozila u kojem je
+                sjedjela i da joj je stavio sredstva za vezivanje na jednoj ruci, pa sud ne može ni ovom dijelu odbrane
+                optuženog pokloniti vjeru, posebno kod činjenice što i svjedokinja B. A., kolizono navodima odbrane ističe da
+                joj policijski službenici nijesu stavljali lisice, već da je smatrala da su pripremljene za nju, a da su stavljene
+                njenom sinu, zbog čega je evidentno da su ovi navodi odbrane smišljeni, kako bi se predstavila sudu drukčija
+                verzija kritičnog događaja, tj. da je optuženi oštećenog napao iz nužne odbrane, iako za te tvrdnje nema
+                dokaza. Takođe se navodi odbrane razilaze sa iskazima svjedoka oštećenog Tripunović Gorana i Bašanović
+                Zarije i u dijelu u kojem odbrana tvrdi da nijesu pominjane dodatnih 100,00 eura, kako bi policijski službenici,
+                pustili optuženog B. D., da izađe iz službenog vozila i napusti lice mjesta, kao i u dijelu u kojem se opisuje
+                napad na službeno lice, jer kod jasnih, objektivnih i uvjerljivih iskaza svjedoka, kojima je sud poklonio punu
+                vjeru, sud ne može prihvatiti navode odbrane, naročito kod činjenice što se u konkretnom slučaju radi o
+                službenim licima, koji rade posao javne bezbjednosti i koji nemaju nikakvog interesa da stranog državljanina,
+                sa kojim se prvi put susrijeću u životu, prijave za ovakvo krivično djelo. Zbog toga, svi navodi odbrane
+                optuženog B. D. su ocijenjeni kao sračunati na izbjegavanje krivice i krivično pravne odgovornosti za učinjeno
+                krivično djelo, zbog čega ih sud u konačnom nije prihvatio.
+            </p>
+            <p>
+                Krivično djelo davanje mita iz <ref href="/krivicni#art_424_para_1">čl. 424. st 1.</ref> KZCG, čini onaj ko službenom licu neposredno ili posredno da,
+                ponudi ili obeća mito za njega ili drugoga da službeno lice izvrši službenu ili drugu radnju koju ne bi smjelo
+                izvršiti ili da ne izvrši službenu radnju, koju bi moralo izvršiti ili ko posreduje pri ovakvom davanju mita
+                službenog lica. Dakle, davanje mita, odnosno pravo aktivno podmićivanje postoji kad se službenom licu učini
+                ili obeća poklon ili druga korist da bi izvršilo nezakonitu radnju ili da ne bi izvršilo zakonitu radnju. Radnja
+                krivičnog djela je obećanje ili davanje mita. Mito je obećano kad davalac na ma koji način izrazi svoju želju ili
+                saglasnost da ga učini. To se može učiniti usmenom ili pismenom radnjom ili konkludentnim ponašanjem iz
+                koga proizilazi obećanje mita. Pri tome, nije od značaja da li se mito vrši samoinicijativno ili na zahthev
+                drugog lica. Obećanje mita se može vršiti neposredno ili posredno, preko drugih lica. Davanje mita je njihovo
+                uručivanje ili prenošenje na primaoca i ono se može izvršiti neposredno ili posredno. Djelo je izvršeno samim
+                obećanjem ili davanjem mita, u vezi sa vršenjem nezakonite radnje ili neizvršenjem zakonite radnje, ali za
+                njegovo postojanje nije neophodno da je primalac mita, u vezi sa tim nešto učinio ili propustio da učini.
+                Krivično djelo napad na službeno lice u vršenju dužnosti iz čl.<ref href="/krivicni#art_376_para_1"> 376. st. 1.</ref> KZCG, čini onaj ko napadne ili prijeti
+                da će napasti službeno lice u vršenju službene dužnosti, dok je st. 3. prednje citiranog člana propisano da,
+                ako je djelo iz st. 1. odnosno 2. istog člana učinjeno prema sudiji ili državnom tužiocu u vezi sa vršenjem
+                njihove sudijske, odnosno tužilačke dužnosti ili službenom licu u vezi sa vršenjem poslova javne ili
+                nacionalne bezbjednosti.
+            </p>
+            <p>
+                Dakle, u radnjama optuženog <party id="bda" refersTo="#bda" as="#defendant">B. D. A.,</party> stekla su se sva objektivna obilježja citiranih krivičnih djela, koja je
+                optuženi izvršio u sticaju, a koja mu se predmetnom optužnicom državnog tužilaštva stavljaju na teret.Ocjenjujući subjektivni aspekt kod optuženog B. D., sud je našao da je isti, bio svjestan zabranjenosti i
+                protivpravnosti svojih djela, te da je htio njihovo izvršenje. Dakle, optuženi je bio svjestan da je zabranjeno
+                nuditi novac policijskom službeniku, sa ciljem da mu službeno lice ne napiše prekršajni nalog, odnosno da ga
+                pusti sa lica mjesta, nakon napada na njega, kao i što je bio svjestan da je zabranjeno i protivpravno napasti
+                službeno lice u vršenju poslova javne ili državne bezbjednosti, ali je očigledno to htio, jer je i pored svijesti o
+                protivpravnosti njegovih djela, voljno preduzeo sve radnje tih krivičnih djela, kako je to i predstavljeno
+                optužnicom, pa se u njegovim radnjama iscrpljuje direktni umišljaj (dolus directus) kao najteži oblik vinosti.
+                Prilikom utvrđivanja vrste i visine kazne, koju će sud izreći optuženom, cijenjene su sve olakšavajuće i
+                otežavajuće okolnosti iz čl. 42. KZCG, pa je sud od olakšavajućih okolnosti na strani optuženog B. D. A.,
+                prihvatio navode odbrane da je optuženi neosuđivano lice, koju činjenicu je prihvatilo i državno tužilaštvo
+                prilikom podizanja predmetne optužnice, zatim činjenicu da se optuženi korektno držao pred sudom tokom
+                ovog postupka, te da je njegova majka B. A., teškog zdravstvenog stanja, što je konstatovano na zapisniku
+                ovog suda od 13.03.2019. godine, o čemu je dostavljen dokaz i čemu stranke nijesu prigovorile, već dale
+                saglasnost da se njen iskaz, dat kod državnog tužioca, umjesto neposrednog saslušanja pročita pred sudom,
+                a koje činjenice je sud cijenio kao naročito olakšavajuće okolnosti u smislu čl. <ref href="/krivicni#art_45_para_1">45. st. 1. tač. 3.</ref> KZCG, dok
+                otežavajućih okolnosti van bitnih obilježja krivičnog djela nije bilo. Sud je uzevši u obzir sve prednje
+                okolnosti, a primjenom čl. <ref href="/krivicni#art_48_para_1">48. st 1.</ref> KZCG, optuženom za krivično djelo davanje mita iz čl. 424. st. 1 KZCG,
+                prethodno primjenom čl. <ref href="/krivicni#art_46_para_1">46. st. 1. tač. 4.</ref> KZCG, ublažio kaznu pa istom utvrdio kaznu zatvora u trajanju od 5
+                mjeseci, a za krivično djelo napad na službeno lice u vršenju službene dužnosti iz čl. <ref href="/krivicni#art_376_para_3">376. st. 3.</ref> u vezi st. 1
+                KZCG, prethodno primjenom čl. <ref href="/krivicni#art_46_para_1">46. st. 1. tač. 5.</ref> KZCG, ublažio kaznu pa utvrdio kaznu zatvora u trajanju od 3
+                mjeseca, da bi mu primjenom čl. <ref href="/krivicni#art_48_para_2">48. st. 2. tačka 2.</ref> KZCG, metodom asperacije, uzevši u obzir da utvrđena
+                kazna mora biti veća od svake pojedinačno utvrđene kazne, a manja od njihovog zbira, izrekao jedinstvenu
+                kaznu zatvora u trajanju od 6 mjeseci. U izrečenu kaznu se optuženom, primjenom člana 51. KZCG, ima
+                uračunati vrijeme lišenja slobode i to počev od 11.09.2018. godine od 16,30 časova do 24.09.2018. godine,
+                dok preostali dio kazne isti ima izdržati po pravosnažnosti ove presude. Imajući u vidu svrhu kažnjavanja
+                propisanu članom 32. KZCG, sud je uvjerenja da će se ovako izrečenom kaznom zatvora, u dovoljnoj mjeri
+                uticati kako na optuženog, tako i na druga lica da ubuduće ne čine krivična djela (specijalna i generalna
+                prevencija), čime će se ostvariti opšta svrha izricanja krivičnih sankcija predviđena <ref href="/krivicni#art_4_para_2">čl. 4. st. 2. </ref>KZCG, kojom se
+                suzbijaju opasne djelatnosti, kojima se povređuju ili ugrožavaju vrijednosti, zaštićene krivičnim
+                zakonodavstvom.
+            </p>
+            <p>
+                Pošto je optuženi oglašen krivim, to ga je sud primjenom članova <ref href="/zkp#art_226">226</ref>–<ref href="/zkp#art_229">229.</ref> ZKP-a, obavezao da na ime
+                troškova krivičnog postupka uplati na ime vještačenja po vještaku digitalne forenzike mr S. B., iz P. o kojima
+                će sud donijeti posebno rješenje, te iznos sudskog paušala u iznosu od 50,00 eura, koji iznos je, po
+                odmjerenju ovog suda, srazmjeran trajanju i složenosti postupka, te imovinskim prilikama optuženog, a sve
+                prednje u korist Budžeta Crne Gore, u roku od 15 dana od dana pravosnažnosti presude pod prijetnjom
+                prinudnim izvršenjem.
+            </p>
+            <p>
+                Troškovi na ime angažovanja sudskog tumača za ruski jezik u iznosu od 596,70 eura koji se odnosi na
+                naknadu i nagradu troškova sudskom tumaču za ruski jezik K. S., iz P. i to :iznos od 177,40 eura, za usmeno
+                prevođenje sa crnogorskog na ruski jezik i obratno i za prevod pisanog teksta žalbe, koji su odmjereni
+                rješenjem ODT-a u Cetinju Kti br. 7/18 od 11.10.2018. godine; iznos od 20,00 eura, za prevođenje rješenje ovog
+                suda Kvo.br. 12/18-I od 19.11.2018. godine, koji su odmjereni rješenjem ovog suda Kvo.br. 12/18-I od21.01.2019. godine; iznos od 204,50 eura, za usmeno prevođenje sa crnogorskog na ruski jezik na ročištu, koji
+                su odmjereni rješenjem ovog suda K.br. 99/18 od 14.01.2019. godine; iznos od 102,40 eura, za usmeno
+                prevođenje sa crnogorskog na ruski jezik na ročištu, koji su odmjereni rješenjem ovog suda K.br. 99/18 od
+                24.01.2019. godine; iznos od 92,40 eura, za usmeno prevođenje sa crnogorskog na ruski jezik na glavnom
+                pretresu, koji su odmjereni rješenjem ovog suda K.br. 99/18 od 30.01.2019. godine;kao i iznos troškova na ime
+                nagrade i naknade troškova stalnom sudskom tumaču za ruski jezik K. S., iz P., za prevođenje na glavnom
+                pretresu održanom dana 21.02.2019.godine, 13.03.2019.godine, 14.04.2019.godine i 23.04.2019. godine o
+                kojima će biti odlučeno posebnim rješenjem, padaju na teret Budžetskih sredstava ovog suda jer se isti ne
+                naplaćuju od lica koja su po odredbama ovog Zakonika dužna da naknade troškove krivičnog postupka
+                ,osnovom člana <ref href="/zkp#art_226_para_6">226. stav 6.</ref> ZKP-a.
+                Na osnovu izloženog, a primjenom čl. <ref href="/zkp#art_374">374 ZKP-a</ref>, odlučeno je kao u izreci presude.
+            </p>
+        </arguments>
+        <conclusion>
+            <p class="subtitle">
+                OSNOVNI SUD U CETINJU
+            </p>
+            <p>
+                Dana, 27.05.2019. godine
+            </p>
+            <p>
+                Zapisničar, S u d i j a,
+            </p>
+            <p>
+                <party id="amartinovic" refersTo="#amartinovic" as="#clerk">Aleksandra Martinović</party> party id="mcupic" refersTo="#mcupic" as="#judge">Marija Ćupić,s.r.</party>
+            </p>
+            <p>
+                PRAVNA POUKA:
+            </p>
+            <p>
+                Protiv ove presude može se izjaviti žalba
+                u roku od 15 dana, od dana prijema ovjerenog prepisa
+                iste višem sudu u Podgorici, a preko ovog suda.
+            </p>
+        </conclusion>
+    </judgement>
+</acomaNtoso>
+</xml>
