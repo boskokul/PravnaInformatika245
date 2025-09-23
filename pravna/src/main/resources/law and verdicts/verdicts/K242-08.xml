@@ -21,7 +21,7 @@
             <references>                    
                 <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Kotor" showAs="Osnovni sud u Kotoru" />
                 <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Kotor" showAs="Osnovno državno tužilaštvo u Kotoru" />
-                <TLCPerson eId="vpean" href="/ontology/person/bradovic" showAs="Vesna Pean" />
+                <TLCPerson eId="vpean" href="/ontology/person/vpean" showAs="Vesna Pean" />
                 <TLCPerson eId="mpetar" href="/ontology/person/mpetar" showAs="Mršulja Petra" />
                 <TLCPerson eId="bkukalja" href="/ontology/person/bkukalja" showAs="Branka Kukalja" />
                 <TLCPerson eId="tnikolic" href="/ontology/person/tnikolic" showAs="Tatjane Nikolić" />

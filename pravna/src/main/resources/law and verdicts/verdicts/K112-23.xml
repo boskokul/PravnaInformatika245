@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
+    <judgement>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni Sud u Bijelom Polju
+                    </FRBRauthor>
+                    <FRBRdate date="2008-07-10"> 
+                        2023-12-06
+                    </FRBRdate>
+                    <FRBRtitle>                      
+                        K 112/2023
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>                    
+                <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.BijeloPolje" showAs="Osnovni sud u Bijelom Polju" />
+                <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.BijeloPolje" showAs="Osnovno državno tužilaštvo u Bijelom Polju" />
+                <TLCPerson eId="bradovic" href="/ontology/person/bradovic" showAs=" Bojana Radović" />
+                <TLCPerson eId="kljesnjak" href="/ontology/person/kljesnjak" showAs="Koviljke Lješnjak" />
+                <TLCPerson eId="mc  " href="/ontology/person/mc" showAs="M.Ć." />
+                <TLCPerson eId="dm" href="/ontology/person/dm" showAs="D.M."/>
+                <TLCPerson eId="lb" href="/ontology/person/lb" showAs=" L.B." />
+                <TLCPerson eId="mv" href="/ontology/person/mv" showAs="M.V." />
+                <TLCRole eId="adviser" href="/ontology/role/adviser" showAs="Adviser" />
+                <TLCRole eId="jury" href="#jury" href="/ontology/role/jury" showAs="Jury"/>
+                <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
+				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+				<TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
+				<TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+				<TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim" />
+                <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
+                </references> 
+        </meta>
+        <introduction>
+        <p class="subtitle">
+                            U IME CRNE GORE
+            </p>
+            <p>
+               <organization id="os" refersTo="#os"> OSNOVNI SUD U BIJELOM POLJU</organization>, sudija <party id="bradovic" refersTo="#bradovic" as="#judge">Bojana Radović</party>, uz učešće samostalnog referenta-zapisničara
+                <party id="kljesnjak" refersTo="#kljesnjak" as="#clerk">Koviljke Lješnjak</party>, u krivičnom predmetu protiv okrivljene <party id="mc" refersTo="#mc" as="#defendant">M.Ć.</party> iz B.P., postupajući po optužnici <organization id="odt" refersTo="#odt">O.d.t. u B.P.</organization>
+                KT.br. ................. od 29. marta 2023. godine, zbog krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_1">člana 424 stav 1 Krivičnog
+                zakonika C.G.</ref> (Kz), nakon održanog usmenog, glavnog i javnog pretresa zaključenog u prisustvu <organization id="odt" refersTo="#odt">ODT-u u B.P.</organization>
+                <party id="dm" refersTo="#dm" as="#plaintiff">D.M.</party>, okrivljene <party id="mc" refersTo="#mc" as="#defendant">M.Ć.</party> i njenog branioca advokata <party id="lb" refersTo="#lb" as="#lawyer">L.B.,</party> donio je i dana 06. 12. 2023. godine javno objavio
+            </p>
+        </introduction>
+        <background>
+            <p>  P R E S U D U</p>
+            <p>
+                Okrivljena <party id="mc" refersTo="#mc" as="#defendant">M.Ć.</party>, JMBG ...................... , od oca A. i majke H., rođena ........................ godine, sa prebivalištem u
+                B.P., D.-K., državljanka C.G., pismena, sa završenom osnovnom školom, domaćica, lošeg imovnog stanja,
+                neudata, osuđivana,
+            </p>
+        </background>
+        <decision>
+        <p class ="subtitle">
+                            K R I V A J E
+            </p>
+            <p>
+                Zato što je:
+                Dana 21.03.2023 godine, oko 15:00 h, u prostorijama JZU D.z. B.P., u ul ................, službenom licu, stalnom
+                sudskom vještaku dr <party id="mv" refersTo="#mv" as="#victim">M.V.</party>, angažovanoj po naredbi O.d.t. u B.P. u predmetu Kt. Br. ............. od 21.03.2023.
+                godine radi davanja nalaza i mišljenja u postupku koji se vodi kod istog tužilaštva protiv Ć.H., majke
+                okrivljene, ponudila novac da bi doktorka M.V. izvršila službenu radnju, koju ne bi smjela izvršiti, na način što
+                je ušla u ordinaciju Dr <party id="mv" refersTo="#mv" as="#victim">M.V.</party>, istoj rekla da je došla zbog svoje majke koja je u pritvoru, a koju će policija dovesti
+                kod nje na pregled, te da bi htjela da je zamoli da napiše u svom nalazu da njena majka "nije u redu", kako bi
+                ista u postupku ostvarila povoljniji položaj, a potom je na doktorkin sto, iz stisnute šake, spustila novčanicu u
+                apoenu od 50€, da bi, nakon što je doktorka povikala" Je li Vi to meni nudite novac, izađite napolje sram Vas
+                bilo, sad ću da Vas prijavim policiji", uzela novac i napustila ordinaciju, pri čemu je bila svjesna svog djela,
+                njegove zabranjenosti i htjela njegovo izvršenje,
+                
+            </p>
+            <p>
+                čime je izvršila krivično djelo davanje mita iz <ref href="/krivicni#art_424_para_1">člana 424 stav 1 Krivičnog zakonika</ref> C.G.,
+                - za koje je sud, primjenom citiranog zakonskog propisa te <ref href="/krivicni#art_2">čl. 2</ref>, <ref href="/krivicni#art_2">4,</ref> <ref href="/krivicni#art_5">5,</ref> <ref href="/krivicni#art_13">13,</ref> <ref href="/krivicni#art_15">15,</ref> <ref href="/krivicni#art_32">32,</ref> <ref href="/krivicni#art_36a">36a,</ref> <ref href="/krivicni#art_45">45</ref> i <ref href="/krivicni#art_46">46</ref> Krivičnog
+                zakonika, kao i čl. <ref href="/zkp#art_226">226,</ref> <ref href="/zkp#art_229">229</ref> i <ref href="/zkp#art_374">374</ref> Zakonika o krivičnom postupku,
+            </p>
+            <p class="subtitle">
+                O S U Đ U J E
+            </p>
+            <p>
+                Na kaznu zatvora od šest mjeseci i istovremeno određuje da će se kazna izvršiti izdržavanjem u prostorijama
+                u kojima okrivljena stanuje, bez napuštanja prostorija u kojima stanuje, uz primjenu elektronskog nadzora.
+                Ukoliko okrivljena jednom u trajanju preko šest časova ili dva puta, u trajanju do šest časova, samovoljno
+                napusti prostrorije u kojima stanuje, sud će odrediti da ostatak kazne izdrži u Z.za i.k.s.
+                Okrivljena se obavezuje da na ime paušala plati ovom sudu iznos od 30,00€, koji iznos će uplatiti na račun
+                Budžeta CG broj: broj ..................... , u roku od 15 dana od dana pravosnažnosti presude, pod prijetnjom
+                prinudnog izvršenja, s tim što će dokaz o izvršenoj uplati dostaviti krivičnoj pisarnici ovog suda.
+            </p>
+            </p>
+        </decision>
+        <arguments>
+        <p class="subtitle">
+                            O b r a z l o ž e nj e
+            </p>
+            <p>
+                Optužnicom <organization id="odt" refersTo="#odt">O.d.t. u B.P.,</organization> KT.br. ................ od 29.03.2023. godine, okrivljenoj <party id="mc" refersTo="#mc" as="#defendant">M.Ć.</party> iz B.P., stavljeno je na teret
+                izvršenje krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_1">člana 424 stav 1 Krivičnog zakonika<ref> C.G. Zastupnik optužbe je na
+                glavnom pretresu ostao u cjelosti pri podigutoj optužnici i predložio da sud okrivljenu oglasi krivom i osudi
+                na kaznu po zakonu.
+            </p>
+            <p>
+                Glavni pretres je održan i zaključen u prisustvu tužioca u O.d.t. u B.P. <party id="dm" refersTo="#dm" as="#plaintiff">D.M.,</party> okrivljene <party id="mc" refersTo="#mc" as="#defendant">M.Ć.</party> i njenog branioca
+                advokata <party id="lb" refersTo="#lb" as="#lawyer">L.B.</party>
+                Okrivljena <party id="mc" refersTo="#mc" as="#defendant">M.Ć.</party> je tokom postupka izviđaja koristila prvao da se brani ćutanjem.
+                Na glavnom pretresu je izjavila da ne priznaje izvršenje krivičnog djela. Iznijela je odbranu, u kojoj je navela
+                da je njena majka bila u pritvoru u martu ove godine, a advokatica njene majke, Slađana Ljujić joj je rekla
+                uveče, (dan prije predmetnog događaja) oko 23h, da njena majka treba da bude puštena sjutra. Sjutradan je
+                srela pomenutu advokaticu, koja joj je rekla da će njena majka biti puštena do kraja radnog vremena,
+                odnosno dok sudija donese mjeru zabrane prilaska. Tom prilikom dala je svoj broj telefona advokatici, koja je
+                pozvala istog dana i rekla joj da njena majka treba da ide u D.z., nije joj rekla razlog, ali joj je rekla da će ići
+                kod dr V. Ona je tada otišla u D.z., medicinska sestra joj je rekla da su završili radno vrijeme i da kod dr V.
+                može ući samo privatno. Ona je je rekla da nema problema i ušla je u kancelariju kod dr V. Kancelarija u kojoj
+                je bila pomenuta sestra je kancelarija iz koje se ulazi kod dr V. Kad je ušla kod doktorke, ona se već spremala
+                da krene, rekla joj je da policija treba da dovede njenu majku kod nje, ili da će je najvjerovatnije ona dovesti,jer joj je advokatica rekla da će biti puštena. Doktorka je pitala gdje joj se nalazi majka u tom momentu, pa joj
+                je odgovorila da se nalazi u pritvoru i da treba da je puste posle 3 sata. Doktorka joj je rekla da za to treba
+                200€, na šta je ona odgovrila da će dati, ali da za sad ima samo 50€. Nije vadila novac da joj da, a doktorka je
+                odmah otvorila vrata i počela da viče "daje mi mito, daje mi mito". Nije znala šta da kaže, osim doviđenja i
+                otišla je.Nije otišla sa namjerom da doktorki da mito, niti je imalo potrebe kad će joj majka biti puštena.
+                Mislila je da je to 200€ nešto od suda što treba da plati, a ne bi ni išla u D.z. da joj nije prethodno advokatica
+                rekla da njena majka treba da ide tamo.
+            </p>
+            <p>
+                U završnoj riječi je okrivljena izjavila da prihvata završnu riječ svog branioca, koji je predložio da sud
+                okrivljenu oslobodi od optužbe zbog krivičnog djela, koje joj je stavljeno na teret, a obzirom da se iz
+                izvedenih dokaza ne može utvrditi da u njenim radnjama ima elemenata tog krivičnog djela. Kako iz iskaza
+                svjedoka M.V. proizilazi da ona nije vidjela novac za koje se tereti okrvljena da je pokušala da da mito, a što
+                proizilazi i iz iskaza svjedoka N.R., to znači da ni jedan ni drugi svjedok nisu sigurne u svojim izjavama u
+                pogledu davanja određene koristi u novcu od strane okrivljene.Istakao je da je okrivljena sa završenom
+                osnovnom školom i vjerovatno neiskusna, a nisu joj poznati postupci pred sudom ili tužilaštvom, pa je
+                očigledno iz tog nerazumijevanja, pogrešno shvatila upute, date od strane branioca njene majke advokatice
+                S.Lj.
+                Radi utvrđivanja odlučnih činjenica i donošenja pravilne i zakonite odluke sud je na glavnom pretresu u
+                dokaznom postupku izveo sledeće dokaze: saslušao svjedoke dr M.V. i N.R., izvršio uvid u spise O.d.t. u B.P. Kt.
+                br. ………… i izvršio uvid u izvod iz registra kaznene evidencije M.p. na ime okrivljene.
+                Cijeneći odbranu okrivljene i izvedene dokaze, kako pojedinačno tako i u međusobnoj povezanosti, a shodno
+                članu 370 Zakonika o krivičnom postupku C.G., sud je utvrdio da je okrivljena izvršila krivično djelo, koje joj je
+                stavljeno na teret i da je za isto kriva.
+            </p>
+            <p>
+                Ovakav zaključak sud temelji prvesteno na iskazu svjedoka M.V., koja je izjavila da radi kao ljekar specijalista
+                psihijatar u JZU D.z. B.P., a pored toga je i direktor te Javne ustanove. Dana 21.03.2023. godine, oko 14:30h
+                pozvala je državna tužiteljka iz O.d.t. u B.P., J.V., kako bi obavila psihijatriski pregled u svrhu vještačenja u
+                jednom predmetu.Tom prilikom su joj iz tužilaštva poslali spise predmeta i dogovorili se da osumnjičenu
+                dovede policija na pregled u 14;30h u prostorije C. za m.z. Radila je u svojoj ambulanti pregled pacijenata,
+                medicinska sestra N.R. joj je saopštila da je u hodniku čeka neka gospođa Ć., koja je rekla da joj treba
+                privatno. Nakon obavljenog pregleda pacijenta, ustala je i rekla sestri da pozove gospođu Ć. da vidi o čemu se
+                radi. Ista je ušla u njenu ordinaciju, zatvorila vrata, rekla joj da je došla kod nje zbog majke, koja je u pritvoru i
+                da policija treba da je dovede kod nje na pregled, te da bi je ona zamolila da napise da njena majka "nije u
+                redu" kako ne bi otišla u zatvor, jer je stara. Tada joj je ona odgovorila da će biti samo onako kako inače jeste,
+                te da sa njom neće da diskutuje o tome, pitala je i da li joj majka ima zaista neki problem, a ona je odgovorila
+                da nema. Istakla je da je ona stajala i da je htjela da što prije završi taj razgovor, a da je gospođa tada nešto
+                rekla u smislu "Evo, evo mi ćemo..." i krenula da na njen sto iz zgrčene šake, spusti nešto, kako je mogla da
+                vidi radilo se o novčanici od 50,00. Ona joj je tada viknula "Je li Vi to meni nudite novac, izađite napolje, sram
+                Vas bilo", a zatim je izašla u prostoriju gdje je inače smejštena medicinska sestra sa kojom radi, sa podignutim
+                rukama, rekla je medicinskoj sestri N. "Ova gospođa mi nudi novac". Tada je rekla gospođi "sada ću da vas
+                prijavim policiji, kakav je to način, nema smisla", nakon čega je ta gospođa njoj rekla "Izvinite, ja sam mislila
+                samo... " i izašla u hodnik.
+            </p>
+            <p>
+                Na glavnom pretresu je ponovila ovako dat iskaz i naglasila da od <party id="mc" refersTo="#mc" as="#defendant">M.Ć.</party> nije zahtijevala nikakav novac, nije
+                pominjala bilo kakav iznos, niti da bilo šta košta 200,00€, a kamoli njen nalaz. Razgovor je trajao 4 do 5
+                minuta.Sud je u potpunosti kao istinit prihvatio iskaz svjedoka dr M.V., cijeneći ga potpuno uvjerljivim, dat je jasno,
+                bez kontradiktornosti, a nije imalo dokaza ili okolnosti, koje ovaj iskaz dovode u sumnju. Pri tom je iskaz ovog
+                svjedoka, u dijelu koji se odnosi na opisano ponašanje okrivljene pri dolasku i na događanje nakon
+                ponuđenog novca, potvrđen iskazom svjedoka N.R.
+            </p>
+            <p>
+                Naime, svjedok N.R. je izjavila da je zaposlena u JZU D.z. B.P., kao medicinska sestra u C. za m.z. Dana
+                21.03.2023. godine, radila je sa dr M., koja je tog dana imala pacijente i negdje oko 14,20h, došla je jedna žena
+                koja se predstavila kao Ć., a koja je tražila doktorku i reka da joj doktorka treba privatno. Doktorka je imala
+                pregled u ambulanti, pa kada je završila ušla je kod nje i saopštila joj je da je čeka jedna žena Ć. Kada je
+                završila sa zakazanim pregledima, spremala se da ide iz ordinacije i tada je ta žena ušla u ordinaciju kod
+                doktorke, a nakon što je ušla za sobom je zatvorila vrata. Prostoriju u kojoj je ona i doktorkinu ambulantu
+                dijele jedna vrata, pa je čula doktorku kako povišenim tonom govori "Je li vi to meni dajete novac", a zatim je
+                doktorka otvorila vrata iz ordinacije, izašla iz iste i sa podignutim rukama je rekla " N., meni ona nudi novac,
+                ja ništa nisam uzela". To je rekla povišenim tonom, a zatim se obratila toj ženi i rekla joj: "Sad ću da Vas
+                prijavim policiji". U tom trenutku ta žena je samo rekla; "Izvinite", prošla je pored njih i izašla u hodnik.
+                Iskaz svjedoka N.R. sud je prihvatio u potpunosti kao istinit, iz istih razloga, kao i iskaz svjedoka dr M.V.
+                Uvidom u spise O.d.t. u B.P. Kt. br. ............... , utvrđeno je da je u tom predmetu donijeta naredba za
+                vještačenje, koje je povremeno vještaku dr <party id="mv" refersTo="#mv" as="#victim">M.V.,</party> a radi davanja nalaza i mišljenja u pogledu uračunljivosti Ć.H.
+                Iz istih spisa se utvrđuje da je dr <party id="mv" refersTo="#mv" as="#victim">M.V.</party> dala nalaz i mišljenje, a nakon neposrednog pregleda Ć.H., koji obavila
+                upravo dana, kada je izvršeno krivično djelo, koje se okrivljenoj Ć.M. stavlja na teret, tj. dana 21. 03. 2023.
+                Godine. Iz datom nalaza i mišljenja dr <party id="mv" refersTo="#mv" as="#victim">M.V.</party>, proizilazi da je Ć.H. u vrijeme izvršenja djela, koje joj se stavlja na
+                teret mogla da shvati značaj svog djela, te da je njena sposobnost upravljanja postupcima bila smanjena, ali
+                ne u bitnom nivou.
+            </p>
+            <p>
+                Dakle, navedenim dokazima, cijenjenim kako je prethodno navedeno, sud je utvrdio da je okrivljena dana
+                21.03.2023 godine, oko 15:00 h, u prostorijama JZU D.z. B.P., ......................... , službenom licu, stalnom
+                sudskom vještaku dr<party id="mv" refersTo="#mv" as="#victim"> M.V.,</ref> angažovanoj po naredbi O.d.t. u B.P. u predmetu Kt. Br. .............. od 21.03.2023.
+                godine radi davanja nalaza i mišljenja u postupku koji se vodi kod istog tužilaštva protiv Ć.H., majke
+                okrivljene, ponudila novac da bi doktorka M.V. izvršila službenu radnju, koju ne bi smjela izvršiti, tako što je
+                ušla u ordinaciju Dr <party id="mv" refersTo="#mv" as="#victim">M.V.</party>, istoj rekla da je došla zbog svoje majke koja je u pritvoru, a koju će policija dovesti
+                kod nje na pregled, te da bi htjela da je zamoli da napiše u svom nalazu da njena majka "nije u redu", kako bi
+                ista u postupku ostvarila povoljniji položaj, a potom je na doktorkin sto, iz stisnute šake, spustila novčanicu u
+                apoenu od 50€, da bi nakon što je doktorka povikala" Je li Vi to meni nudite novac, izađite napolje sram Vas
+                bilo, sad ću da Vas prijavim policijiu", uzela novac i napustila ordinaciju.
+            </p>
+            <p>
+                Postupajući na opisani način, okrivljena je ostvarila sva bitna obilježja krivičnog djela davanje mita iz člana
+                <ref href="/krivicni#art_424_para_1">424 stav 1 Kz</ref>. Ovo krivično djelo čini, shodno pomenutom članu, onaj ko službenom licu neposredno ili
+                posredno da, ponudi ili obeća mito za njega ili drugog da službeno lice izvrši službenu radnju ili drugu radnju
+                koju ne bi smjelo izvršiti ili da ne izvrši službenu ili drugu radnju koju bi moralo da izvrši ili ko posreduje u
+                ovakvom davanju mita službenom licu. Za ovo krivično djelo je propisana kazna zatvora od jedne do osam
+                godina.
+            </p>
+            <p>
+                U konkretnom slučaju, djelo je izvršeno na način što je okrivljena ponudila mito dr <party id="mv" refersTo="#mv" as="#victim">M.V.,</party> da dr M. izvrši
+                službenu radnju, koju ne bi smjela izvršiti, odnosno da u krivičnom predmetu, kao sudski vještak sačini nalaz
+                i da mišljenje sa neistinitom sadržinom.
+            </p>
+            <p>
+                Okrivljena je bila svjesna da doktorki nudi novčanicu od 50€, da bi u svom nalazu napisala da njena majka
+                "nije u redu", odnosno da napise nešto što nije istinito, pa je to htjela, čime je krivično djelo izvršila sadirektnim umišljajem i za isto je kriva.
+                Sud ne prihvata navode okrivljene da nije imala takvu namjeru, jer je očigledno da jeste, s obzirom na to da je
+                niko nije pozvao da ode u D.z. kod dr <party id="mv" refersTo="#mv" as="#victim">M.V.,</party> niti je postojao neki drugi opravdan razlog za to, zatim je pri
+                dolasku rekla pri svom predstavljanju da je došla privatno, zatvorila je vrata kad je ušla kod dr M. i rekla istoj
+                da njena majka nema nikakvih zdravstvenih problema, ali je tražila od doktorke da napiše da njena majka
+                „nije u redu“. Bez obzira na nivo obrazovanja, koji okrivljena ima, njeno postupanje, kako je prethodno
+                opisano, jasno ukazuje na njenu dovoljnu svijest o zabranjenosti djela, koje čini.
+            </p>
+            <p>
+                Iz izvoda registra kaznene evidencije M.p. na ime okrivljene, utvrđeno je da je ista osuđivana i to presudom
+                O.s. u U. K. br. ................. za krivično djelo krađa iz čl. <ref href="/krivicni#art_239">239,</ref> za koje joj je izrečena uslovna osuda.
+                Odlučujući o vrsti i visini krivične sankcije, sud je cijenio okolnosti iz čl. 42 Kz, pa je kao olakšavajuću okolnost
+                cijenio pobude, iz kojh je djelo izvršeno, odnosno da je okrivljena djelo učinila zbog prirodne jake ljubavi
+                prema svojoj majci, koja je u tom momentu bila lišena slobode, a što je predstavljalo način okrivljene da
+                eventualno majci pomogne na taj način, kako bi bila puštena na slobodu i kako bi joj bio olakšan položaj u
+                krivičnom postupku, što se može cijeniti naročito olakšavajućom okolnosti, a to je jedan od osnova za
+                ublažavanje kazne. Zbog toga je sud, primjenom čl. <ref href="/krivicni#art_45_para_1">45 st. 1 tač. 3 Kz</ref>, propisanu kaznu ublažio na 6 mjeseci
+                zatvora, što je u skladu sa čl. <ref href="/krivicni#art_46_para_1">46 st.1 tač.4 Kz</ref>, kojim je propisano da ako je za krivično djelo kao najmanja
+                mjera kazne propisan zatvor od jedne godine, kazna se može ublažiti do tri mjeseca.
+                Sud je, shodno čl. <ref href="/krivicni#art_36a">36a Kz,</ref> odlučio da se kazna izvršava izdržavanjem u prostorijama u kojima okrivljena
+                stanuje, uz primjenu elektronskog nadzora, cijeneći da će se ovom kaznom postići svrha kažnjavanja iz <ref href="/krivicni#art_32">čl. 32
+                Kz</ref>, odnosno da će se istom uticati na okrivljenu i na druge da ne čine krivična djela, te da je ista adekvatan
+                izraz društvene osude za krivično djelo i obaveze poštovanja zakona. Sud je odredio, a kako je to propisano u
+                <ref href="/krivicni#art_36a_para_2">stavu 2 člana 36a Krivičnog zakonika</ref>, da ukoliko okrivljena jednom u trajanju preko šest časova, ili dva puta,
+                u trajanju do šest časova, samovoljno napusti prostorije u kojima stanuje, da će ostatak kazne zatvora izdržati
+                u Z. za i. k.s.
+            </p>
+            <p>
+                Činjenica je da je okrivljena ranije osuđivana jedanput, ali toj okolnosti sud nije dao značaj okolnosti, koja bi
+                isključila mogućnost odluke izdržavanja kazne zatvora u kućnim uslovima, jer je od osude prošlo duže
+                vrijeme, a ne radi se o istovrnim krivičnim djelima. Okolnost što je okrivljena ranije osuđivana je bila bitna pri
+                odluci da se ne izrekne mjera upozorenja ponovo, jer je očigledno da takva sankcija, ne bi ostvarila svoju
+                svrhu.
+            </p>
+            <p>
+                Okrivljena je, shodno <ref href="/zkp#art_226">čl. 226</ref> i <ref href="/zkp#art_229">229</ref> Zakonika o krivičnom postupku, obaveza na da plati, na ime paušala, iznos
+                od 30,00 €, pri kojem određenju je sud imao u vidu složenost i trajanje krivičnog postupka, te imovinske
+                prilike okrivljene.
+            </p>
+            <p>
+                Sa iznijetih razloga, shodno <ref href="/zkp#art_374">čl. 374</ref> Zakonika o krivičnom postupku C.G., odlučeno je kao u izreci presude.
+            </p>
+        </arguments>
+        <conclusion>
+            <p>
+                OSNOVNI SUD U BIJELOM POLJU
+            </p>
+            <p>
+                Dana 06. 12. 2023. godineZAPISNIČAR, S U D I J A,
+            </p>
+            <p>
+                 <party id="kljesnjak" refersTo="#kljesnjak" as="#clerk">Koviljka Lješnjak,s.r.</party> <party id="bradovic" refersTo="#bradovic" as="#judge">Bojana Radović, s.r</party>
+            </p>
+        </conclusion>
+    </judgement>
+</acomaNtoso>
+</xml>
