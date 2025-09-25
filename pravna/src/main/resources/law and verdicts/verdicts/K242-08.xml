@@ -30,7 +30,7 @@
                 <TLCPerson eId="mv" href="/ontology/person/mv" showAs="M. V." />
                 <TLCPerson eId="kg" href="/ontology/person/kg" showAs="K.G." />
                 <TLCRole eId="adviser" href="/ontology/role/adviser" showAs="Adviser" />
-                <TLCRole eId="jury" href="#jury" href="/ontology/role/jury" showAs="Jury"/>
+                <TLCRole eId="jury" href="/ontology/role/jury" showAs="Jury"/>
                 <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
@@ -54,7 +54,7 @@
                 </party>
                  i članova vijeća-sudija porotnika <party id="mpetar" refersTo="#mpetar" as="#jury">Mršulja Petra</party>
                  i <party id="bkukalja" refersTo="#bkukalja" as="#jury">Branka Kukalja</party>, uz učešće zapisničara
-                <party id="tnikolic" refersTo="#tnikolic" as="#clerk">Tatjane Nikolić</party>, u predmetu okr. <party id="sm" refersTo="#sm" as="#defendant">S. M., 
+                <party id="tnikolic" refersTo="#tnikolic" as="#clerk">Tatjane Nikolić</party>, u predmetu okr. <party id="sm" refersTo="#sm" as="#defendant">S. M.</party>, 
                 zbog krivičnog djela davanja mita iz <ref href="/krivicni#art_424_para_1">čl.424. st.1. Krivičnog zakonika</ref>
                 Crne Gore, koji se vodi po optužnici <organization id="odt" refersTo="#odt"> Kotor</organization>, <ref href="/cg/kt/2008-04-28/88_08"> Kt. br. 88/08 od 28.o4.2oo8.g.</ref>, nakon održanog glavnog i
                 javnog pretresa dana 7.o7.2oo8.g.. u prisustvu okrivljenog i zastupnika tužbe <party id="ljm" refersTo="#ljm" as="#plaintiff">Lj. M.</party> zamjenika <organization id="odt" refersTo="#odt">ODT Kotor</organization>,
@@ -81,7 +81,7 @@
                 Dana 04.02.2008. godine u B., službenom licu Uprave policije PJ B. <party id="mv" refersTo="#mv" as="#victim">M. V.</party>, zaposlenom na poslovima
                 prekršajne prevencije, ponudio novac u iznosu od 50 €, da u okviru svog službenog ovlašćenja ne izvrši
                 službenu radnju koju bi morao izvršiti, na način što je toga dana pristupio u službene prostorije PJ B., zatražio
-                prijem kod službenog lica <party id="mv" refersTo="#mv" as="#victim">M. V.</mv> i dolaskom u kancelariju istog obratio mu se sa zahtjevom da obustavi
+                prijem kod službenog lica <party id="mv" refersTo="#mv" as="#victim">M. V.</party> i dolaskom u kancelariju istog obratio mu se sa zahtjevom da obustavi
                 prekršajni postupak po prijavi službenih lica Ispostave B. zbog učinjenog saobraćajnog prekršaja od strane
                 njegovog sina S. D., odnosno, da istom po toj prijavi ne izrekne kaznene poene, kada je iz džepa izvadio
                 novčanicu ser.br. ......... u apoenu od 50 €, koju je stavio na sto ispred V., uporno insistirajući da V. uzme ovu
@@ -193,7 +193,7 @@
                 25.o1.2oo8.g., na Jadranskom putu u B., povodom učinjenog prekršaja od strane S. D. iz T..
                 Iz službene zabilješke OB B. utvrđeno je da je ista sačinjena dana 4.o2.2oo8.g. od strane OPS- Filijale za
                 suzbijanje privrednog kriminaliteta, u vzei prijavljivanja <party id="mv" refersTo="#mv" as="#victim">V. M.</party>, službenika za pokretanje prekršajnog postupka
-                PJ B., krivičnog djela davanaj mita, izvršenog od strane <party id="sm" refersTo="#sm" as="#defendant">S. M..
+                PJ B., krivičnog djela davanaj mita, izvršenog od strane <party id="sm" refersTo="#sm" as="#defendant">S. M.</party>.
                 Iz službene zabilješke M. V., je utvrdjeno da je sastavljena dana 4.o2.2oo8.g., u službenim prostorijama PJ B., a
                 povodom nudjenja mita ( novca u iznosu od 50 eura) od strane <party id="sm" refersTo="#sm" as="#victim">S. M.</party> iz T..
                 Iz potvrde o privremenom oduzimanju predmeta i uvidom u novčanicu u apoenu od 50 eura utvrđeno je da je
@@ -268,14 +268,13 @@
         <p>
             ZAPISNIČAR PREDSJEDNIK VIJEĆA, SUDIJA
         </p>
+        <p>
             <party id="tnikolic" refersTo="#tnikolic" as="#clerk">Tatjana Nikolić s.r.</party>, <party id="vpean" refersTo="#vpean" as="#judge">Vesna Pean s.r.</party>+
         </p>
         <p class="subtitle">
             PRAVNA POUKA:Protiv ove presude ima se pravo žalbe u roku od 15 dana od dana prijema iste, Višem
             sudu u Podgorici, a preko ovog suda.
-        <p>
+        </p>
         </conclusion>
     </judgement>
-
- </acomaNtoso>
- </xml>
+ </akomaNtoso>

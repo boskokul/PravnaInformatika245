@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Document - Montenegro Court Judgment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Georgia, serif;
+            line-height: 1.7;
+            background-color: #f8f9fa;
+            color: #212529;
+            padding: 20px;
+        }
+
+        .document-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .document-header {
+            background: #343a40;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 3px solid #6c757d;
+        }
+
+        .court-name {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .case-info {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        .document-body {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #495057;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #6c757d;
+            padding-bottom: 8px;
+        }
+
+        .content-text {
+            text-align: justify;
+            font-size: 1rem;
+            color: #212529;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-indent: 1.5em;
+        }
+
+        .content-text:first-of-type {
+            text-indent: 0;
+        }
+
+        .content-text.no-indent {
+            text-indent: 0;
+        }
+
+        .subtitle {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #343a40;
+            margin: 25px 0 15px 0;
+            text-align: center;
+            padding: 10px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .party {
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .organization {
+            font-weight: bold;
+            color: #6c757d;
+        }
+
+        .article-ref {
+            color: #495057;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .metadata {
+            background: #f8f9fa;
+            padding: 25px;
+            border: 1px solid #dee2e6;
+            margin-bottom: 30px;
+        }
+
+        .metadata-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #343a40;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .metadata-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .metadata-item:last-child {
+            border-bottom: none;
+        }
+
+        .metadata-label {
+            font-weight: bold;
+            color: #495057;
+            min-width: 150px;
+        }
+
+        .metadata-value {
+            color: #6c757d;
+            text-align: right;
+        }
+
+        .legal-notice {
+            background: #f8f9fa;
+            border: 2px solid #6c757d;
+            padding: 25px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .legal-notice h3 {
+            color: #343a40;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .legal-notice p {
+            color: #495057;
+            line-height: 1.6;
+        }
+
+        .signature-section {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-top: 2px solid #dee2e6;
+        }
+
+        .signature-left, .signature-right {
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .signature-title {
+            font-weight: bold;
+            color: #495057;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .signature-name {
+            font-weight: bold;
+            color: #343a40;
+            border-bottom: 1px solid #6c757d;
+            padding-bottom: 2px;
+            display: inline-block;
+        }
+
+        .decision-highlight {
+            background: #f8f9fa;
+            border-left: 4px solid #343a40;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .sentence-highlight {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #343a40;
+        }
+
+        .long-content {
+            text-align: justify;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .document-container {
+                box-shadow: none;
+                border: none;
+            }
+            
+            .document-header {
+                background: white;
+                color: black;
+                border-bottom: 3px solid black;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .document-container {
+                margin: 10px;
+            }
+            
+            .document-body {
+                padding: 20px;
+            }
+            
+            .section {
+                padding-bottom: 15px;
+            }
+            
+            .court-name {
+                font-size: 1.4rem;
+            }
+            
+            .signature-section {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="document-container">
+        <div class="document-header">
+            <div class="court-name">OSNOVNI SUD U DANILOVGRADU</div>
+            <div class="case-info">Krivični predmet K 30/2016 • Datum: 09.12.2016</div>
+        </div>
+
+        <div class="document-body">
+            <div class="metadata">
+                <div class="metadata-title">Podaci o Predmetu</div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Sud:</span>
+                    <span class="metadata-value">Osnovni Sud u Danilovgradu</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Sudija:</span>
+                    <span class="metadata-value">Sonja Keković</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Zapisničarka:</span>
+                    <span class="metadata-value">Ana Ivanović</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Okrivljeni:</span>
+                    <span class="metadata-value">D.G.</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Branilac:</span>
+                    <span class="metadata-value">Ć.D., advokat</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Tužilaštvo:</span>
+                    <span class="metadata-value">Osnovno državno tužilaštvo u Podgorici</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Krivično djelo:</span>
+                    <span class="metadata-value">Davanje mita (čl. 424 st. 1 KZ CG)</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Broj optužnice:</span>
+                    <span class="metadata-value">Kt.br.1042/16</span>
+                </div>
+            </div>
+
+            <section class="section">
+                <h2 class="section-title">Uvod</h2>
+                <div class="subtitle">U IME CRNE GORE</div>
+                <div class="content-text no-indent">
+                    <span class="organization">OSNOVNI SUD U DANILOVGRADU</span> kao krivični, sutkinja <span class="party">Sonja Keković</span>, uz učešće <span class="party">Ane Ivanović</span> kao zapisničarke, u krivičnom predmetu okrivljenog <span class="party">D.G.</span>, koga brani branilac <span class="party">Ć.D.</span>, advokat iz P., zbog krivičnog djela davanje mita iz <a href="#" class="article-ref">čl.424 st.1 Krivičnog zakonika</a> Crne Gore, odlučujući po optužnici <span class="organization">Osnovnog državnog tužilaštva u Podgorici</span> Kt.br.1042/16 od 21.09.2016. godine, koju je na glavnom pretresu zastupala tužiteljka <span class="organization">Osnovnog državnog tužilaštva u Podgorici</span> <span class="party">R. V.</span>, nakon glavnog i javnog pretresa održanog dana 08.12.2016. godine, u prisustvu zastupnika optužbe, okrivljenog i njegovog branioca, donio je dana 09.12.2016. godine i istog dana javno objavio.
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Presudu</h2>
+                <div class="content-text no-indent">
+                    Okrivljeni <span class="party">D.G.</span>, JMBG..., od oca H. i majke R., rođene File, rođen godine u T., A., sa prebivalištem u T. – A., R.T. Z., državljanin A., ne razumije crnogorski jezik, njegov jezik je albanski, pismen, završio Filozofski fakultet - magistar, po zanimanju turistički vodič, neoženjen, bez djece, lošeg imovnog stanja, neosuđivan.
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Odluka Suda</h2>
+                <div class="subtitle">Kriv je</div>
+                <div class="content-text no-indent">
+                    Što je: Dana 26.08.2016. godine, oko 23,30 časova, u Danilovgradu, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, službenim licima Uprave policije - Odjeljenja bezbjednosti Danilovgrad B.M. i <span class="party">O.N.</span>, neposredno ponudio mito, da ta službena lica ne izvrše službenu radnju koju bi morala izvršiti, na način što je, nakon što su ga imenovani službenici saobraćajne policije zaustavili na magistralnom putu Nikšić - Podgorica, u Danilovgradu, zbog učinjenog prekršaja i saobraćajne kontrole, a potom i priveli u prostorije Odjeljenja bezbjednosti u Danilovgradu radi podnošenja prekršajne prijave, istima neposredno ponudio iznos od 50,00 € da ne podnose prekršajnu prijavu protiv njega, na način što je novčanicu od 50,00 €, serijskog broja..., stavio na stol za kojim se nalazio službenik Uprave policije OB Danilovgrad <span class="party">O.N.</span>, dok je B.M. bio u neposrednoj blizini.
+                </div>
+                <div class="content-text">
+                    čime je izvršio krivično djelo davanje mita iz <a href="#" class="article-ref">čl.424 st.1 Krivičnog zakonika</a> Crne Gore.
+                </div>
+                <div class="content-text">
+                    Pa sud okrivljenog D.G., primjenom citiranih zakonskih propisa, te <a href="#" class="article-ref">čl.4</a>, <a href="#" class="article-ref">5</a>, <a href="#" class="article-ref">13</a>, <a href="#" class="article-ref">15</a>, <a href="#" class="article-ref">32</a>, <a href="#" class="article-ref">36</a>, <a href="#" class="article-ref">42</a>, <a href="#" class="article-ref">45</a>, <a href="#" class="article-ref">46</a> i <a href="#" class="article-ref">51</a> KZ CG, te i <a href="#" class="article-ref">čl.226</a>, <a href="#" class="article-ref">229</a> i <a href="#" class="article-ref">374</a> ZKP-a,
+                </div>
+
+                <div class="decision-highlight">
+                    <div class="subtitle">OSUĐUJE</div>
+                    <div class="content-text no-indent">
+                        Na kaznu zatvora u trajanju od <span class="sentence-highlight">3 (tri) mjeseca i 15 (petnaest) dana</span>, u koju kaznu mu se uračunava vrijeme provedeno u pritvoru počev od 26.08.2016. godine od 23,50 časova pa nadalje.
+                    </div>
+                    <div class="content-text">
+                        Dužan je okrivljeni D.G. da na ime troškova krivičnog postupka uplati u korist budžeta Crne Gore novčani iznos od <span class="sentence-highlight">126,50 €</span>, kao i da po osnovu sudskog paušala uplati u korist budžeta Crne Gore novčani iznos od <span class="sentence-highlight">30,00 €</span>, a sve u roku od 15 dana po pravosnažnosti presude. O troškovima krivičnog postupka u dijelu koji se odnosi na nagradu braniocu po službenoj dužnosti, sud će odlučiti posebnim rješenjem.
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Obrazloženje</h2>
+                <div class="subtitle">O b r a z l o ž e n j e</div>
+                
+                <div class="long-content">
+                    Optužnicom Osnovnog državnog tužilaštva u Podgorici Kt.br.1042/16 od 21.09.2016. godine, okrivljenom D.G. je stavljeno na teret izvršenje krivičnog djela davanje mita iz čl.424 st.1 Krivičnog zakonika Crne Gore. Zastupnik optužbe je na glavnom pretresu izmijenila činjenični opis dispozitiva optužnice, na način kako je to navedeno u izreci presude, te u završnoj riječi navela da u cjelosti ostaje pri izmijenjenom činjeničnom opisu dispozitiva optužnice i neizmijenjenoj pravnoj kvalifikaciji, jer je provedenim dokazima, kako materijalnim, tako i iskazima svjedoka - službenika Uprave policije OB Danilovgrad, nesumnjivo utvrđeno da je okrivljeni izvršio krivično djelo koje mu se stavlja na teret, pa je njegova odbrana po stanovištu optužbe neosnovana, nelogična, sračunata na izbjegavanje krivice, te opovrgnuta iskazima policijskih službenika.
+                </div>
+
+                <div class="long-content">
+                    Branilac okrivljenog <span class="party">D.G.</span>, advokat <span class="party">Ć.D.</span> u završnoj riječi je naveo da smatra da je okrivljeni D.G. tokom postupka dao jasnu, logičnu i ubjedljivu odbranu kojom je opovrgao navode iz optužnice. Ukazao je da se radi o intelektualcu, visokih moralnih načela i licu koje dolazi iz patrijarhalne sredine i patrijarhalnog vaspitanja, koje kao takvo nije sklono izvršenju bilo kojeg krivičnog djela, niti bilo kakvom ponašanju koje bi bilo protivno kako moralnim, tako i zakonskim normama.
+                </div>
+
+                <div class="long-content">
+                    Okrivljeni <span class="party">D.G.</span> u odbrani datoj u prethodnom postupku u bitnom je naveo da je zaposlen u turističkoj agenciji u Albaniji, a da je na teritoriji Crne Gore ušao dana 25.08.2016. godine i sa grupom turista prenoćio u Cetinju. Nakon toga su otpratili turističku grupu do Dubrovnika, preko graničnog prelaza Debeli brijeg. Po povratku u Podgoricu, sa graničnog prelaza Debeli brijeg, stigli su u Podgoricu turističkim kombijem, a zatim su preuzeli njihovo vozilo "Citroen belingo". On je upravljao navedenim vozilom, a Španac koji je bio u društvu sa njim je vlasnik agencije za prevoz turista.
+                </div>
+
+                <div class="long-content">
+                    Sud je na glavnom pretresu u dokaznom postupku saslušao svjedoka B.M.; svjedoka <span class="party">O.N.</span>; pročitao izvještaj o kriminalističko-tehničkom pregledu lica mjesta i uzorkovanju tragova od 27.08.2016. godine; izvršio uvid u fotodokumentaciju Uprave policije OB Danilovgrad 60-03-240/16-185 od 27.08.2016. godine; izvršio uvid u novčanicu u apoenu od 50,00 €, serijski broj i saslušao vještaka medicinske struke, specijalista psihijatra Dr. G.Ž., koji je na zapisniku dao nalaz i mišljenje od 08.12.2016. godine.
+                </div>
+
+                <div class="long-content">
+                    Svjedok B.M. u iskazu datom u prethodnom postupku i na glavnom pretresu u bitnom je naveo da je predmetne večeri obavljao noćnu smjenu od 19 do 07 časova, u patroli sa kolegom <span class="party">O.N.</span>, zaduženi za javni red i mir i saobraćajno patrolnu djelatnost na teritoriji opštine Danilovgrad. Kritičnog dana oko 23,00 sata su izvršili zaustavljanje vozila "Citroen pik ap", španskih registarskih oznaka. Alkometrom su utvrdili da je vozač alkoholisan i da ima 1 promil alkohola, pa su mu na crnogorskom jeziku objasnili da zavisi od sudije za prekršaje da li će biti priveden ili će postupak ići redovnom procedurom, ali je vozač sugerisao njemu i kolegi da bi odmah dao novac na licu mjesta, kako se ništa ne bi radilo.
+                </div>
+
+                <div class="long-content">
+                    Svjedok <span class="party">O.N.</span> u iskazu datom u prethodnom postupku i na glavnom pretresu u bitnom je naveo da je kritične večeri sa kolegom B.M., radio saobraćajnu patrolu. Osjetio je da se vozač osjeća na alkohol, pa mu je takođe na engleskom jeziku kazao da će ga alkotestirati. Na aparatu je pokazalo da ima 1 promil alkohola, pa je u tom trenutku vozač Albanac, sa njim i B.M. počeo da priča na crnogorskom jeziku koji je vrlo dobro govorio. Tada su mu saopštili na crnogorskom jeziku da mora da mu se podnese prekršajna prijava zbog alkohola.
+                </div>
+
+                <div class="long-content">
+                    Iz izvještaja o kriminalističko-tehničkom pregledu lica mjesta i uzorkovanju tragova od 27.08.2016. godine, utvrđeno je da je dana 26.08.2016. godine, oko 23,40 časova, <span class="party">D.G.</span>, prilikom uzimanja podataka u službenim prostorijama Odjeljenja bezbjednosti u Danilovgradu, zbog saobraćajnog prekršaja, dao jednu novčanicu od pedeset (50) eura službenicima policije kako bi ga pustili bez pokretanja postupka. Uviđaj je započet dana 27.08.2016. godine u 00,00 časova, kada je na licu mjesta pronađena jedna (1) novčanica od pedeset (50) evra.
+                </div>
+
+                <div class="long-content">
+                    Na osnovu naprijed izložene činjenične građe, koja proizilazi iz sadržine dokaza provedenih na glavnom pretresu, ovaj sud je nesumnjivo zaključio da su se u radnjama okrivljenog <span class="party">D.G.</span> stekla sva obilježja krivičnog djela davanje mita iz <a href="#" class="article-ref">čl.424 st.1</a> Krivičnog zakonika Crne Gore.
+                </div>
+
+                <div class="long-content">
+                    Okrivljeni <span class="party">D.G.</span> u svojoj odbrani u prethodnom postupku i na glavnom pretresu nije sporio da je kritičnog dana upravljao vozilom marke "Citroen", ali je negirao da je htio da korumpira ili podmiti službena lica policije. Sud je ovakvu odbranu okrivljenog cijenio neprihvatljivom i sračunato datom u cilju izbjegavanja krivice.
+                </div>
+
+                <div class="long-content">
+                    Krivično djelo davanje mita iz <a href="#" class="article-ref">čl.424 st.1 Krivičnog zakonika</a> Crne Gore čini onaj ko službenom licu neposredno ili posredno da, ponudi ili obeća mito za njega ili drugog da službeno lice izvrši službenu ili drugu radnju koju ne bi smjelo izvršiti ili da ne izvrši službenu ili drugu radnju koju bi moralo izvršiti.
+                </div>
+
+                <div class="long-content">
+                    Prilikom odlučivanja o kazni, sud je imao u vidu sve okolnosti na strani okrivljenog koje utiču da kazna bude manja ili veća, u smislu odredbe <a href="#" class="article-ref">čl.42 KZCG</a>, pa je od olakšavajućih okolnosti na strani okrivljenog <span class="party">D.G.</span> cijenio činjenicu da je lošeg imovnog stanja, kao i da ranije nije osuđivan, te i činjenicu da je izrazio kajanje i žaljenje zbog postupanja u predmetnom događaju, dok otežavajućih okolnosti na njegovoj strani nije bilo.
+                </div>
+
+                <div class="long-content">
+                    Shodno odredbi <a href="#" class="article-ref">čl.51 KZCG</a> sud je okrivljenom D.G. u izrečenu kaznu zatvora uračunao vrijeme provedeno u pritvoru od 26.08.2016. godine u 23,50 časova, pa nadalje.
+                </div>
+
+                <div class="long-content">
+                    O troškovima krivičnog postupka odlučeno je na osnovu <a href="#" class="article-ref">čl.226</a> i <a href="#" class="article-ref">229</a> ZKP-a, pa kako je okrivljeni oglašen krivim, obavezan je da na ime troškova krivičnog postupka uplati u korist budžeta Crne Gore novčani iznos od 126,50 €, koji iznos se odnosi na nagradu vještaku medicinske struke, specijalisti psihijatru Dr. Golubović Željku za izradu nalaza i mišljenja, a takođe je obavezan da na ime sudskog paušala uplati u korist budžeta Crne Gore novčani iznos od 30,00 eura, a sve u roku od 15 dana po pravosnažnosti presude.
+                </div>
+
+                <div class="long-content">
+                    Na osnovu izloženog, a shodno odredbi <a href="#" class="article-ref">čl.374</a> Zakonika o krivičnom postupku, odlučeno je kao u izreci presude.
+                </div>
+            </section>
+
+            <div class="signature-section">
+                <div class="signature-left">
+                    <div class="signature-title">Zapisničarka</div>
+                    <div class="signature-name">Ana Ivanović</div>
+                </div>
+                <div class="signature-right">
+                    <div class="signature-title">Sudija</div>
+                    <div class="signature-name">Sonja Keković</div>
+                </div>
+            </div>
+
+            <div class="legal-notice">
+                <h3>Pravna Pouka</h3>
+                <p>Protiv ove presude dozvoljena je žalba Višem sudu u Podgorici, u roku od 15 dana, od dana prijema pismenog otpravka presude, a preko ovog suda.</p>
+                <br>
+                <p><strong>DOSTAVITI:</strong><br>
+                - ODT-a Podgorica<br>
+                - Okrivljenom D.G.<br>
+                - Braniocu okrivljenog, advokatu Ć.D.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

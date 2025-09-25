@@ -28,7 +28,7 @@
                 <TLCPerson eId="ke" href="/ontology/person/ke" showAs="K.E." />
                 <TLCPerson eId="bmb" href="/ontology/person/bmb" showAs=" B., M. B" />
                 <TLCRole eId="adviser" href="/ontology/role/adviser" showAs="Adviser" />
-                <TLCRole eId="jury" href="#jury" href="/ontology/role/jury" showAs="Jury"/>
+                <TLCRole eId="jury" href="/ontology/role/jury" showAs="Jury"/>
                 <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
@@ -47,7 +47,7 @@
                 krivičnom predmetu protiv optuženog <party id="bm" refersTo="#bm" as="#defendant">B.M.a,</party> iz F., zbog krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_1">čl.424 st.1.Krivičnog
                 zakonika Crne Gore</ref>, po optužnici Osnovnog državnog tužilaštva u R.ama Kt.br..... od 29.08.2022 godine,
                 nakon održanog glavnog i javnog pretresa, u prisustvu državnog tužioca u <party id="bbm" refersTo="#bbm" as="#plaintiff">B. B. M.</party>, optuženog <party id="bm" refersTo="#bm" as="#defendant">B.M.a</party> i
-                njegovog branioca adv.<party id="kc" refersTo="#kc" as="#lawyer">K. Č.</lawyer>, iz B. P. i oštećenog <party id="ke" refersTo="#ke" as="#victim">K.E.a</party>, donio je dana 07.12.2022 a javno objavio dana
+                njegovog branioca adv.<party id="kc" refersTo="#kc" as="#lawyer">K. Č.</party>, iz B. P. i oštećenog <party id="ke" refersTo="#ke" as="#victim">K.E.a</party>, donio je dana 07.12.2022 a javno objavio dana
                 09.12.2022 godine
             </p>
         </introduction>
@@ -56,7 +56,7 @@
                         P R E S U D U
             </p>
             <p>
-                Optuženi <party id="bm" refersTo="#bm" as="#defendant">B.M.<party>, sa brojem pasoša ..... izdat od nadležnog organa F., od oca M. i majke Ć., rođene B., rođen
+                Optuženi <party id="bm" refersTo="#bm" as="#defendant">B.M.</party>, sa brojem pasoša ..... izdat od nadležnog organa F., od oca M. i majke Ć., rođene B., rođen
                 ......1969 godine u u U., republika K., sa prebivalištem u 2 P. D. L.” ........ F., Republika F., državljanin republike
                 F., razumije crnogorski jezik, po zanimanju radnik u opštini, oženjen, otac dvoje djece, pismen, sa završenom
                 SSS, srednjeg imovnog stanja, neosuđivan.
@@ -83,7 +83,7 @@
                 07. Decembar 2022Pa ga sud za izvršeno krivično djelo na osnovu navedenog zakonskog propisa, te primjenom
                 čl.<ref href="/krivicni#art_4_para_2">4.st.2.</ref><ref href="/krivicni#art_32">32.</ref><ref href="/krivicni#art_36">36.</ref><ref href="/krivicni#art_42">42.</ref><ref href="/krivicni#art_45">45.</ref><ref href="/krivicni#art_46">46.</ref> i <ref href="/krivicni#art_51">51.</ref> Krivičnog zakonika Crne Gore  i <ref href="/zkp#art_226_para_2">čl.226. st.2.</ref> <ref href="/zkp#art_227_para_2">227.st.2.</ref> i <ref href="/zkp#art_374">374 ZKP-a</ref>,
             </p>
-            </p>
+            <p>
                 O S U DJ U J E
             </p>
             <p>
@@ -142,7 +142,7 @@
             učinio misleći da će taj policajac da mu napiše prekršajni nalog ali on to nije učinio već ga je prijavio kao da
             mu je dao mito. Naveo je da odgovorno tvrdi da nije tom policajcu dao novčanicu od ...... € kao mito, već da bi
             naplatio kaznu zbog prethodno počinjenog prekršaja i da nije tu novčanicu stavljao u džep policajcu već da
-            mu je dao na ruke. U završnoj riječi je prihvatio završnu riječ svog branioca, advokata <party id="kc" refersTo="#kc" as="#lawyer">K. Č.</lawyer>, koji je izjavio da
+            mu je dao na ruke. U završnoj riječi je prihvatio završnu riječ svog branioca, advokata <party id="kc" refersTo="#kc" as="#lawyer">K. Č.</party>, koji je izjavio da
             shodno kontekstu cjelokupnog dogadjaja tj. od mjesta i momenta zaustavljanja do mjesta ispred Stanice
             policije u R.ama okrivljeni navodno dao oštećenom iznos od ...... €, proteklo je više od četiri sata, što je jasno i
             lako utvrditi ako bi se utvrdjivalo vrijeme samo nastanka eventualnog prekršaja i momenta navodne ponude.
@@ -208,6 +208,7 @@
             R.e koji je pokriven video nadzorom tako da se na video nadzoru može vidjeti sve a M. mu nije rekao da je taj
             novac za plaćanje kazne.
         </p>
+        <p>
             Svjedok D.E. u iskazu je naveo da radi kao policajac i dana .....2022 godine, angažovan je na poslovima i
             radnim zadacima kontrole i regulisanja saobraćaja. Negdje oko 15,00 časova od strane dežurne službe OB R.e
             upućen je u mjesto D. jer je došlo do saobraćajne nezgode, kako bi izvršio uvidaj i kada je došao na lice
@@ -245,7 +246,7 @@
         </p>
         <p>
             Pravnom analizom naprijed utvrđenog činjeničnog stanja sud je našao da su se u opisanim radnjama
-            optuženog <party id="bm" refersTo="#bm" as="#defendant">B.M.a,</ref> stekla sva bitna obilježja bića krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_1">čl.424.st.1 Krivičnog zakonika</ref>
+            optuženog <party id="bm" refersTo="#bm" as="#defendant">B.M.a,</party> stekla sva bitna obilježja bića krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_1">čl.424.st.1 Krivičnog zakonika</ref>
             Crne Gore. Izvedenim dokazima nesporno je utvrđeno da je optuženi B.M. dana 13.08.2022 godine, oko 17,00
             časova, ispred zgrade policije OB R.e, u R.ama, sposoban da shvati značaj svoga djela i upravlja svojim
             postupcima i svjestan svoga djela čije je izvršenje htio i znajući da je isto zabranjeno, neposredno dao mito
@@ -264,6 +265,7 @@
             umišljajem svjestan da službenom licu neposredno daje novac da ne izvrši kažnjavanje njegovog sina zbog
             učinjenog prekršaja u saobraćaju, pa je htio postizanje zabranjene posledice.
         </p>
+        <p>
             Prilikom odlučivanja o izboru vrste i visine krivične sankcije koju u konkretnom slučaju treba primijeniti
             prema optuženom za naprijed navedeno krivično djelo, sud je imao u vidu sve okolnosti u smislu <ref href="/krivicni#art_42">čl.42.</ref> KZ
             CG. Tako je od olakšavajućih okolnosti na strani optuženog sud cijenio i uzeo u obzir da je porodičan čovjek,
@@ -276,6 +278,7 @@
             U izrečenu kaznu optuženom uračunato je vrijeme provedeno u pritvoru počev od ........2022 godine do
             .....2022 godine, kao isteka kazne izrečene ovom presudom.
         </p>
+        <p>
             Odluka o troškovima krivičnog postupka-paušalni iznos odmjeren je s obzirom na složenost i trajanje i
             krivičnog postupka, te imovno stanje optuženog, dok će o troškovima branioca po službenoj dužnosti i
             troškovima Sudskog savjeta za prikazivanje materijala sa video nadzora sud odlučiti posebnim rešenjem.
@@ -283,6 +286,7 @@
             predmet izvršenja krivičnog djela.
             Imovinsko pravnog zahtjeva za naknadu štete nije bilo.
             Sa iznijetih razloga odlučeno je kao u izreci presude.
+        </p>
         </arguments>
         <conclusion>
         <p>
@@ -294,7 +298,6 @@
         <p>
             <party id="ljmilacic" refersTo="#ljmilacic" as="#clerk">Ljiljana Milačić</party> <party id="dpopovic" refersTo="#dpopovic" as="#judge">DUBRAVKA POPOVIĆ</party>
         </p>
-        <conclusion>
-    <judgement>
-</acomaNtoso>
-</xml>
+        </conclusion>
+    </judgement>
+</akomaNtoso>

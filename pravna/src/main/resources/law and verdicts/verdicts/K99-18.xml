@@ -28,7 +28,7 @@
                 <TLCPerson eId="sradulovic" href="/ontology/person/sradulovic" showAs=" Sanje Radunović" />
                 <TLCPerson eId="tg" href="/ontology/person/tg" showAs="Tripunović Goranu" />
                 <TLCRole eId="adviser" href="/ontology/role/adviser" showAs="Adviser" />
-                <TLCRole eId="jury" href="#jury" href="/ontology/role/jury" showAs="Jury"/>
+                <TLCRole eId="jury" href="/ontology/role/jury" showAs="Jury"/>
                 <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
@@ -44,20 +44,21 @@
             </p>
             <p>
                 <organization id="os" refersTo="#os">OSNOVNI SUD U CETINJU,</organization> po sudiji <party id="mcupic" refersTo="#mcupic" as="#judge">Mariji Ćupić,</party> uz sudjelovanje zapisničarke <party id="amartinovic" refersTo="#amartinovic" as="#clerk">Aleksandre Martinović,</party> u
-                krivičnom predmetu optuženog<party id="bda" refersTo="#bda" as="#defendant"> B. D. A.,</ref> iz R. F., iz N., zbog krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_1">člana 424. stav 1.</ref>
+                krivičnom predmetu optuženog<party id="bda" refersTo="#bda" as="#defendant"> B. D. A.,</party> iz R. F., iz N., zbog krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_1">člana 424. stav 1.</ref>
                 Krivičnog zakonika Crne Gore, u sticaju sa krivičnim djelom napad na službeno lice u vršenju službene
-                dužnosti iz člana <ref href="/krivicni#art_376_para_3">376. stav 3.</reF> u vezi stava 1. a u <ref href="/krivicni#art_48_para_1">vezi člana 48. stav 1.</ref> Krivičnog zakonika Crne Gore (KZCG), po
+                dužnosti iz člana <ref href="/krivicni#art_376_para_3">376. stav 3.</ref> u vezi stava 1. a u <ref href="/krivicni#art_48_para_1">vezi člana 48. stav 1.</ref> Krivičnog zakonika Crne Gore (KZCG), po
                 Optužnici ODT-a u Cetinju Kt.br. 123/18 od 11.10.2018. godine, koju je ovaj sud zaprimio 12.10.2018. godine,
                 nakon održanog glavnog i javnog pretresa od 23.05.2019. godine, u prisustvu zastupnice optužbe, državnog
-                tužioca u Cetinju <party id="sradulovic" refersTo="#sradulovic" as="#plaintiff">Sanje Radunović, optuženog <party id="bda" refersTo="#bda" as="#defendant">B. D. A.</party> i njegovog branioca <party id="nk" refersTo="#nk" as="#lawyer">N. K.,</party> adv. iz P., donio je dana,
+                tužioca u Cetinju <party id="sradulovic" refersTo="#sradulovic" as="#plaintiff">Sanje Radunović</party>, optuženog <party id="bda" refersTo="#bda" as="#defendant">B. D. A.</party> i njegovog branioca <party id="nk" refersTo="#nk" as="#lawyer">N. K.,</party> adv. iz P., donio je dana,
                 27.05.2019. godine i javno objavio
+            </p>
         </introduction>
         <background>
                 <p class="subtitle">     P R E S U D U</p>
             <p>
                 Optuženi:
             </p>
-            </p>
+            <p>
                 <party id="bda" refersTo="#bda" as="#defendant">B. D. A.,</party> od oca A. i majke A., rođene B., rođen .. godine u N., gdje i prebiva, državljanin R.F., srednjeg imovnog
                 stanja, neosuđivan,
             </p>
@@ -97,6 +98,7 @@
             <p class="subtitle">
                 U T V R Đ U J E
             </p>
+            <p>
                 za krivično djelo davanje mita iz čl. <ref href="/krivicni#art_424_para_1">424. st. 1. </ref>KZCG, kaznu zatvora u trajanju od 5 (pet) mjeseci, a za krivično
                 djelo napad na službeno lice u vršenju službene dužnosti iz čl. <ref href="/krivicni#art_376_para_3">376. st. 3.</ref> u vezi st. 1 Krivičnog zakonika Crne
                 Gore, kaznu zatvora u trajanju od 3 (tri) mjeseca,
@@ -133,6 +135,7 @@
                 vršenju službene dužnosti iz čl. <ref href="/krivicni#art_376_para_3">376. st. 3.</ref> u vezi st. 1. a u vezi <ref href="/krivicni#art_48_para_1">čl. 48. st. 1.</ref> KZCG, koja je potvrđena rješenjem
                 krivičnog vijeća ovog suda Kvo.br. 12/18 od 03.12.2018. godine.
             </p>
+            <p>
                 Zastupnica optužnice je u završnoj riječi, istakla kako cijeni da su provedenim dokazima, u cjelosti potvrđeni
                 navodi optužnice tog tužilaštva Kt.br.123/18 od 11.10.2018. godine i to prevashodno jasnim i uvjerljivim
                 iskazom svjedoka oštećenog Tripunović Gorana, kao i iskazom svjedoka Bašanović Zarije, te uvidom u
@@ -390,7 +393,7 @@
             <p>
                 Iz iskaza svjedoka Bašanović Zarije, proizilazi da su navedenog dana vršeći redovnu patrolnu djelatnost na
                 magistralnom putnom pravcu C. - Podgorica u mjestu B., a između ostalog i radarsku kontrolu, on i kolega
-                <party id="tg" refersTo="#tg" as="#victim">Tripunović Goran</ref>. U 16,16 časova zaustavili su putničko motorno vozilo “VW Passat”, registarskih oznaka PG
+                <party id="tg" refersTo="#tg" as="#victim">Tripunović Goran</party>. U 16,16 časova zaustavili su putničko motorno vozilo “VW Passat”, registarskih oznaka PG
                 .., koje se kretalo brzinom 80 km/h, na dijelu puta gdje je brzina ograničena saobraćajnim znakom na 50
                 km/h. Tom prilikom on je prišao vozilu i tražio dokumenta ovom licu koje je upravljalo vozilom i saopštio mu
                 na engleskom jeziku koji je prekršaj počinio i da, ako želi priđe radaru i sam se uvjeri da je počinio prekršaj.
@@ -828,7 +831,7 @@
                 Zapisničar, S u d i j a,
             </p>
             <p>
-                <party id="amartinovic" refersTo="#amartinovic" as="#clerk">Aleksandra Martinović</party> party id="mcupic" refersTo="#mcupic" as="#judge">Marija Ćupić,s.r.</party>
+                <party id="amartinovic" refersTo="#amartinovic" as="#clerk">Aleksandra Martinović</party> <party id="mcupic" refersTo="#mcupic" as="#judge">Marija Ćupić,s.r.</party>
             </p>
             <p>
                 PRAVNA POUKA:
@@ -840,5 +843,4 @@
             </p>
         </conclusion>
     </judgement>
-</acomaNtoso>
-</xml>
+</akomaNtoso>

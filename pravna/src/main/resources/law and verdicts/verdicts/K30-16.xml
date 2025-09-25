@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
     <judgement>
         <meta>
@@ -27,7 +28,7 @@
                 <TLCPerson eId="rv" href="/ontology/person/rv" showAs="R. V" />
                 <TLCPerson eId="on" href="/ontology/person/on" showAs="O.N." />
                 <TLCRole eId="adviser" href="/ontology/role/adviser" showAs="Adviser" />
-                <TLCRole eId="jury" href="#jury" href="/ontology/role/jury" showAs="Jury"/>
+                <TLCRole eId="jury"  href="/ontology/role/jury" showAs="Jury"/>
                 <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
@@ -46,7 +47,7 @@
                 zapisničarke, u krivičnom predmetu okrivljenog <party id="dg" refersTo="#dg" as="#defendant">D.G.,</party> koga brani branilac <party id="cd" refersTo="#cd" as="#lawyer">Ć.D.,</party> advokat iz P., zbog krivičnog
                 djela davanje mita iz <ref href="/krivicni#art_424_para_1">čl.424 st.1 Krivičnog zakonika</ref> Crne Gore, odlučujući po optužnici <organization id="odt" refersTo="#odt">Osnovnog državnog
                 tužilaštva u Podgorici</organization> Kt.br.1042/16 od 21.09.2016. godine, koju je na glavnom pretresu zastupala tužiteljka
-                <organization id="odt" refersTo="#odt">Osnovnog državnog tužilaštva u Podgorici</ref> <party id="rv" refersTo="#rv" as="#plaintiff">R. V.,</party> nakon glavnog i javnog pretresa održanog dana 08.12.2016.
+                <organization id="odt" refersTo="#odt">Osnovnog državnog tužilaštva u Podgorici</organization><party id="rv" refersTo="#rv" as="#plaintiff">R. V.,</party> nakon glavnog i javnog pretresa održanog dana 08.12.2016.
                 godine, u prisustvu zastupnika optužbe, okrivljenog i njegovog branioca, donio je dana 09.12.2016. godine i
                 istog dana javno objavio
             </p>
@@ -78,7 +79,7 @@
                 novčanicu od 50,00 €, serijskog broja ..., stavio na stol za kojim se nalazio službenik Uprave policije OB
                 Danilovgrad <party id="on" refersTo="#on" as="#victim">O.N.,</party> dok je B.M. bio u neposrednoj blizini,
                 - čime je izvršio krivično djelo davanje mita iz <ref href="/krivicni#art_424_para_1">čl.424 st.1 Krivičnog zakonika</ref> Crne Gore.
-                Pa sud okrivljenog D.G., primjenom citiranih zakonskih propisa, te <ref href="/krivicni#art_4">čl.4,</ref> <ref href="/krivicni#art_5">5,</ref> <ref href="/krivicni#art_13">13,</ref> <ref href="/krivicni#art_15">15,</ref> <ref href="/krivicni#art_32">32,</ref> <ref href="/krivicni#art_36">36,</ref> <ref href="/krivicni#art_42">42,</ref> <ref href="/krivicni#art_45">45,</ref> <ref href="/krivicni#art_46">46 i <ref href="/krivicni#art_51">51</ref> KZ
+                Pa sud okrivljenog D.G., primjenom citiranih zakonskih propisa, te <ref href="/krivicni#art_4">čl.4,</ref> <ref href="/krivicni#art_5">5,</ref> <ref href="/krivicni#art_13">13,</ref> <ref href="/krivicni#art_15">15,</ref> <ref href="/krivicni#art_32">32,</ref> <ref href="/krivicni#art_36">36,</ref> <ref href="/krivicni#art_42">42,</ref> <ref href="/krivicni#art_45">45,</ref> <ref href="/krivicni#art_46">46</ref> i <ref href="/krivicni#art_51">51</ref> KZ
                 CG, te i <ref href="/zkp#art_226">čl.226,</ref> <ref href="/zkp#art_229">229</ref> i <ref href="/zkp#art_376">374</ref> ZKP-a,
             </p>
             <p class="subtitle">
@@ -478,6 +479,4 @@
             </p>
         </conclusion>
     </judgement>
-
-</acomaNtoso>
-</xml>
+</akomaNtoso>

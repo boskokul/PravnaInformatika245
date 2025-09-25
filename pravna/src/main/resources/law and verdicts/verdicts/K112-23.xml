@@ -28,7 +28,7 @@
                 <TLCPerson eId="lb" href="/ontology/person/lb" showAs=" L.B." />
                 <TLCPerson eId="mv" href="/ontology/person/mv" showAs="M.V." />
                 <TLCRole eId="adviser" href="/ontology/role/adviser" showAs="Adviser" />
-                <TLCRole eId="jury" href="#jury" href="/ontology/role/jury" showAs="Jury"/>
+                <TLCRole eId="jury" href="/ontology/role/jury" showAs="Jury"/>
                 <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
@@ -93,7 +93,6 @@
                 Budžeta CG broj: broj ..................... , u roku od 15 dana od dana pravosnažnosti presude, pod prijetnjom
                 prinudnog izvršenja, s tim što će dokaz o izvršenoj uplati dostaviti krivičnoj pisarnici ovog suda.
             </p>
-            </p>
         </decision>
         <arguments>
         <p class="subtitle">
@@ -101,7 +100,7 @@
             </p>
             <p>
                 Optužnicom <organization id="odt" refersTo="#odt">O.d.t. u B.P.,</organization> KT.br. ................ od 29.03.2023. godine, okrivljenoj <party id="mc" refersTo="#mc" as="#defendant">M.Ć.</party> iz B.P., stavljeno je na teret
-                izvršenje krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_1">člana 424 stav 1 Krivičnog zakonika<ref> C.G. Zastupnik optužbe je na
+                izvršenje krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_1">člana 424 stav 1 Krivičnog zakonika</ref> C.G. Zastupnik optužbe je na
                 glavnom pretresu ostao u cjelosti pri podigutoj optužnici i predložio da sud okrivljenu oglasi krivom i osudi
                 na kaznu po zakonu.
             </p>
@@ -194,7 +193,7 @@
             <p>
                 Dakle, navedenim dokazima, cijenjenim kako je prethodno navedeno, sud je utvrdio da je okrivljena dana
                 21.03.2023 godine, oko 15:00 h, u prostorijama JZU D.z. B.P., ......................... , službenom licu, stalnom
-                sudskom vještaku dr<party id="mv" refersTo="#mv" as="#victim"> M.V.,</ref> angažovanoj po naredbi O.d.t. u B.P. u predmetu Kt. Br. .............. od 21.03.2023.
+                sudskom vještaku dr<party id="mv" refersTo="#mv" as="#victim"> M.V.</party>, angažovanoj po naredbi O.d.t. u B.P. u predmetu Kt. Br. .............. od 21.03.2023.
                 godine radi davanja nalaza i mišljenja u postupku koji se vodi kod istog tužilaštva protiv Ć.H., majke
                 okrivljene, ponudila novac da bi doktorka M.V. izvršila službenu radnju, koju ne bi smjela izvršiti, tako što je
                 ušla u ordinaciju Dr <party id="mv" refersTo="#mv" as="#victim">M.V.</party>, istoj rekla da je došla zbog svoje majke koja je u pritvoru, a koju će policija dovesti
@@ -273,5 +272,4 @@
             </p>
         </conclusion>
     </judgement>
-</acomaNtoso>
-</xml>
+</akomaNtoso>

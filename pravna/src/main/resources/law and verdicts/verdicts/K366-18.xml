@@ -31,7 +31,7 @@
 
                 <TLCPerson eId="idjdanka" href="/ontology/person/idjdanka" showAs="Ivanović Đerić Danka" />
                 <TLCRole eId="adviser" href="/ontology/role/adviser" showAs="Adviser" />
-                <TLCRole eId="jury" href="#jury" href="/ontology/role/jury" showAs="Jury"/>
+                <TLCRole eId="jury" href="/ontology/role/jury" showAs="Jury"/>
                 <TLCRole eId="plaintiff" href="/ontology/role/plaintiff" showAs="Plaintiff" />
 				<TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
 				<TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
@@ -47,9 +47,9 @@
             </p>
             <p>
                 <organization id="os" refersTo="#os">OSNOVNI SUD U PODGORICI,</organization> po sudiji <party id="gdjukovic" refersTo="#gdjukovic" as="#judge">Goranu Đukoviću,</party> uz učešće <party id="sradevic" refersTo="#sradevic" as="#clerk">Radević Sanje</party> kao namještenika suda, u
-                krivičnom predmetu protiv okrivljenog <party id="mi" refersTo="#mi" as="#defendant">M. I.</prty> zbog dva krivična djela primanje mita iz čl. <ref href="/krivicni#art_423_para_2">423 st. 2 </ref>Krivičnog
+                krivičnom predmetu protiv okrivljenog <party id="mi" refersTo="#mi" as="#defendant">M. I.</party> zbog dva krivična djela primanje mita iz čl. <ref href="/krivicni#art_423_para_2">423 st. 2 </ref>Krivičnog
                 zakonika, okrivljenog <party id="nd" refersTo="#nd" as="#defendant">N. D.</party> zbog krivičnog djela primanje mita iz <ref href="/krivicni#art_423_para_2">čl. 423 st. 2 </ref>Krivičnog zakonika, okrivljenog
-                <party id="cz" refersTo="#cz" as="#defendant">Ć. Z.</party> zbog krivičnog djela davanje mita iz čl. <ref href="/krivicni#art_423_para_2">424 st. 2</reF> Krivičnog zakonika, okrivljenog <party id="jb" refersTo="#jb" as="#defendant">J. B.</party> zbog krivičnog djela
+                <party id="cz" refersTo="#cz" as="#defendant">Ć. Z.</party> zbog krivičnog djela davanje mita iz čl. <ref href="/krivicni#art_423_para_2">424 st. 2</ref> Krivičnog zakonika, okrivljenog <party id="jb" refersTo="#jb" as="#defendant">J. B.</party> zbog krivičnog djela
                 primanje mita iz čl. <ref href="/krivicni#art_423_para_2">423 st. 2 Krivičnog zakonika,</ref> okrivljenog <party id="ga" refersTo="#ga" as="#defendant">G. A.</party> zbog krivičnog djela davanje mita iz <ref href="/krivicni#art_423_para_2">čl. 424
                 st. 2</ref> Krivičnog zakonika i okrivljene <party id="jr" refersTo="#jr" as="#defendant">J. R.</party> zbog krivičnog djela davanje mita iz čl. <ref href="/krivicni#art_423_para_2">424 st. 2 </ref>Krivičnog zakonika,
                 odlučujući po optužnici Osnovnog državnog tužilaštva iz Podgorice Kt. br. 483/15 od 07.11.2016.godine
@@ -100,7 +100,7 @@
                 državljanin Crne Gore, diplomirani pravnik, neoženjen, nema djecu, neosudjivan.
                 2. <party id="nd" refersTo="#nd" as="#defendant">N. D.,</party> sa JMBG ..., od oca H. i majke R., rodjene K., rodjen ....1980.godine u P., sa prebivalištem u P., ulica ...,
                 državljanin Crne Gore, diplomirani ekonomista, oženjen, otac jednog djeteta.
-                3. <party id="cz" refersTo="#cz" as="#defendant">Ć. Z.,</ref> sa JMBG ..., od oca S. i majke D., rodjene R., rodjen ...1961. godine u D., sa prebivalištem u P., ulica ...,
+                3. <party id="cz" refersTo="#cz" as="#defendant">Ć. Z.,</party> sa JMBG ..., od oca S. i majke D., rodjene R., rodjen ...1961. godine u D., sa prebivalištem u P., ulica ...,
                 Naselje G., državljanin Crne Gore, završio višu školu - Odsjek sociologije, oženjen, otac dvoje djece, dobrog
                 imovnog stanja.
                 4. <party id="jb" refersTo="#jb" as="#defendant">J. B.,</party> sa JMBG ..., od oca V. i majke M., rodjene P., rodjen ...1975.godine u B., Republika S., sa prebivalištem
@@ -130,11 +130,11 @@
                 odobrenje A. I., uzeo jedno ćebe.
                 - čime bi izvršio krivično djelo primanje mita iz čl. <ref href="/krivicni#art_423_para_2">423 st. 2 </ref>Krvičnog zakonika.
                 2. O. N. D. i Ć. Z.
-                Dana 21.11.2012.godine, u P. i D., okrivljeni <party id="nd" refersTo="#nd" as="#defendant">N. D.</par> kao službeno lice, carinski inspektor u Upravi carina -
+                Dana 21.11.2012.godine, u P. i D., okrivljeni <party id="nd" refersTo="#nd" as="#defendant">N. D.</party> kao službeno lice, carinski inspektor u Upravi carina -
                 Carinska ispostava D., neposredno primio poklon u novcu za sebe koji mu je obećao i dao okrivljeni Ć. Z., u
                 iznosu od 100,00 eura, da izvrši služenu radnju koju bi morao izvršiti, stavljanje robe u slobodan promet, pri
                 čemu su bili svjesni svog djela, čije izvršenje su htjeli iako su znali da je njihovo djelo zabranjeno, na način što
-                je prethodno dana 20.11.2012.godine okrivljeni <party id="cd" refersTo="#cd" as="#defendant">Ć. Z.,</ref> vlasnik špediterskog preduzeća ''E.'' DOO P., obavijestio
+                je prethodno dana 20.11.2012.godine okrivljeni <party id="cd" refersTo="#cd" as="#defendant">Ć. Z.,</party> vlasnik špediterskog preduzeća ''E.'' DOO P., obavijestio
                 okrivljenog N. D., da će u carinskoj ispostavi D., predati za carinjenje jedno putničko vozilo, da bi dana
                 21.11.2012. godine, kada je okrivljeni N. dobio u rad predmet carinjenja putničkog vozila ''Mini Cooper'' čiji je
                 špediter ''E.'' o istom obavijestio okrivljenog Ć., koji mu je rekao da će dobiti 100,00 eura da bi zatim u
@@ -144,8 +144,8 @@
                 krivično djelo davanje mita iz čl. <ref href="/krivicni#art_423_para_2">424 st. 2 </ref>Krivičnog zakonika.
                 3. Okrivljeni J. B., R. J., G. A.
                 Dana 05.10.2012.godine, u P., okrivljeni <party id="jb" refersTo="#jb" as="#defendant">J. B.</party> kao službeno lice, carinski inspektor u Upravi carina - Carinska
-                ispostava P. posredno zahtijevao za sebe poklon od okrivljene <party id="jr" refersTo="#jr" as="#defendant">J. R.</ref> izvršnog direktora preduzeća ''A.'' DOO P.,
-                da izvrši službenu radnju koju bi morao da izvrši, pa mu je okrivljena <party id="jr" refersTo="#jr" as="#defendant">R. J.</reF> traženi poklon u novcu posredno
+                ispostava P. posredno zahtijevao za sebe poklon od okrivljene <party id="jr" refersTo="#jr" as="#defendant">J. R.</party> izvršnog direktora preduzeća ''A.'' DOO P.,
+                da izvrši službenu radnju koju bi morao da izvrši, pa mu je okrivljena <party id="jr" refersTo="#jr" as="#defendant">R. J.</party> traženi poklon u novcu posredno
                 dala, a okrivljeni <party id="ga" refersTo="#ga" as="#defendant">G. A.</party> posredovao pri ovakvom davanju mita službenom licu da izvrši službenu radnju koju bi
                 morao izvršiti, stavljanje robe u slobodan promet, pri čemu su bili svjesni svog djela čije izvršenje su htjeli
                 iako su znali da je njihovo djelo zabranjeno, na način što je okrivljeni J. da bi izvršio carinjenje kamena,
@@ -157,6 +157,7 @@
                 - čime bi okrivljeni J. B. izvršio krivično djelo primanje mita iz čl. 423 st. 2 Krivičnog zakonika a okrivljeni G. A. i
                 J. R. krivično djelo davanje mita iz čl. <ref href="/krivicni#art_423_para_2">424 st. 2 </ref>Krivičnog zakonika.
                 Troškovi postupka padaju na teret budžetskih sredstava suda.
+            </p>
         </decision>
         <arguments>
             <p>
@@ -342,5 +343,4 @@
             </p>
         </conclusion>
     </judgement>
-</acomaNtoso>
-</xml>
+</akomaNtoso>

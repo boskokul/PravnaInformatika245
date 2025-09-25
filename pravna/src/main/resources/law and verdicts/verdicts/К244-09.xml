@@ -36,7 +36,7 @@
     </p>
     <p>
       <organization id="os" refersTo="#os">Osnovni sud u Kotoru</organization>, kao nadležni prvostepeni krivični sud, u vijeću sastavljenom od predsjednika vijeća -
-      sudije<party id="mmarovic" refersTo="#mmarovic" as="#judge"> Momirke Marović i članova vijeća sudija porotnika <party id="pmrsulja" refersTo="#pmrsulja" as="#jury">Petra Mršulje</party> i <party id="jraskovic" refersTo="#jraskovic" as="#jury">Jova Raškovića,</party> uz učešće
+      sudije<party id="mmarovic" refersTo="#mmarovic" as="#judge">Momirke Marović</party> i članova vijeća sudija porotnika <party id="pmrsulja" refersTo="#pmrsulja" as="#jury">Petra Mršulje</party> i <party id="jraskovic" refersTo="#jraskovic" as="#jury">Jova Raškovića,</party> uz učešće
       zapisničara <party id="apetkovic" refersTo="#apetkovic" as="#clerk">Ana-Marije Petković,</party> u krivičnom predmetu protiv okrivljenog <party id="km" refersTo="#km" as="#defendant">K. M.</party> zbog krivičnog djela davanja
       mita iz <ref href="/krivicni#art_424_para_1">člana 424. stav 1. Krivičnog zakonika</ref>, koji se vodi po optužnici <organization id="odt" refersTo="#odt">ODT Kotor</organization> <ref href="/cg/kt/2007-05-24/213_07">Kt.br. 213/07 od 24. 05. 2007</ref>
       godine, nakon održanog glavnog i javnog pretresa dana 08.07.2009. godine, u prisustvu zamjenika ODT Kotor
@@ -106,6 +106,7 @@
       okrivljenog <party id="km" refersTo="#km" as="#defendant">K. M.</party> i njegov branioca adv.<party id="vv" refersTo="#vv" as="#lawyer"> V. V.,</party> svjedoka J. Z. i M. B., kao i prevodioca za ruski jezik J. Đ., i istog
       dana donio odluku u ovoj krivičnopravnoj stvari.
     </p>
+    <p>
       U završnoj rječi zamjenik ODT Kotor <party id="jcizmovic" refersTo="#jcizmovic" as="#plaintiff">Jovanka Čizmović</party> izjavila je da u cjelosti ostaje pri podnijetoj optužnici,
       pa je predložila sudu da okrivljenog kazni po zakonu i izrekne mjeru bezbjednosti oduzimanja predmeta.
       U završnoj rječi branilac okrivljenog adv. <party id="vv" refersTo="#vv" as="#lawyer">V. V.</party> izjavio je u svemu kao u završnoj riječi sa ranijeg pretresa
@@ -147,7 +148,7 @@
       stanicu policije. Znači, on policajcu nije nudio novac da mu ne bi napisao prijavu za učinjeni prekršaj, već se
       ova novčanica od 10 eura našla u ovim njegovim dokumentima, a da on i nije znao da se ona tu nalazi i tu
       novčanicu on nije nudio ovom policajcu. U stanici policije saslušavan je u prisustvu njegovog branioca
-      advokata <party id="vv" refersTo="#vv" as="#lawyer">V. V.,</ref> ali bez prisustva tumača, pa je najvjerovatnije zbog nerazumijevanja jezika, pogrešno
+      advokata <party id="vv" refersTo="#vv" as="#lawyer">V. V.,</party> ali bez prisustva tumača, pa je najvjerovatnije zbog nerazumijevanja jezika, pogrešno
       shvaćeno i u njegovoj izjavi napisano da se ovih 10 eura nalazilo među vozačkom i saobraćajnom dozvolom.
       Na pitanje svoh branioca, okrivljeni je odgovorio da je policajac kome je dao na uvid njegovu legitimaciju
       Internacionalne policijske asocijacije sjedao u službenom vozilu, dok se drugi policajac nalazio kod drugog
@@ -293,7 +294,7 @@
       Ovakvo činjenično stanje sud je utvrdio na osnovu iskaza svjedoka <party id="jz" refersTo="#jz" as="#victim">J. Z.</party> i M. B., iskaza svjedoka M. L., uvida u
       službenu zabilješku Uprave policije PJ B. .... , uvida u Potvrdu o privremenom oduzimanju predmeta Uprave
       policije PJ B. br .... od ....godine i uvida u samu oduzetu novčanicu, kao i na osnovu odbrane okrivljenog <party id="km" refersTo="#km" as="#defendant">K. M..</party>
-      Na osnovu podudarnih iskaza svjedoka <party id="jz" refersTo="#jz" as="#victim">J. Z</ref>., M. B. i M. L. nesporno utvrđeno da je okrivljeni izvadio iz džepa
+      Na osnovu podudarnih iskaza svjedoka <party id="jz" refersTo="#jz" as="#victim">J. Z</party>., M. B. i M. L. nesporno utvrđeno da je okrivljeni izvadio iz džepa
       predmetnu novčanicu i ponudio je policajcu J.. Svjedok J. je izjavio da je u trenutku kada je sjeo na mjesto
       suvozača službenog vozila i počeo da piše zapisnik okrivljeni stajao pored vrata suvozača i kada je vidio da J.
       piše zapisnik, izvadio je iz džepa pantalona novčanicu od 10 eura i pružio mu je rekavši „Ne to da pišete, ja ću
@@ -329,7 +330,7 @@
       odnosno da je namjera davanja mita postojala.
     </p>
     <p>
-      U radnjama okrivljenog ostvarena su sva bitna obilježja bića krivičnog djela davanja mita iz <ref href="/krivicni#art_424_para_1">člana 424. stav 1.Krivičnog zakonika.</party> Okrivljeni je postupao sa umišljajem davanjem poklona odnosno novčanice od 10 eura
+      U radnjama okrivljenog ostvarena su sva bitna obilježja bića krivičnog djela davanja mita iz <ref href="/krivicni#art_424_para_1">člana 424. stav 1.Krivičnog zakonika.</ref> Okrivljeni je postupao sa umišljajem davanjem poklona odnosno novčanice od 10 eura
       službenom licu da u okviru svog ovlašćenja ne izvrši službenu radnju koju bi moralo izvršiti. Umišljaj se
       ogleda u tome što je okrivljeni ponudio službenom licu – policajcu UP PJ B. <party id="jz" refersTo="#jz" as="#victim">J. Z.</party> novčanicu od 10 eura
       govoreći mu: „Ne to da pišete, ja ću da Vas častim“ a nakon što mu je saopšteno da je učinio saobraćajni
@@ -362,7 +363,7 @@
   </arguments>
   <conclusion>
     <p>
-          <organization id="os" refersTo="#os">  OSNOVNI SUD U KOTORU<organization>
+          <organization id="os" refersTo="#os">  OSNOVNI SUD U KOTORU</organization>
     </p>
     <p>
         Dana 08.07.2009. godine
@@ -371,7 +372,7 @@
         Zapisničar, Predsjednik vijeća-sudija,
     </p>
     <p>
-        <party id="apetkovic" refersTo="#apetkovic" as="#clerk">Ana-Marija Petković </party> <party id="mmarovic" refersTo="#mmarovic" as="#judge">Momirka Marović</ref>
+        <party id="apetkovic" refersTo="#apetkovic" as="#clerk">Ana-Marija Petković </party> <party id="mmarovic" refersTo="#mmarovic" as="#judge">Momirka Marović</party>
     </p>
     <p>
         PRAVNA POUKA: Protiv ove presude dozvoljena je žalba Višem sudu Podgorica, u roku od 15 dana od dana

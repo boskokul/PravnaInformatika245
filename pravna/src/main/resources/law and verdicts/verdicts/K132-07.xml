@@ -11,15 +11,15 @@
         </FRBRWork>
       </identification>
       <references>
-        <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Kotor" showAs="<organization id="os" refersTo="#os">Osnovni sud u Kotoru</organization>"/>
+        <TLCOrganization eId="os" href="/ontology/organization/OsnovniSud.Kotor" showAs="Osnovni sud u Kotoru"/>
         <TLCOrganization eId="odt" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Kotor" showAs="Osnovno državno tužilaštvo u Kotoru"/>
         <TLCPerson eId="vpean" href="/ontology/person/vpean" showAs="Vesna Pean"/>
         <TLCPerson eId="sgoranovic" href="/ontology/person/sgoranovic" showAs="Šćepan Goranović"/>
         <TLCPerson eId="bkukalj" href="/ontology/person/bkukalj" showAs="Branko Kukalj"/>
         <TLCPerson eId="tnikolic" href="/ontology/person/tnikolic" showAs="Tatjana Nikolić"/>
-        <TLCPerson eId="ha" href="/ontology/person/ha" showAs="<party id="ha" refersTo="#ha" as="#defendant">H. A.</party>"/>
+        <TLCPerson eId="ha" href="/ontology/person/ha" showAs="H. A."/>
         <TLCPerson eId="jc" href="/ontology/person/jc" showAs="J. Č."/>
-        <TLCPerson eId="jz" href="/ontology/person/jz" showAs="<party id="jz" refersTo="#jz" as="#victim">J. Z.</party>"/>
+        <TLCPerson eId="jz" href="/ontology/person/jz" showAs="J. Z."/>
         <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge"/>
         <TLCRole eId="jury" href="/ontology/role/jury" showAs="Jury"/>
         <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk"/>
@@ -155,7 +155,7 @@
 <p>OSNOVNI SUD U KOTORU</p>
 <p>Dana, 4.03.2008.godine</p>
 <p>ZAPISNIČAR                                                                      PREDSJEDNIK VIJEĆA -SUDIJA</p>
-<p><party id="tnikolic" refersTo="#tnikolic" as="#clerk">Tatjana Nikolić s.r.</ref>                                                                             <party id="vpean" refersTo="#vpean" as="#judge">Vesna Pean s.r.</ref></p>
+<p><party id="tnikolic" refersTo="#tnikolic" as="#clerk">Tatjana Nikolić s.r.</party>                                                                             <party id="vpean" refersTo="#vpean" as="#judge">Vesna Pean s.r.</party></p>
 <p>PRAVNA POUKA:Protiv ove presude ima se pravo žalbe u roku od 15 dana od dana prijema iste, Višem</p>
 <p>sudu u Podgorici, a preko ovog suda.</p>
     </conclusion>
