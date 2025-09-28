@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
+  <judgement>
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>Osnovni Sud u Podgorici</FRBRauthor>
+          <FRBRdate date="2024-06-20">2024-06-20</FRBRdate>
+          <FRBRtitle>K 315/2024</FRBRtitle>
+          <FRBRcountry>CG</FRBRcountry>
+        </FRBRWork>
+      </identification>
+      <references>
+        <TLCOrganization eId="ospg" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici"/>
+        <TLCOrganization eId="odtpg" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno državno tužilaštvo u Podgorici"/>
+        <TLCPerson eId="bloncar" href="/ontology/person/bloncar" showAs="Borko Lončar"/>
+        <TLCPerson eId="livanovic" href="/ontology/person/livanovic" showAs="Ljiljana Ivanović"/>
+        <TLCPerson eId="ns" href="/ontology/person/ns" showAs="N. S."/>
+        <TLCPerson eId="df" href="/ontology/person/df" showAs="D. F."/>
+        <TLCPerson eId="ipv" href="/ontology/person/ipv" showAs="Ivana Petrušić Vukašević"/>
+        <TLCPerson eId="nj" href="/ontology/person/nj" showAs="N. J."/>
+        <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge"/>
+        <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk"/>
+        <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant"/>
+        <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor"/>
+        <TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer"/>
+        <TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim"/>
+      </references>
+    </meta>
+
+    <introduction>
+      <p>K.br.315/24</p>
+      <p>U IME CRNE GORE</p>
+      <p><organization id="ospg" refersTo="#ospg">Osnovni sud u Podgorici</organization>, 
+      <party id="bloncar" refersTo="#bloncar" as="#judge">sudija Borko Lončar</party>, 
+      uz učešće zapisničarke <party id="livanovic" refersTo="#livanovic" as="#clerk">Ljiljane Ivanović</party>, 
+      u krivičnom predmetu protiv okrivljenog <party id="ns" refersTo="#ns" as="#defendant">N. S.</party> 
+      zbog krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_2">čl.424 st.2 Krivičnog zakonika Crne Gore</ref>, 
+      odlučujući o Sporazumu o priznanju krivice Kt. br.652/24 zaključenom dana 30.05.2024. godine između 
+      <organization id="odtpg" refersTo="#odtpg">Osnovnog državnog tužilaštva u Podgorici</organization> 
+      i okrivljenog <party id="ns" refersTo="#ns" as="#defendant">N. S.</party> i njegovog branioca 
+      <party id="df" refersTo="#df" as="#lawyer">adv. D. F.</party>, nakon ročišta održanog dana 20.06.2024. godine, 
+      u prisustvu državne tužiteljke <party id="ipv" refersTo="#ipv" as="#prosecutor">Ivane Petrušić Vukašević</party>, 
+      okrivljenog i branioca, donio je</p>
+      <p>P R E S U D U</p>
+    </introduction>
+
+    <background>
+      <p><party id="ns" refersTo="#ns" as="#defendant">S. N.</party>, JMB GxxxxxxxxN, od oca H. N. i majke F. N., 
+      rođene T., rođen xx.xx.19xx. godine u D., Republika Albanija, stanuje u Skadru, Republika Albanija, 
+      državljanin Albanije, djelimično razumije crnogorski jezik, njegov jezik je albanski, radnik, oženjen, 
+      otac dvoje djece, pismen, sa završenom srednjom školom, lošeg imovnog stanja, neosuđivan, protiv koga se ne vodi krivični postupak.</p>
+    </background>
+
+    <decision>
+      <p>K R I V   J E</p>
+      <p>Zato što je:</p>
+      <p>Dana 11. decembra 2023. godine, na Graničnom prelazu Božaj, 
+      službenom licu <party id="nj" refersTo="#nj" as="#victim">N. J.</party>, policijskom službeniku, 
+      neposredno dao mito u iznosu od 5 eura, da u okviru svog službenog položaja izvrši 
+      radnju granične provjere i unosa podataka u evidenciju, 
+      čime je učinio krivično djelo davanje mita iz <ref href="/krivicni#art_424_para_2">čl.424 st.2 Krivičnog zakonika Crne Gore</ref>.</p>
+
+      <p>Pa ga sud primjenom <ref href="/krivicni#art_2">čl.2</ref>, 
+      <ref href="/krivicni#art_3">čl.3</ref>, 
+      <ref href="/krivicni#art_4_para_2">čl.4 st.2</ref>, 
+      <ref href="/krivicni#art_5">čl.5</ref>, 
+      <ref href="/krivicni#art_13_para_1">čl.13 st.1</ref>, 
+      <ref href="/krivicni#art_14">čl.14</ref>, 
+      <ref href="/krivicni#art_15">čl.15</ref>, 
+      <ref href="/krivicni#art_32">čl.32</ref>, 
+      <ref href="/krivicni#art_36a">čl.36a</ref>, 
+      <ref href="/krivicni#art_42_para_1">čl.42 st.1</ref>, 
+      <ref href="/krivicni#art_51_para_1">čl.51 st.1</ref> Krivičnog zakonika CG 
+      te <ref href="/zkp#art_229">čl.229</ref> i <ref href="/zkp#art_374">čl.374</ref> ZKP CG</p>
+      <p>O S U Đ U J E</p>
+      <p>Na kaznu zatvora u trajanju od 4 (četiri) mjeseca, koju će izdržavati u prostorijama za stanovanje, 
+      uz ograničenja izlaska i mogućnost preinačenja u zatvorsku kaznu u slučaju kršenja uslova.</p>
+      <p>Okrivljeni se obavezuje da uplati 4000 eura u korist KCCG - Dječije bolnice, kao i sudski paušal i troškove postupka.</p>
+    </decision>
+
+    <arguments>
+      <p>O b r a z l o ž e nj e</p>
+      <p>Optužnim predlogom ODT Podgorica Kt.br.652/24 od 03.06.2024. godine, 
+      okrivljenom <party id="ns" refersTo="#ns" as="#defendant">S. N.</party> stavljeno je na teret 
+      krivično djelo iz <ref href="/krivicni#art_424_para_2">čl.424 st.2 KZ CG</ref>.</p>
+      <p>Sporazum o priznanju krivice zaključen 30.05.2024. godine između tužilaštva, okrivljenog i branioca, 
+      a usvojen rješenjem od 20.06.2024. godine, bio je osnov za donošenje presude.</p>
+      <p>Sud je ocijenio da je sporazum zakonit, dobrovoljan i u interesu pravde, 
+      te je izrekao kaznu zatvora u skladu sa predloženim sporazumom.</p>
+    </arguments>
+
+    <conclusion>
+      <p>OSNOVNI SUD U PODGORICI</p>
+      <p>Dana, 20.06.2024.godine</p>
+      <p><party id="livanovic" refersTo="#livanovic" as="#clerk">Ljiljana Ivanović s.r.</party> — zapisničar</p>
+      <p><party id="bloncar" refersTo="#bloncar" as="#judge">Borko Lončar s.r.</party> — sudija</p>
+      <p>Pravna pouka: Protiv ove presude ima se pravo žalbe u roku od 15 dana od dana prijema iste, 
+      Višem sudu u Podgorici, preko ovog suda.</p>
+    </conclusion>
+
+  </judgement>
+</akomaNtoso>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
+  <judgement>
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>Osnovni Sud u Pljevljima</FRBRauthor>
+          <FRBRdate date="2023-12-20">2023-12-20</FRBRdate>
+          <FRBRtitle>Kv 51/2023</FRBRtitle>
+          <FRBRcountry>CG</FRBRcountry>
+        </FRBRWork>
+      </identification>
+      <references>
+        <TLCOrganization eId="osp" href="/ontology/organization/OsnovniSud.Pljevlja" showAs="Osnovni sud u Pljevljima"/>
+        <TLCOrganization eId="odtp" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Pljevlja" showAs="Osnovno državno tužilaštvo u Pljevljima"/>
+        <TLCOrganization eId="vsb" href="/ontology/organization/VisiSud.BijeloPolje" showAs="Viši sud u Bijelom Polju"/>
+        <TLCPerson eId="lpopovic" href="/ontology/person/lpopovic" showAs="Ljiljana Popović"/>
+        <TLCPerson eId="mkrvavac" href="/ontology/person/mkrvavac" showAs="Mirjana Krvavac"/>
+        <TLCPerson eId="nbajceta" href="/ontology/person/nbajceta" showAs="Nataša Bajčeta"/>
+        <TLCPerson eId="vg" href="/ontology/person/vg" showAs="V. G."/>
+        <TLCPerson eId="ng" href="/ontology/person/ng" showAs="N. G."/>
+        <TLCPerson eId="sm" href="/ontology/person/sm" showAs="S. M."/>
+        <TLCPerson eId="sps" href="/ontology/person/sps" showAs="S. P. Š."/>
+        <TLCPerson eId="dd" href="/ontology/person/dd" showAs="D. D."/>
+        <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge"/>
+        <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk"/>
+        <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant"/>
+        <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor"/>
+        <TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim"/>
+        <TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense Attorney"/>
+        <TLCRole eId="police" href="/ontology/role/police" showAs="Police Officer"/>
+      </references>
+    </meta>
+
+    <introduction>
+      <p>Kv. br.51/23</p>
+      <p>U IME CRNE GORE</p>
+      <p><organization id="osp" refersTo="#osp">Osnovni sud u Pljevljima</organization>, po predsjednici vijeća <party id="lpopovic" refersTo="#lpopovic" as="#judge">sudiji Ljiljani Popović</party> uz sudjelovanje zapisničarke <party id="mkrvavac" refersTo="#mkrvavac" as="#clerk">Krvavac Mirjane</party>, u krivičnom predmetu protiv optuženog <party id="sm" refersTo="#sm" as="#defendant">S. M.</party> iz B. koga brane <party id="vg" refersTo="#vg" as="#defense">V. G.</party> i <party id="ng" refersTo="#ng" as="#defense">N. G.</party> advokati iz P. zbog krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_1">čl. 424 st.1 Krivičnog zakonika</ref> Crne Gore,nakon pravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice zaključenom dana 22.06.2023.godine između državnog tužioca u <organization id="odtp" refersTo="#odtp">ODT Pljevlja</organization> <party id="nbajceta" refersTo="#nbajceta" as="#prosecutor">Bajčeta Nataše</party>, optuženog <party id="sm" refersTo="#sm" as="#defendant">S. M.</party> i njegovog branioca advokata <party id="ng" refersTo="#ng" as="#defense">N. G.</party>, dana 20.12.2023.godine donio je</p>
+      <p>P R E S U D U</p>
+    </introduction>
+
+    <background>
+      <p>Optuženi <party id="sm" refersTo="#sm" as="#defendant">S. M.</party> JMBG.... od oca D. i majke M. rođene Č., rođen u B., S. V. dana ....godine, sa prebivalištem u V.j M., ul...., državljanin Republike Srbije, oženjen, otac troje djece,zaposlen-privatni preduzetnik,govori srpskim jezikom, razumije crnogorski jezik, pismen, završio srednju mašinsku školu,nevodi se postupak za drugo krivično djelo, neosuđivan.</p>
+    </background>
+
+    <decision>
+      <p>K r i v   j e</p>
+      <p>Što je:</p>
+      <p>Dana 13.05.2023.godine oko 11,40 časova u mjestu Kruševice opština Šavnik, svjestan svog djela čije je izvršenje htio znajući da je isto zabranjeno, neposredno dao mito policijskom službeniku <party id="sps" refersTo="#sps" as="#police">S. P. Š.</party> oštećenom <party id="dd" refersTo="#dd" as="#victim">D. D.</party>, da ne izvrši službenu radnju izdavanja prekršajnog naloga za prethodno učinjeni saobraćajni prekršaj iz <ref href="/zobs#art_323_para_1_tac_5">čl.323 st.1 tač.5 ZOBS-a</ref>, a koju radnju je ovo službeno lice moralo izvršiti imajući u vidu da je radarskom kontrolom konstatovano da je optuženi <party id="sm" refersTo="#sm" as="#defendant">S. M.</party> upravljajući PMV marke „Audi A6"reg.oznaka BG .... prekoračilo dozvoljenu brzinu kretanja na način što je, nakon što mu je policijski službenik zbog učinjenog prekršaja prilikom kontrole zatražio na uvid vozačku i saobraćajnu dozvolu,prilikom davanja vozačke i saobraćajne dozvole na uvid policijskom službeniku dao i novčanicu u apoenu od 20,00 € serijskog broja SE 4109258872 govoreći da žuri te da je novac dao da popije kafu i upitao ako može da nastavi putovanje nakon čega mu je saopšteno od strane policijskog službenika da mora doći do službenog vozila kako bi podnijeli prekršajni nalog zbog prekoračenja brzine a da će o okolnosti davanja novca biti obaviješten nadležni državni tužilac,</p>
+      <p>čime je izvršio krivično djelo davanje mita iz <ref href="/krivicni#art_424_para_1">čl. 424 st. 1 Krivičnog zakonika</ref> Crne Gore,</p>
+      <p>pa mu sud, primjenom citiranih zakonskih propisa i <ref href="/krivicni#art_2">čl. 2</ref>, <ref href="/krivicni#art_4">4</ref>, <ref href="/krivicni#art_5">5</ref>, <ref href="/krivicni#art_13">13</ref>, <ref href="/krivicni#art_15">15</ref>, <ref href="/krivicni#art_32">32</ref>, <ref href="/krivicni#art_36">36</ref>,<ref href="/krivicni#art_42">42</ref>,<ref href="/krivicni#art_52">52</ref>,<ref href="/krivicni#art_53">53</ref>,<ref href="/krivicni#art_54">54</ref> i <ref href="/krivicni#art_75">75</ref> Krivičnog zakonika Crne Gore i <ref href="/zkp#art_226">čl. 226</ref>, <ref href="/zkp#art_229">229</ref>, <ref href="/zkp#art_239">239</ref>,<ref href="/zkp#art_300">300</ref>, <ref href="/zkp#art_302">302</ref> i <ref href="/zkp#art_374">374</ref> Zakonika o krivičnom postupku Crne Gore, i z r i č e</p>
+      <p>USLOVNU OSUDU</p>
+      <p>Sa kojom mu utvrđuje kaznu zatvora u trajanju od 1(jedne) godine i istovremeno određuje da se iste neće izvršiti ako optuženi u roku od 2(dvije) godine po pravosnažnosti presude ne izvrši novo krivično djelo.</p>
+      <p>Obavezuje se optuženi da na ime paušala na žiro račun Vrhovnog državnog tužilaštva 832-1187-31 uplate iznos od 30,00 € kao i na ime sudskog paušala na žiro račun Osnovnog suda u Žabljak 535 18321 18 uplati iznos od 30,00 €, a u roku od 30 dana od dana pravosnažnosti presude donijete na osnovu sporazuma o priznanju krivice.</p>
+      <p>Od optuženog se trajno oduzima novčanica u apoenu od 20,00 € serijskog broja SE 4109258872.</p>
+    </decision>
+
+    <arguments>
+      <p>O b r a z l o ž e nj e</p>
+      <p><organization id="odtp" refersTo="#odtp">Osnovno državno tužilaštvo u Pljevljima</organization>, podnijelo je Osnovnom sudu u Žabljaku dana 10.07.2023.godine optužnicu Kt.br.81/23 od 22.06.2023.godine protiv optuženog <party id="sm" refersTo="#sm" as="#defendant">S. M.</party> iz B. zbog krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_1">čl.424 st.1 Krivičnog zakonika</ref> Crne Gore, sa optužnicom dostavljen je zapisnik o pregovaranju Kt.br.81/23 od 22.06.2023.godine i sporazum o priznanju krivice zaključen sa optuženim i njegovim braniocem Kt.br.81/23 od 22.06.2023.godine.</p>
+      <p><organization id="vsb" refersTo="#vsb">Viši sud u Bijelom Polju</organization> rješenjem Kv.br.644/23 od 23.10.2023.godine za suđenje u ovom krivičnom postupku odredio je <organization id="osp" refersTo="#osp">Osnovni sud u Pljevljima</organization>.</p>
+      <p>Na ročištu održanom dana 14.12.2023. godine sud je rješenjem Kv.br.51/23 usvojio sporazum o priznanju krivice Kt.br.81/23 zaključen dana 22.06.2023.godine između državnog tužioca u <organization id="odtp" refersTo="#odtp">Osnovnom državnom tužilaštvu u Pljevljima</organization> <party id="nbajceta" refersTo="#nbajceta" as="#prosecutor">Bajčeta Nataše</party>,optuženog <party id="sm" refersTo="#sm" as="#defendant">S. M.</party> i njegovog branioca advokata <party id="ng" refersTo="#ng" as="#defense">G. N.</party></p>
+      <p>Rješenje o usvajanju sporazuma o priznanju krivice Kv.br.51/23 od 14.12.2023. godine postalo je pravosnažno dana 19.12.2023.godine.</p>
+      <p>Iz dokaza prikupljenih u fazi izviđaja, zapisnika o pregovaranju između stranaka, zapisnika o saslušanju optuženog i sporazuma o priznanju krivice, proizilazi da je optuženi <party id="sm" refersTo="#sm" as="#defendant">S. M.</party>, u vrijeme,mjesto i na način opisan u izreci ove presude, izvršio krivično djelo davanje mita iz <ref href="/krivicni#art_424_para_1">čl. 424 st.1 Krivičnog zakonika</ref> Crne Gore kako mu je to stavljeno na teret, za koje ga i ovaj sud oglašava krivim.</p>
+      <p>Za krivično djelo teška davanje mita iz <ref href="/krivicni#art_424_para_1">čl. 424 st.1 KZ CG</ref> zaprijećena je kazna zatvora od 1 (jedne) godine do 8 (osam) godina.</p>
+      <p>Ispitujući postignuti sporazum u pogledu odluke o krivičnoj sankciji, s obzirom na to da je optuženi priznao izvršenje djela, da se radi o porodičnom čovjeku, ocu troje djece koji do sada nije osuđivan što je utvrđeno iz izvoda iz KE za optuženog,da je oštećeni na ročištu po sporazumu o priznanju krivice istakao da je saglasan sa zaključenim sporazumom između državnog tužioca i optuženog prema kome ne postavlja imovinsko pravni zahtjev te da otežavajućih okolnosti na strani optuženog nije bilo, pa je prihvatljiv sporazum i u dijelu odluke o krivičnoj sankciji, odnosno i sud je mišljenja da će se uslovnom osudom u cjelosti postići svrha kažnjavanja i da će se istom uticati kako na optuženog tako i na druge da ne čine krivična djela, izraziće se društvena osuda i ukazati na obavezu poštovanja zakona i posledice njegovog nepoštovanja.</p>
+      <p>Odluka o troškovima postupka donijeta je na osnovu odredbe <ref href="/zkp#art_226">čl. 226</ref> i <ref href="/zkp#art_229">229</ref> Zakonika o krivičnom postupku Crne Gore, a shodno sporazumu stranaka.</p>
+      <p>Iz iznijetog je odlučeno kao u izreci presude, a shodno <ref href="/zkp#art_302">čl. 302 Zkp-a CG</ref>.</p>
+    </arguments>
+
+    <conclusion>
+      <p>OSNOVNI SUD U PLJEVLJIMA</p>
+      <p>Dana 20.12.2023. godine,</p>
+      <p>Zapisničar                                                                      Predsjednik vijeća-sudija</p>
+      <p><party id="mkrvavac" refersTo="#mkrvavac" as="#clerk">Krvavac Mirjana</party>                                                                     <party id="lpopovic" refersTo="#lpopovic" as="#judge">Ljiljana Popović</party></p>
+      <p>PRAVNA POUKA:Protiv ove presude dozvoljena je žalba samo ukoliko presuda nije u skladu sa zaključenim sporazumom i to Višem sudu Bijelo Polje sudu, preko ovog suda u roku od 15 dana od dana prijema iste.</p>
+    </conclusion>
+
+  </judgement>
+</akomaNtoso>

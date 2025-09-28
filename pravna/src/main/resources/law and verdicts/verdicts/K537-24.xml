@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
+
+  <judgement>
+
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRauthor>Osnovni Sud u Podgorici</FRBRauthor>
+          <FRBRdate date="2024-11-01">2024-11-01</FRBRdate>
+          <FRBRtitle>K 537/24</FRBRtitle>
+          <FRBRcountry>CG</FRBRcountry>
+        </FRBRWork>
+      </identification>
+
+      <references>
+        <TLCOrganization eId="ospg" href="/ontology/organization/OsnovniSud.Podgorica" showAs="Osnovni sud u Podgorici"/>
+        <TLCOrganization eId="odtp" href="/ontology/organization/OsnovnoDrzavnoTuzilastvo.Podgorica" showAs="Osnovno državno tužilaštvo u Podgorici"/>
+        <TLCPerson eId="mlb" href="/ontology/person/mlb" showAs="M. B."/>
+        <TLCPerson eId="dl" href="/ontology/person/dl" showAs="Dragana Lubarda"/>
+        <TLCPerson eId="mp" href="/ontology/person/mp" showAs="Marina Perović"/>
+        <TLCPerson eId="ai" href="/ontology/person/ai" showAs="A. I."/>
+        <TLCPerson eId="vp" href="/ontology/person/vp" showAs="V. J."/>
+        <TLCPerson eId="bp" href="/ontology/person/bp" showAs="Biljana Pavličić"/>
+        <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge"/>
+        <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk"/>
+        <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant"/>
+        <TLCRole eId="prosecutor" href="/ontology/role/prosecutor" showAs="Prosecutor"/>
+        <TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense Attorney"/>
+      </references>
+    </meta>
+
+    <introduction>
+      <p>CRNA GORA<br/>
+      OSNOVNI SUD U PODGORICI<br/>
+      K.br. 537/24</p>
+
+      <p>U IME CRNE GORE</p>
+
+      <p><organization id="ospg" refersTo="#ospg">OSNOVNI SUD U PODGORICI</organization>, predsjednik suda <party id="dl" refersTo="#dl" as="#judge">Dragana Lubarda</party>, sa zapisničarom <party id="mp" refersTo="#mp" as="#clerk">Marina Perović</party>, u krivičnom postupku protiv okrivljenog <party id="mlb" refersTo="#mlb" as="#defendant">M. B.</party>, zbog krivičnog djela davanje mita iz <ref href="/krivicni#art_424_para_2">čl. 424 st. 2 Krivičnog zakonika</ref> Crne Gore, po optužnom predlogu <organization id="odtp" refersTo="#odtp">Osnovnog državnog tužilaštva u Podgorici</organization> Kt. br. 1290/24 od 13.09.2024. godine, zastupanom od <party id="bp" refersTo="#bp" as="#prosecutor">Biljane Pavličić</party>, nakon održanog glavnog i javnog pretresa dana 29.10.2024. godine, u prisustvu zastupnika optužbe, okrivljenog, njegovog branioca <party id="ai" refersTo="#ai" as="#defense">A. I., adv. iz Podgorice</party>, te sudskog tumača za albanski jezik <party id="vp" refersTo="#vp" as="#clerk">V. J.</party>, dana 01.11.2024. godine donio i javno objavio</p>
+
+      <p>P R E S U D U</p>
+    </introduction>
+
+    <background>
+      <p>Okrivljeni <party id="mlb" refersTo="#mlb" as="#defendant">M. B.</party>, ID broj JxxxxxxxxM, br. pasoša BA5375xxx, izdat od Republike Albanije, od oca S. i majke L., rođen xx.xx.19xx. godine u Elbasanu, Republika Albanija, sa prebivalištem u S., L. Str x xxxxx, Republika Njemačka, državljanin Republike Albanije, oženjen, bez djece, pismen, pica majstor, završio srednju školu, lošeg imovnog stanja, neosuđivan.</p>
+    </background>
+
+    <decision>
+      <p>KRIV JE</p>
+      <p>Zato što je:</p>
+      <p>Dana 14.01.2024. godine, oko 23:15 časova, na Graničnom prelazu Božaj, Opština Tuzi, svjestan svog djela, dao novac u iznosu od 10,00 eura policijskom službeniku <party id="zr" refersTo="#zr" showAs="R. Z.">R. Z.</party>, kako bi službenik izvršio službenu radnju koju bi morao izvršiti, tj. graničnu provjeru i unos podataka o licu i vozilu u elektronske evidencije.</p>
+      <p>- čime je izvršio krivično djelo davanje mita iz <ref href="/krivicni#art_424_para_2">čl. 424 st. 2 Krivičnog zakonika</ref> Crne Gore.</p>
+      <p>Pa mu sud, primjenom zakonskih odredbi, izriče</p>
+      <p>USLOVNU OSUDU</p>
+      <p>Kojom mu utvrđuje kaznu zatvora u trajanju od 1 (jedne) godine i istovremeno određuje da se ista neće izvršiti ukoliko okrivljeni u roku od 2 (dvije) godine od dana pravosnažnosti presude ne izvrši novo krivično djelo.</p>
+      <p>U slučaju opoziva uslovne osude, uračunava se vrijeme lišenja slobode od 24.08.2024. do 03.09.2024. godine.</p>
+      <p>Obavezuje se okrivljeni da plati troškove krivičnog postupka u iznosu od 50,00 € na ime sudskog paušala, u roku od 15 dana po pravosnažnosti presude, kao i troškove branioca po službenoj dužnosti adv. L. A.</p>
+    </decision>
+
+    <arguments>
+      <p>O b r a z l o ž e nj e</p>
+      <p>Optužnim predlogom Osnovnog državnog tužilaštva u Podgorici Kt. br. 1290/24 od 13.09.2024. godine, okrivljenom <party id="mlb" refersTo="#mlb" as="#defendant">M. B.</party> je stavljeno na teret krivično djelo davanje mita iz <ref href="/krivicni#art_424_para_2">čl. 424 st. 2 Krivičnog zakonika</ref> Crne Gore.</p>
+      <p>U odbrani, okrivljeni je priznao izvršenje djela i pojasnio okolnosti, uključujući prisustvo majke i druga u vozilu te predaju novca službeniku na graničnom prelazu.</p>
+      <p>Branilac je istakao olakšavajuće okolnosti: priznavanje djela, neosuđivanost, primjeren život, očekivanje djeteta, izdržavanje porodice i pomoć roditeljima bolesnim.</p>
+      <p>Sud je pročitao i ocijenio dokaze: dopise, službene zabilješke, transkript razgovora, izvod iz kaznene evidencije, te utvrdio da je okrivljeni izvršio djelo.</p>
+    </arguments>
+
+    <conclusion>
+      <p>OSNOVNI SUD U PODGORICI<br/>
+      Dana 01.11.2024. godine.</p>
+      <p>Zapisničar                                                                      PREDSJEDNIK SUDA - SUDIJA<br/>
+      <party id="mp" refersTo="#mp" as="#clerk">Marina Perović s.r.</party>                                                                             <party id="dl" refersTo="#dl" as="#judge">Dragana Lubarda s.r.</party></p>
+       <p>Pravna pouka: Protiv ove presude može se izjaviti žalba u roku od 8 (osam) dana od dana prijema pisanog otpravka iste, Višem sudu u Podgorici, a preko ovog suda.</p>
+       
+       </conclusion>
+
+  </judgement>
+</akomaNtoso>

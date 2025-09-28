@@ -1,0 +1,30 @@
+broj_predmeta – broj predmeta/presude.
+
+optuzeni_sluzbeno_lice – TRUE/FALSE.
+
+optuzeni_davalac_mita – TRUE/FALSE.
+
+optuzeni_primalac_mita - TRUE/FALSE.
+
+optuzeni_zahtevao_mito – TRUE/FALSE.
+
+optuzeni_prihvatio_obecanje_mita – TRUE/FALSE.
+
+radnja_nezakonita – TRUE/FALSE (službenik je trebalo da izvrši radnju koju ne bi smeo).
+
+radnja_neizvrsavanja – TRUE/FALSE (službenik je trebalo da ne izvrši radnju koju mora).
+
+radnja_vezana_za_krivicni_postupak – TRUE/FALSE (radnja je vezana za otkrivanje krivičnog dela, vođenje postupka, izricanje ili izvršenje sankcije).
+
+radnja_posle_izvrsenja – TRUE/FALSE - (mito je zahtevan ili primljen nakon izvršenja radnje).
+
+tip_ustanove_davanja_mita – javna_služba / privatna_firma / neprofitna_institucija
+
+utvrdjena_krivica_u_presudi – TRUE/FALSE (da li je presudjeno da je optuzeni kriv ili ne)
+
+duzina_kazne – duzina kazne koja je doneta protiv optuzenog
+
+prethodna_osudjivanost_optuzenog - ako je bio osudjivan koliko
+
+olaksavajuce_okolnosti - ako ima koje olaksavajuce okolnosti
+
