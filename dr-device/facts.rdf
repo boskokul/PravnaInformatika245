@@ -3,12 +3,16 @@
         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
         xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
-    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01">
-        <lc:name>case 01</lc:name>
-        <lc:defendant>John</lc:defendant>
-        <lc:speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</lc:speed>
-	<lc:allowed_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</lc:allowed_speed>
-	<lc:driving_on>town_road</lc:driving_on>
-	<lc:caused_accident>yes</lc:caused_accident>
+    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#presuda01">
+    <lc:name>presuda 01</lc:name>
+    
+    <lc:defendant>Imenko Prezimic</lc:defendant>
+
+    <lc:radnja_nezakonita_ili_neizvrsena>no</lc:radnja_nezakonita_ili_neizvrsena>
+
+	<lc:optuzeni_davalac_mita>yes</lc:optuzeni_davalac_mita>
+	
+    <lc:prijavio_mito>no</lc:prijavio_mito>
+    
     </lc:case>
 </rdf:RDF>
