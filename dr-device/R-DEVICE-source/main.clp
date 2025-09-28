@@ -1,0 +1,235 @@
+(defglobal 
+	?*comp-rule-filename* = nil
+	?*imported-rdf-files* = (create$)
+	?*exported-derived-classes* = (create$)
+)
+
+
+(deffunction load-rule-file (?filename)
+	(bind ?rule-string "")
+	(open ?filename rule "r")
+	(bind ?line (readline rule))
+	(while (neq ?line EOF)
+	   do
+	   	(bind ?rule-string (str-cat ?rule-string ?line))
+	   	(bind ?line (readline rule))
+	)
+	(close rule)
+	;(printout t "?rule-string : " ?rule-string crlf)
+	(bind $?import-rdf-files (create$))
+	(bind ?export-rdf-file "")
+	(bind $?export-rdf-classes (create$))
+	(bind $?rule-list (my-explode$ ?rule-string))
+	(while (> (length$ $?rule-list) 0)
+	   do
+	   	(bind ?p2 (get-token $?rule-list))
+	   	(bind $?rule (subseq$ $?rule-list 1 ?p2))
+	   	;(printout t "$?rule : " $?rule crlf)
+	   	;(bind ?rule-string (str-cat$ "(" (nth$ 2 $?rule) (str-cat$ (subseq$ $?rule 3 (- (length$ $?rule) 1))) ")"))
+	   	;(funcall assert (nth$ 2 $?rule) (str-cat$ (subseq$ $?rule 3 (- (length$ $?rule) 1))))
+	   	(bind ?rule-type (nth$ 2 $?rule))
+	   	(bind ?rule-string (str-cat$ (subseq$ $?rule 3 (- (length$ $?rule) 1))))
+	   	;(printout t "?rule-type : " ?rule-type crlf)
+	   	(switch ?rule-type
+	   		(case deductiverule 
+	   		   then
+	   			(assert (deductiverule ?rule-string))
+	   			(bind ?*untranslated_rules* (+ ?*untranslated_rules* 1))
+	   		)
+	   		(case ntm-deductiverule 
+	   		   then
+	   			(assert (ntm-deductiverule ?rule-string))
+	   			(bind ?*untranslated_rules* (+ ?*untranslated_rules* 1))
+	   		)
+	   		(case derivedattrule
+	   		   then
+	   			(assert (derivedattrule ?rule-string))
+	   			(bind ?*untranslated_rules* (+ ?*untranslated_rules* 1))
+	   		)
+	   		(case ntm-derivedattrule
+	   		   then
+	   			(assert (ntm-derivedattrule ?rule-string))
+	   			(bind ?*untranslated_rules* (+ ?*untranslated_rules* 1))
+	   		)
+	   		(case aggregateattrule
+	   		   then
+	   			(assert (aggregateattrule ?rule-string))
+	   			(bind ?*untranslated_rules* (+ ?*untranslated_rules* 1))
+	   		)
+	   		(case ntm-aggregateattrule
+	   		   then
+	   			(assert (ntm-aggregateattrule ?rule-string))
+	   			(bind ?*untranslated_rules* (+ ?*untranslated_rules* 1))
+	   		)
+	   		(case import-rdf
+	   		   then
+	   		   	 (bind $?import-rdf-files (explode$ (str-cat$ (subseq$ $?rule 3 (- (length$ $?rule) 1)))))
+	   		)
+	   		(case export-rdf
+	   		   then
+	   		   	(bind ?export-rdf-file (str-cat$ (nth$ 3 $?rule)))
+	   		   	(if (neq (str-index "\"" ?export-rdf-file) FALSE)
+	   		   	   then
+	   		   	   	(bind ?export-rdf-file (sub-string 2 (- (str-length ?export-rdf-file) 1) ?export-rdf-file))
+	   		   	)
+	   		   	(bind $?export-rdf-classes (subseq$ $?rule 4 (- (length$ $?rule) 1)))
+	   		)
+	   		(default (printout t "Unknown rule type: " crlf (str-cat$ $?rule) crlf))
+	   	)
+	   	(bind $?rule-list (subseq$ $?rule-list (+ ?p2 1) (length$ $?rule-list)))
+	)
+	(import-rdf-files $?import-rdf-files)
+	(bind ?*imported-rdf-files* (create$ ?*imported-rdf-files* $?import-rdf-files))
+	(bind ?run-compiled-bat-filename (str-cat (sub-string 1 (- (str-index ".clp" ?filename) 1) ?filename) "-comp.bat"))
+	(open ?run-compiled-bat-filename bat-out "w")
+	(printout bat-out "(import-rdf-files " (str-cat$ $?import-rdf-files) ")" crlf)
+	(printout bat-out "(load-compiled-r-device " ?filename ")" crlf)
+	(printout bat-out "(go-r-device)" crlf)
+	(printout bat-out "(r-device_export_rdf " (str-cat$ ?export-rdf-file $?export-rdf-classes) ")" crlf)
+	(close bat-out)
+	(bind ?*exported-derived-classes* (create$ ?*exported-derived-classes* $?export-rdf-classes))
+	(return (create$ ?export-rdf-file $?export-rdf-classes))
+)
+
+(deffunction load-rule-files ($?file-list)
+	(bind ?end (length$ $?file-list))
+	(loop-for-count (?n 1 ?end)
+	   do
+	   	(load-rule-file (nth$ ?n $?file-list))
+	)
+)
+
+(deffunction go-r-device ()
+	(verbose crlf "Running R-DEVICE rules..." crlf)
+	(bind ?old-strategy (get-strategy))
+	(bind ?old-salience (get-salience-evaluation))
+	(set-strategy breadth)
+	;(set-strategy depth)
+	(set-salience-evaluation when-activated)
+	;(set-salience-evaluation every-cycle)
+	(bind ?objects-before -1)
+	(bind ?objects-after (no-of-derived-objects))
+	(while (<> ?objects-after ?objects-before)
+	   do
+		(bind ?ind (assert (run-deductive-rules)))
+		(bind ?objects-before ?objects-after)
+		(run)
+		(bind ?objects-after (no-of-derived-objects))
+		(retract ?ind)
+	)
+	(set-salience-evaluation ?old-salience)
+	(set-strategy ?old-strategy)
+	(verbose crlf "End of inferencing!" crlf)
+	TRUE
+)
+
+; Loading should distinguish between .bat and .clp files
+(deffunction device (?rule-files ?class-files ?object-files ?verbose)
+	(set-verbose ?verbose)
+	(verbose crlf "Loading COOL classes...")
+	(load-files (explode$ ?class-files))
+	(verbose " ok" crlf)
+	(reset)
+	(set-verbose ?verbose)
+	(verbose crlf "Loading DEVICE rules...")
+	(load-rule-files (explode$ ?rule-files))
+	(verbose " ok" crlf)
+	(verbose crlf "Loading objects...")
+	(load-files (explode$ ?object-files))
+	(verbose " ok" crlf)
+	;(run)
+	(verbose crlf "Translating DEVICE rules..." )
+	(translate-device-rules)
+	(verbose " ok" crlf)
+	TRUE
+)
+
+; R-Device must return export parameters
+; See load-only-defeasible
+(deffunction load-only-r-device (?rule-file)
+	;(bind $?rule-files (explode$ ?rule-files))
+	;(bind ?filename (nth$ 1 $?rule-files))
+	(bind ?filename ?rule-file)
+	(bind ?rule-filename (str-cat "r-device-compiled-rules-" ?filename))
+	(open ?rule-filename r-device-rule-out "w")
+	(bind ?rule-inst-filename (str-cat "r-device-compiled-rule-instances-" ?filename))
+	(bind ?rule-class-inst-filename (str-cat "r-device-compiled-rule-class-instances-" ?filename))
+	(bind ?rule-derived-class-filename (str-cat "r-device-compiled-derived-classes-" ?filename))
+	(open ?rule-derived-class-filename r-device-derived-class-out "w")
+	(verbose crlf "Loading R-DEVICE rules...")
+	(bind $?export-parameters (load-rule-file ?rule-file))
+	(verbose " ok" crlf)
+	;(reset)
+	;(run)
+	(verbose crlf "Translating R-DEVICE rules..." )
+	(translate-device-rules)
+	(close r-device-rule-out)
+	(close r-device-derived-class-out)
+	(save-instances ?rule-inst-filename visible inherit r-device-rule)
+	(funcall save-instances ?rule-class-inst-filename visible derived-class-inst)
+	(verbose " ok" crlf)
+	(return $?export-parameters)
+)
+
+(deffunction load-compiled-r-device (?filename)
+	(bind ?rule-filename (str-cat "r-device-compiled-rules-" ?filename))
+	(bind ?rule-inst-filename (str-cat "r-device-compiled-rule-instances-" ?filename))
+	(bind ?rule-class-inst-filename (str-cat "r-device-compiled-rule-class-instances-" ?filename))
+	(bind ?rule-derived-class-filename (str-cat "r-device-compiled-derived-classes-" ?filename))
+	(bind ?compiled-rule-file-exists (file-exists ?rule-filename))
+	(if (eq ?compiled-rule-file-exists FALSE)
+	   then
+		(printout t "ERROR!" crlf)
+		(printout t ?filename " has not yet been compiled!" crlf)
+		(printout t "Use r-device function instead!" crlf)
+   	   else
+   		(restore-instances ?rule-inst-filename)
+   		(restore-instances ?rule-class-inst-filename)
+		(load* ?rule-derived-class-filename)
+		(load* ?rule-filename)
+	)
+)
+
+(deffunction load-r-device (?filename)
+	(bind $?export-parameters (load-only-r-device ?filename))
+	(go-r-device)
+	(bind ?export-rdf-file (nth$ 1 $?export-parameters))
+	(bind $?export-rdf-classes (rest$ $?export-parameters))
+	(if (neq ?export-rdf-file "")
+	   then
+		(r-device_export_rdf ?export-rdf-file $?export-rdf-classes)
+	)	
+)
+
+(deffunction load-ruleml-r-device (?filename ?address)
+	(if (eq ?address local)
+	   then
+	   	(verbose crlf "Translating RuleML syntax to R-DEVICE native syntax for file: " ?filename crlf crlf)
+	   	(bind ?command (str-cat "cmd /c \"\".\\bin\\ruleml2rdevice.bat\" " ?filename "\""))
+	   	(system ?command)
+	   	(load-r-device (str-cat ?filename ".clp"))
+	   else
+	   	(verbose crlf "Remote RULE access at URL: " ?address crlf crlf)
+	   	(open "loadfile.bat" mkbat "w")
+		(printout mkbat "@echo off" crlf)
+	   	(printout mkbat "@\".\\Libwww\\loadtofile.exe\" " ?address " -o " ?filename ".ruleml \".\\bin\\y\"")
+	   	(close mkbat)
+	   	(system "cmd /c loadfile.bat")
+	   	(remove "loadfile.bat")
+		(load-ruleml-r-device ?filename local)
+	)
+)
+
+(deffunction load-ruleml-r-device-local (?filename ?path-file)
+	(if (eq ?path-file local)
+	   then
+	   	(verbose crlf "Translating RuleML syntax to R-DEVICE native syntax for file: " ?filename crlf crlf)
+	   	(bind ?command (str-cat "cmd /c \"\".\\bin\\ruleml2rdevice.bat\" " ?filename "\""))
+	   	(system ?command)
+	   	(load-r-device (str-cat ?filename ".clp"))
+	   else
+	   	(verbose crlf "Local RULE access at Path: " ?path-file crlf crlf)
+	   	(system (str-cat "cmd /c copy \"" ?path-file "\" " ?filename ".ruleml"))
+		(load-ruleml-r-device-local ?filename local)
+	)
+)
