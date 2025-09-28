@@ -2,6 +2,323 @@
 <lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ xsd-compact/lrml-compact.xsd" xmlns:ruleml="http://ruleml.org/spec">
 	<lrml:Statements>
 
+	<!-- 423 -->
+
+		<!-- 423 stav 2, podmitio (lv1), bude negiran ako se ispostavi da je podmitio za nezakonito (lv2) -->
+		<lrml:PrescriptiveStatement key="pravilo1_423">
+			<ruleml:Rule key=":rulee1" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:optuzeni_primalac_mita"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:optuzeni_sluzbeno_lice"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:mito_vezan_za_kazneni_postupak"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:trazio_mito_nakon"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>taken_bribe_lv1</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		
+		<!-- 423. stav 1, pravilo koje kaze da ako je podmitio za nelegalnu radnju ili da ne ucini nesto sto je morao onda je to tezi prekrsaj (lv2) -->
+		<lrml:PrescriptiveStatement key="pravilo2_423">
+			<ruleml:Rule key=":rulee2" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+							<ruleml:Atom>
+								<ruleml:Rel iri="lc:radnja_nezakonita_ili_neizvrsena"/>
+								<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+								<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+							</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:optuzeni_primalac_mita"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:optuzeni_sluzbeno_lice"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:mito_vezan_za_kazneni_postupak"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:trazio_mito_nakon"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>taken_bribe_lv2</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<!-- 423 stav 2, negira se jer je podmitio za nezakonito ili neizvrsavanje obaveznog -->
+		<lrml:PrescriptiveStatement key="pravilo3_423">
+			<ruleml:Rule key=":rulee3" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel>taken_bribe_lv2</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Negation>
+						<ruleml:Atom>
+							<ruleml:Rel>taken_bribe_lv1</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:Negation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<!-- 423. stav 3, pravilo da ako je mito vezan za krivicni postupak ide jos strozija kazna -->
+		<lrml:PrescriptiveStatement key="pravilo4_423">
+			<ruleml:Rule key=":rulee4" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>	
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:optuzeni_primalac_mita"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:optuzeni_sluzbeno_lice"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:trazio_mito_nakon"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:mito_vezan_za_kazneni_postupak"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>uzeo_mito_kazneni</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<!-- 423. stav 4, pravilo da ako je mito trazio nakon sto je vec vec uradjena nelegalna ili neizvrsena obavezna radnja pa je kazna blaza -->
+		<lrml:PrescriptiveStatement key="pravilo5_423">
+			<ruleml:Rule key=":rulee5" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>	
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:optuzeni_primalac_mita"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:optuzeni_sluzbeno_lice"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:trazio_mito_nakon"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>trazio_mito_kasnije</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		
+		<!-- kazne -->
+		<lrml:PenaltyStatement key="pen5">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":zatvor_max"/>
+							<ruleml:Var>Meseci</ruleml:Var>
+							<ruleml:Ind>96</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="pen6">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":zatvor_min"/>
+							<ruleml:Var>Meseci</ruleml:Var>
+							<ruleml:Ind>24</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="pen7">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":zatvor_max"/>
+							<ruleml:Var>Meseci</ruleml:Var>
+							<ruleml:Ind>144</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="pen8">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":zatvor_min"/>
+							<ruleml:Var>Meseci</ruleml:Var>
+							<ruleml:Ind>24</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="pen9">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":zatvor_max"/>
+							<ruleml:Var>Meseci</ruleml:Var>
+							<ruleml:Ind>180</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="pen10">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":zatvor_min"/>
+							<ruleml:Var>Meseci</ruleml:Var>
+							<ruleml:Ind>36</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="pen11">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":zatvor_max"/>
+							<ruleml:Var>Meseci</ruleml:Var>
+							<ruleml:Ind>36</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="pen12">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":zatvor_min"/>
+							<ruleml:Var>Meseci</ruleml:Var>
+							<ruleml:Ind>3</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen5"/>
+				<lrml:toPrescriptiveStatement keyref="#pravilo1_423"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen6"/>
+				<lrml:toPrescriptiveStatement keyref="#pravilo1_423"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen7"/>
+				<lrml:toPrescriptiveStatement keyref="#pravilo2_423"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen8"/>
+				<lrml:toPrescriptiveStatement keyref="#pravilo2_423"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen9"/>
+				<lrml:toPrescriptiveStatement keyref="#pravilo4_423"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen10"/>
+				<lrml:toPrescriptiveStatement keyref="#pravilo4_423"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen11"/>
+				<lrml:toPrescriptiveStatement keyref="#pravilo5_423"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#pen12"/>
+				<lrml:toPrescriptiveStatement keyref="#pravilo5_423"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+
+		<lrml:OverrideStatement>
+			<lrml:Override under="#pravilo1_423" over="#pravilo2_423"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#pravilo1_423" over="#pravilo3_423"/>
+		</lrml:OverrideStatement>
+
+		<!-- 424 -->
+
 		<!-- 424 stav 2, podmitio (lv1), bude negiran ako se ispostavi da je podmitio za nezakonito (lv2) -->
 		<lrml:PrescriptiveStatement key="pravilo1_424">
 			<ruleml:Rule key=":rule1" closure="universal" strength="defeasible">
@@ -83,7 +400,7 @@
 		
 		<!-- 424. stav 3, pravilo koje kaze da se moze osloboditi ako je sam prijavio pre otkrivanja mita -->
 		<lrml:PrescriptiveStatement key="pravilo4_424">
-			<ruleml:Rule key=":rule8" closure="universal" strength="defeasible">
+			<ruleml:Rule key=":rule5" closure="universal" strength="defeasible">
 				<ruleml:if>
 					<ruleml:And>	
 						<ruleml:Atom>

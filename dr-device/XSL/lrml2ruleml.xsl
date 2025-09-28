@@ -17,7 +17,7 @@
         <RuleML>
             <xsl:attribute name="proof">proof.ruleml</xsl:attribute>
             <xsl:attribute name="rdf_export">export.rdf</xsl:attribute>
-            <xsl:attribute name="rdf_export_classes">oslobodjen_prijavio_mito given_bribe_lv1 given_bribe_lv2 zatvor_max zatvor_min</xsl:attribute>
+            <xsl:attribute name="rdf_export_classes">trazio_mito_kasnije uzeo_mito_kazneni taken_bribe_lv1 taken_bribe_lv2 oslobodjen_prijavio_mito given_bribe_lv1 given_bribe_lv2 zatvor_max zatvor_min</xsl:attribute>
             <xsl:attribute name="rdf_import">&quot;facts.rdf&quot;</xsl:attribute>
             <xsl:apply-templates select="lrml:Statements"/>
         </RuleML>
