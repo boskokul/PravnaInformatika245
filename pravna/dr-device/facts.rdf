@@ -8,21 +8,15 @@
     
     <!-- o optuzenom -->
     <lc:defendant>Imenko Prezimic</lc:defendant>
-
     <lc:optuzeni_davalac_mita>no</lc:optuzeni_davalac_mita>
 	
 	<lc:optuzeni_primalac_mita>yes</lc:optuzeni_primalac_mita>
-
     <lc:optuzeni_sluzbeno_lice>yes</lc:optuzeni_sluzbeno_lice>
-
     <!-- o samoj radnji i predmetu mita (da li je radio nesto zabranjeno ili nije izvrsio obaveznu radnju) -->
-    <lc:radnja_nezakonita_ili_neizvrsena>yes</lc:radnja_nezakonita_ili_neizvrsena>	
-
-    <lc:mito_vezan_za_kazneni_postupak>yes</lc:mito_vezan_za_kazneni_postupak>
-
+    <lc:radnja_nezakonita_ili_neizvrsena>no</lc:radnja_nezakonita_ili_neizvrsena>	
+    <lc:mito_vezan_za_kazneni_postupak>no</lc:mito_vezan_za_kazneni_postupak>
     <!-- da li je trazio mito nakon sto je vec uradjena nelegalna ili neizvrsena obavezna radnja -->
-    <lc:trazio_mito_nakon>yes</lc:trazio_mito_nakon>
-
+    <lc:trazio_mito_nakon>no</lc:trazio_mito_nakon>
     <!-- da li ga je sam prijavio pre otkrivanja -->
     <lc:prijavio_mito>no</lc:prijavio_mito>
     
