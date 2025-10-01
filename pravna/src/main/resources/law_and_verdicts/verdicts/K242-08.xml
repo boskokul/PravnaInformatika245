@@ -40,6 +40,7 @@
                 <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
                 </references> 
         </meta>
+        <judgmentBody>
         <introduction>
             <p class="subtitle">
                 U IME NARODA !
@@ -258,6 +259,7 @@
                 Sud je obavezao okrivljenog na plaćanje sudskog paušala, koji je odmjeren shodno <ref href="/zkp#art_199">čl.199</ref> i <ref href="/zkp#art_202">202 ZKP</ref> CG, a to
                 imajući u vidu imovinske prilike okrivljenog, te složenost i trajanje postupka.
         </arguments>
+        </judgmentBody>
         <conclusion>
         <organization class="subtitle" id="os" refersTo="#os">
             OSNOVNI SUD U KOTORU

@@ -38,6 +38,7 @@
                 <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
                 </references> 
         </meta>
+        <judgmentBody>
         <introduction>
             <p class="subtitle">
                 U IME CRNE GORE
@@ -288,6 +289,7 @@
             Sa iznijetih razloga odlučeno je kao u izreci presude.
         </p>
         </arguments>
+        </judgmentBody>
         <conclusion>
         <p>
                        <organization id="os" refersTo="#os"> OSNOVNI SUD U BERANAMA</organization>

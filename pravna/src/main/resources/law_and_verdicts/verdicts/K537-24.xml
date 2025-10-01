@@ -29,7 +29,7 @@
         <TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense Attorney"/>
       </references>
     </meta>
-
+    <judgmentBody>
     <introduction>
       <p>CRNA GORA<br/>
       OSNOVNI SUD U PODGORICI<br/>
@@ -65,7 +65,7 @@
       <p>Branilac je istakao olakšavajuće okolnosti: priznavanje djela, neosuđivanost, primjeren život, očekivanje djeteta, izdržavanje porodice i pomoć roditeljima bolesnim.</p>
       <p>Sud je pročitao i ocijenio dokaze: dopise, službene zabilješke, transkript razgovora, izvod iz kaznene evidencije, te utvrdio da je okrivljeni izvršio djelo.</p>
     </arguments>
-
+    </judgmentBody>
     <conclusion>
       <p>OSNOVNI SUD U PODGORICI<br/>
       Dana 01.11.2024. godine.</p>

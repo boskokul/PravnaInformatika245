@@ -41,6 +41,7 @@
                 <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
                 </references> 
         </meta>
+        <judgmentBody>
         <introduction>
             <p class="subtitle">
                         U IME CRNE GORE
@@ -320,6 +321,7 @@
                 Imajući u vidu navedeno, odlučeno je kao u stavu I i II izreke presude.
             </p>
         </arguments>
+        </judgmentBody>
         <conclusion>
             <p class="subtitle">
                        <organization id="os" refersTo="#os"> OSNOVNI SUD U PODGORICI</organization>

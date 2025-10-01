@@ -38,6 +38,7 @@
                 <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
                 </references> 
         </meta>
+        <judgmentBody>
         <introduction>
             <p class="subtitle">
                 U IME NARODA
@@ -222,6 +223,7 @@
                 Troškovi krivičnog postupka su odmjereni shodno <ref href="/zkp#art_199">čl.199.</ref> i <ref href="/zkp#art_202">202.</ref> ZKP.
             </p>
         </arguments>
+        </judgmentBody>
         <conclusion>
             <organization class="subtitle" id="os" refersTo="#os">
                 OSNOVNI SUD U KOTORU

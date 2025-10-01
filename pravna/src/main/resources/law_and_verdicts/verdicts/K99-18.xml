@@ -38,6 +38,7 @@
                 <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
                 </references> 
         </meta>
+        <judgmentBody>
         <introduction>
             <p class="subtitle">
                         U IME CRNE GORE
@@ -820,6 +821,7 @@
                 Na osnovu izloženog, a primjenom čl. <ref href="/zkp#art_374">374 ZKP-a</ref>, odlučeno je kao u izreci presude.
             </p>
         </arguments>
+        </judgmentBody>
         <conclusion>
             <p class="subtitle">
                 OSNOVNI SUD U CETINJU

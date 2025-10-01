@@ -31,7 +31,7 @@
         <TLCRole eId="police" href="/ontology/role/police" showAs="Police Officer"/>
       </references>
     </meta>
-
+    <judgmentBody>
     <introduction>
       <p>Kv. br.51/23</p>
       <p>U IME CRNE GORE</p>
@@ -67,7 +67,7 @@
       <p>Odluka o troškovima postupka donijeta je na osnovu odredbe <ref href="/zkp#art_226">čl. 226</ref> i <ref href="/zkp#art_229">229</ref> Zakonika o krivičnom postupku Crne Gore, a shodno sporazumu stranaka.</p>
       <p>Iz iznijetog je odlučeno kao u izreci presude, a shodno <ref href="/zkp#art_302">čl. 302 Zkp-a CG</ref>.</p>
     </arguments>
-
+    </judgmentBody>
     <conclusion>
       <p>OSNOVNI SUD U PLJEVLJIMA</p>
       <p>Dana 20.12.2023. godine,</p>

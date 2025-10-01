@@ -30,6 +30,7 @@
         <TLCRole eId="lawyer" href="/ontology/role/lawyer" showAs="Lawyer" />
       </references>
     </meta>
+    <judgmentBody>
   <introduction>
     <p class="subtitle">
         U IME NARODA
@@ -361,6 +362,7 @@
       godine, jer ista predstavlja predmet izvršenja krivičnog djela.
     </p>
   </arguments>
+  </judgmentBody>
   <conclusion>
     <p>
           <organization id="os" refersTo="#os">  OSNOVNI SUD U KOTORU</organization>

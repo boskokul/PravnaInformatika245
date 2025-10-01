@@ -28,7 +28,7 @@
         <TLCRole eId="defense" href="/ontology/role/defense" showAs="Defense Attorney"/>
       </references>
     </meta>
-
+    <judgmentBody>
     <introduction>
       <p>CRNA GORA<br/>
       OSNOVNI SUD U ROŽAJAMA<br/>
@@ -75,7 +75,7 @@
       <p>Na osnovu <ref href="/zkp#art_229">čl. 229</ref> u vezi <ref href="/zkp#art_226">čl. 226 st. 3 ZKP-a</ref>, sud je obavezao okrivljenu da na ime troškova krivičnog postupka plati iznos od 30,00 eura, na ime paušala, imajući u vidu trajanje i složenost krivičnog postupka.</p>
       <p>Shodno odredbi <ref href="/krivicni#art_75">čl. 75 KZCG-a</ref>, od okrivljene <party id="im" refersTo="#im" as="#defendant">I.M.</party>, oduzima se novčanica u apoenu od 50,00 eura, serijskog broja X89639957351, kao predmet izvršenja krivičnog djela.</p>
     </arguments>
-
+    </judgmentBody>
     <conclusion>
       <p>OSNOVNI SUD U ROŽAJAMA<br/>
       Dana 06.07.2023. godine.</p>

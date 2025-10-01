@@ -31,7 +31,7 @@
         <TLCRole eId="victim" href="/ontology/role/victim" showAs="Victim"/>
       </references>
     </meta>
-
+    <judgmentBody>
     <introduction>
       <p>OSNOVNI SUD U ROŽAJAMA<br/>
       K.br. 82/18</p>
@@ -80,7 +80,7 @@
       <p>Na osnovu <ref href="/zkp#art_226">čl. 226. st. 2. tač. 9. i st. 3. ZKP</ref>, sud je obavezao okrivljenog da plati na ime paušala iznos od 80,00 eura, u korist budžeta Crne Gore a ovo imajući u vidu trajanje i složenost postupka kao i imovno stanje okrivljenog.</p>
       <p>Sa izloženog odlučeno je kao u dispozitivu ove presude.</p>
     </arguments>
-
+    </judgmentBody>
     <conclusion>
       <p>OSNOVNI SUD U ROŽAJAMA<br/>
       Dana 05.10.2018.godine.</p>

@@ -38,6 +38,7 @@
                 <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
                 </references> 
         </meta>
+        <judgmentBody>
         <introduction>
             <p class="subtitle">
                         U IME CRNE GORE
@@ -462,6 +463,7 @@
                 presude.
             </p>
         </arguments>
+        </judgmentBody>
         <conclusion>
             <p class="subtitle">
                         ZAPISNIČARKA SUTKINJA

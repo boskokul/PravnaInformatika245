@@ -38,6 +38,7 @@
                 <TLCRole eId="expertMedical" href="/ontology/role/expertMedical" showAs="Expert - medical" />
                 </references> 
         </meta>
+        <judgmentBody>
         <introduction>
         <p class="subtitle">
                             U IME CRNE GORE
@@ -260,6 +261,7 @@
                 Sa iznijetih razloga, shodno <ref href="/zkp#art_374">čl. 374</ref> Zakonika o krivičnom postupku C.G., odlučeno je kao u izreci presude.
             </p>
         </arguments>
+        </judgmentBody>
         <conclusion>
             <p>
                 OSNOVNI SUD U BIJELOM POLJU

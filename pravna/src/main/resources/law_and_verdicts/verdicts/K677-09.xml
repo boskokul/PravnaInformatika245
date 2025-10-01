@@ -32,7 +32,7 @@
         <TLCRole eId="witness" href="/ontology/role/witness" showAs="Witness"/>
       </references>
     </meta>
-
+    <judgmentBody>
     <introduction>
       <p>OSNOVNI SUD U BIJELOM POLJU<br/>
       K. br. 677/09</p>
@@ -77,7 +77,7 @@
       <p>Oštećena <party id="mm_victim" refersTo="#mm_victim" as="#victim">M.M.</party>je shodno <ref href="/zkp#art_212">čl. 212 ZKP CG</ref> upućen da imovinsko pravni zahtjev ostvaruje u parničnom postupku.</p>
       <p>Sa iznijetog je odlučeno kao u izreci presude, a shodno <ref href="/zkp#art_363">čl. 363. ZKP CG</ref>.</p>
     </arguments>
-
+    </judgmentBody>
     <conclusion>
       <p>OSNOVNI SUD U BIJELOM POLJU<br/>
       Dana, 26. 02. 2010. godine</p>
