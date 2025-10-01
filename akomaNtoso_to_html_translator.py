@@ -101,7 +101,7 @@ def verdict_xml_to_html(xml_file, output_html):
                 link_text = escape(child.text.strip()) if child.text else ""
                 if href.startswith("/krivicni#"):
                     section_id = href.split("#")[-1]
-                    html_content += f' <a href="../../Laws/html/krivicni.html#{section_id}" target="_blank">{link_text}</a> '
+                    html_content += f' <a href="../../law_html/criminal_law_acoma_ntoso.html#{section_id}" target="_blank">{link_text}</a> '
                 else:
                     html_content += f' <a href="{escape(href)}" target="_blank">{link_text}</a> '
             else:
