@@ -1,34 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import VerdictList from "./components/VerdictsList";
+import Viewer from "./components/Viewer";
+import SideBarButtons from "./components/SideBarButtons";
+import RulesBased from "./components/RulesBased";
+import CaseBased from "./components/CaseBased";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [selectedFile, setSelectedFile] = useState<string | null>(null);
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div style={{ display: "flex", height: "100vh" }}>
+              <div style={{ flex: 1 }}>
+                <VerdictList onSelect={setSelectedFile} />
+              </div>
+              <div style={{ flex: 2 }}>
+                <Viewer filePath={selectedFile} />
+              </div>
+              <div style={{ flex: 3 }}>
+                <SideBarButtons />
+              </div>
+            </div>
+          }
+        />
+        <Route path="/ruleBased" element={<RulesBased />} />
+        <Route path="/caseBased" element={<CaseBased />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
