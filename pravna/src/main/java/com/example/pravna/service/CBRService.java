@@ -34,12 +34,12 @@ public class CBRService {
 
     @PostConstruct
     public void init(){
-        this.caseBase = new LinealCaseBase();
-        loadCasesFromDatabase();
-        simConfig.setDescriptionSimFunction(new Average());
         simConfig = new NNConfig();
+
         simConfig.setDescriptionSimFunction(new Average());
         configureSimilarities();
+        this.caseBase = new InMemoryCaseBase();
+        loadCasesFromDatabase();
     }
 
     private void loadCasesFromDatabase() {
