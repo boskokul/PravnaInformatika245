@@ -11,17 +11,16 @@ import jakarta.validation.Valid;
 
 import java.io.IOException;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/api/legal-cases")
 @RequiredArgsConstructor
-@Slf4j
 public class LegalCaseController {
 
     private final LegalCaseService legalCaseService;
 
     @PostMapping("/decide")
     public ResponseEntity<String> makeDecision(@Valid @RequestBody LegalCaseFacts facts) throws IOException, InterruptedException {
-        log.info("Received request to process legal case for defendant: {}", facts.getDefendant());
         String decision = legalCaseService.makeDecision(facts);
         return ResponseEntity.ok(decision);
     }

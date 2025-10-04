@@ -3,11 +3,11 @@
         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
         xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
-    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#presuda01">
-    <lc:name>presuda 01</lc:name>
+    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#K242025">
+    <lc:name>K24-2025</lc:name>
     
     <!-- o optuzenom -->
-    <lc:defendant>Imenko Prezimic</lc:defendant>
+    <lc:defendant>BIlija</lc:defendant>
     <lc:optuzeni_davalac_mita>no</lc:optuzeni_davalac_mita>
 	
 	<lc:optuzeni_primalac_mita>yes</lc:optuzeni_primalac_mita>

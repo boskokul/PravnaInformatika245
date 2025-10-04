@@ -6,14 +6,14 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "http://localhost:5137")
 @RestController
-@RequestMapping("/verdicts")
-public class VerdictsController {
+@RequestMapping("/law_html")
+public class LawController {
 
     @GetMapping(value = "/{filename}", produces = MediaType.TEXT_HTML_VALUE)
-    public ResponseEntity<Resource> getVerdict(@PathVariable String filename) {
-        Resource resource = new ClassPathResource("law_and_verdicts/verdicts/html/" + filename);
+    public ResponseEntity<Resource> getLaw(@PathVariable String filename) {
+        Resource resource = new ClassPathResource("law_and_verdicts/law_html/" + filename);
         if (!resource.exists()) {
             return ResponseEntity.notFound().build();
         }
