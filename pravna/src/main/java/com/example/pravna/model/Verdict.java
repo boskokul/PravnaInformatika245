@@ -7,6 +7,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @Table(name = "verdicts")
 @Data
@@ -59,6 +61,9 @@ public class Verdict {
     @Column(name = "utvrdjenaKrivicaUPresudi", nullable = false)
     @NotBlank(message = "Case name is required")
     private boolean utvrdjenaKrivicaUPresudi;
+
+    @Column(name = "primjenjeniPropisi", nullable = false)
+    private List<String> primjenjeniPropisi;
 
     @Column(name = "duzinaKazne", nullable = false)
     private int duzinaKazne; // mjeseci
