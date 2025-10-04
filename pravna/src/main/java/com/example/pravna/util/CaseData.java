@@ -122,6 +122,9 @@ public class CaseData implements CaseComponent {
         return new Attribute("id", this.getClass());
     }
 
+    public CaseData() {
+        // Empty constructor for jCOLIBRI
+    }
     public CaseData(Verdict v) {
         this.caseId = v.getId();
         this.name = v.getName();
