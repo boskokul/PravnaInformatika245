@@ -9,13 +9,13 @@ import java.util.List;
 public class VerdictSimilarity implements CaseComponent {
     private Long caseId;
     private String name;
+    private Boolean optuzenoDavalacMita;
+    private Boolean optuzenoPrimalacMita;
     private Boolean optuzeniSluzbenoLice;
-    private Boolean optuzeniDavalacMita;
-    private Boolean optuzeniPrimalacMita;
-    private Boolean optuzeniZahtevaoMito;
-    private Boolean optuzebiPrihvatioObecanjeMita;
-    private Boolean radnjaNezakonita;
-    private Boolean radnjaNeizvrsavanja;
+    private Boolean radnjaNezakonitaIliNeizvrsena;
+    private Boolean mitoVezanZaKazneniPostupak;
+    private Boolean trazioMitoNakon;
+    private Boolean prijavioMito;
     private Integer oslobadjajuceOkolnosti;
     private List<String> primjenjeniPropisi;
     private Boolean utvrdjenaKrivicaUPresudi;
@@ -46,6 +46,22 @@ public class VerdictSimilarity implements CaseComponent {
         this.name = name;
     }
 
+    public Boolean getOptuzenoDavalacMita() {
+        return optuzenoDavalacMita;
+    }
+
+    public void setOptuzenoDavalacMita(Boolean optuzenoDavalacMita) {
+        this.optuzenoDavalacMita = optuzenoDavalacMita;
+    }
+
+    public Boolean getOptuzenoPrimalacMita() {
+        return optuzenoPrimalacMita;
+    }
+
+    public void setOptuzenoPrimalacMita(Boolean optuzenoPrimalacMita) {
+        this.optuzenoPrimalacMita = optuzenoPrimalacMita;
+    }
+
     public Boolean getOptuzeniSluzbenoLice() {
         return optuzeniSluzbenoLice;
     }
@@ -54,52 +70,36 @@ public class VerdictSimilarity implements CaseComponent {
         this.optuzeniSluzbenoLice = optuzeniSluzbenoLice;
     }
 
-    public Boolean getOptuzeniDavalacMita() {
-        return optuzeniDavalacMita;
+    public Boolean getRadnjaNezakonitaIliNeizvrsena() {
+        return radnjaNezakonitaIliNeizvrsena;
     }
 
-    public void setOptuzeniDavalacMita(Boolean optuzeniDavalacMita) {
-        this.optuzeniDavalacMita = optuzeniDavalacMita;
+    public void setRadnjaNezakonitaIliNeizvrsena(Boolean radnjaNezakonitaIliNeizvrsena) {
+        this.radnjaNezakonitaIliNeizvrsena = radnjaNezakonitaIliNeizvrsena;
     }
 
-    public Boolean getOptuzeniPrimalacMita() {
-        return optuzeniPrimalacMita;
+    public Boolean getMitoVezanZaKazneniPostupak() {
+        return mitoVezanZaKazneniPostupak;
     }
 
-    public void setOptuzeniPrimalacMita(Boolean optuzeniPrimalacMita) {
-        this.optuzeniPrimalacMita = optuzeniPrimalacMita;
+    public void setMitoVezanZaKazneniPostupak(Boolean mitoVezanZaKazneniPostupak) {
+        this.mitoVezanZaKazneniPostupak = mitoVezanZaKazneniPostupak;
     }
 
-    public Boolean getOptuzeniZahtevaoMito() {
-        return optuzeniZahtevaoMito;
+    public Boolean getTrazioMitoNakon() {
+        return trazioMitoNakon;
     }
 
-    public void setOptuzeniZahtevaoMito(Boolean optuzeniZahtevaoMito) {
-        this.optuzeniZahtevaoMito = optuzeniZahtevaoMito;
+    public void setTrazioMitoNakon(Boolean trazioMitoNakon) {
+        this.trazioMitoNakon = trazioMitoNakon;
     }
 
-    public Boolean getOptuzebiPrihvatioObecanjeMita() {
-        return optuzebiPrihvatioObecanjeMita;
+    public Boolean getPrijavioMito() {
+        return prijavioMito;
     }
 
-    public void setOptuzebiPrihvatioObecanjeMita(Boolean optuzebiPrihvatioObecanjeMita) {
-        this.optuzebiPrihvatioObecanjeMita = optuzebiPrihvatioObecanjeMita;
-    }
-
-    public Boolean getRadnjaNezakonita() {
-        return radnjaNezakonita;
-    }
-
-    public void setRadnjaNezakonita(Boolean radnjaNezakonita) {
-        this.radnjaNezakonita = radnjaNezakonita;
-    }
-
-    public Boolean getRadnjaNeizvrsavanja() {
-        return radnjaNeizvrsavanja;
-    }
-
-    public void setRadnjaNeizvrsavanja(Boolean radnjaNeizvrsavanja) {
-        this.radnjaNeizvrsavanja = radnjaNeizvrsavanja;
+    public void setPrijavioMito(Boolean prijavioMito) {
+        this.prijavioMito = prijavioMito;
     }
 
     public Integer getOslobadjajuceOkolnosti() {
@@ -137,15 +137,16 @@ public class VerdictSimilarity implements CaseComponent {
     public VerdictSimilarity(Verdict v) {
         this.caseId = v.getId();
         this.name = v.getName();
-        this.optuzebiPrihvatioObecanjeMita = v.isOptuzebiPrihvatioObecanjeMita();
         this.primjenjeniPropisi = v.getPrimjenjeniPropisi();
-        this.optuzeniDavalacMita = v.isOptuzeniDavalacMita();
-        this.optuzeniPrimalacMita = v.isOptuzeniPrimalacMita();
-        this.optuzeniSluzbenoLice = v.isOptuzeniSluzbenoLice();
-        this.utvrdjenaKrivicaUPresudi = v.isUtvrdjenaKrivicaUPresudi();
-        this.optuzeniZahtevaoMito = v.isOptuzeniZahtevaoMito();
+        this.optuzeniSluzbenoLice = v.getOptuzeniSluzbenoLice();
+        this.utvrdjenaKrivicaUPresudi = v.getUtvrdjenaKrivicaUPresudi();
         this.oslobadjajuceOkolnosti = v.getOslobadjajuceOkolnosti();
-        this.radnjaNeizvrsavanja = v.isRadnjaNezakonita();
-        this.radnjaNezakonita = v.isRadnjaNezakonita();
+        this.radnjaNezakonitaIliNeizvrsena = v.getRadnjaNezakonitaIliNeizvrsena();
+        this.prijavioMito = v.getPrijavioMito();
+        this.trazioMitoNakon = v.getTrazioMitoNakon();
+        this.mitoVezanZaKazneniPostupak = v.getMitoVezanZaKazneniPostupak();
+        this.optuzenoPrimalacMita = v.getOptuzenoPrimalacMita();
+        this.optuzenoDavalacMita = v.getOptuzenoDavalacMita();
+
     }
 }
