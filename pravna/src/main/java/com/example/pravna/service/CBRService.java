@@ -74,7 +74,7 @@ public class CBRService {
 
     }
 
-    public List<VerdictSimilarity> findTop5Similar(CaseData input) throws ExecutionException {
+    public List<VerdictSimilarity> findTop5Similar(CaseData input){
         // novi slucaj
         CBRQuery query = new CBRQuery();
         query.setDescription(input);

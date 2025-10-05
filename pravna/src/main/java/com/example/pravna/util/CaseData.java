@@ -1,9 +1,12 @@
 package com.example.pravna.util;
 
+import com.example.pravna.model.LegalCaseFacts;
+import com.example.pravna.model.LegalDecisionResult;
 import com.example.pravna.model.Verdict;
 import es.ucm.fdi.gaia.jcolibri.cbrcore.Attribute;
 import es.ucm.fdi.gaia.jcolibri.cbrcore.CaseComponent;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CaseData implements CaseComponent {
@@ -139,5 +142,20 @@ public class CaseData implements CaseComponent {
         this.optuzenoPrimalacMita = v.getOptuzenoPrimalacMita();
         this.optuzenoDavalacMita = v.getOptuzenoDavalacMita();
 
+    }
+
+    public CaseData(LegalCaseFacts v) {
+        this.caseId = v.getId();
+        this.name = v.getName();
+        this.primjenjeniPropisi = new ArrayList<>(); // na pocetku je neinicalizovano
+        this.optuzeniSluzbenoLice = v.getOptuzeniSluzbenoLice();
+        this.utvrdjenaKrivicaUPresudi = false; // na pocetku
+        this.oslobadjajuceOkolnosti = 2; // ovo promijeniti sa Boskom
+        this.radnjaNezakonitaIliNeizvrsena = v.getRadnjaNezakonitaIliNeizvrsena();
+        this.prijavioMito = v.getPrijavioMito();
+        this.trazioMitoNakon = v.getTrazioMitoNakon();
+        this.mitoVezanZaKazneniPostupak = v.getMitoVezanZaKazneniPostupak();
+        this.optuzenoPrimalacMita = v.getOptuzenoPrimalacMita();
+        this.optuzenoDavalacMita = v.getOptuzenoDavalacMita();
     }
 }
