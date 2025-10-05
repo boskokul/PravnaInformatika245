@@ -60,8 +60,8 @@ public class CBRService {
     private void configureSimilarities() {
         // Boolean atributi
         List<String> booleanAttrs = Arrays.asList(
-                "optuzeniSluzbenoLice", "optuzeniDavalacMita", "optuzeniPrimalacMita", "optuzeniZahtevaoMito",
-                "optuzebiPrihvatioObecanjeMita", "radnjaNezakonita", "radnjaNeizvrsavanja"
+                "optuzenoDavalacMita", "optuzenoPrimalacMita", "optuzeniSluzbenoLice", "radnjaNezakonitaIliNeizvrsena",
+                "mitoVezanZaKazneniPostupak", "trazioMitoNakon", "prijavioMito"
         );
         for (String attr : booleanAttrs)
             simConfig.addMapping(new Attribute(attr, CaseData.class), new Equal());
@@ -69,7 +69,7 @@ public class CBRService {
         //razmisliti da li da promijenimo interval u gausovu slicnost
         simConfig.addMapping(
                 new Attribute("oslobadjajuceOkolnosti", CaseData.class),
-                new Interval(5) //ako su razliciti za vise od 3, nisu slicni
+                new Interval(5) //ako su razliciti za vise od 5, nisu slicni
         );
 
     }
@@ -99,16 +99,16 @@ public class CBRService {
             VerdictSimilarity vs = new VerdictSimilarity();
             vs.setName(dto.getName());
             vs.setCaseId(dto.getCaseId());
-            vs.setOptuzebiPrihvatioObecanjeMita(dto.getOptuzebiPrihvatioObecanjeMita());
-            vs.setOptuzeniPrimalacMita(dto.getOptuzeniPrimalacMita());
-            vs.setOptuzeniDavalacMita(dto.getOptuzeniDavalacMita());
+            vs.setPrijavioMito(dto.getPrijavioMito());
+            vs.setTrazioMitoNakon(dto.getTrazioMitoNakon());
+            vs.setMitoVezanZaKazneniPostupak(dto.getMitoVezanZaKazneniPostupak());
             vs.setOptuzeniSluzbenoLice(dto.getOptuzeniSluzbenoLice());
             vs.setPrimjenjeniPropisi(dto.getPrimjenjeniPropisi());
             vs.setOslobadjajuceOkolnosti(dto.getOslobadjajuceOkolnosti());
-            vs.setRadnjaNeizvrsavanja(dto.getRadnjaNeizvrsavanja());
-            vs.setRadnjaNezakonita(dto.getRadnjaNezakonita());
+            vs.setRadnjaNezakonitaIliNeizvrsena(dto.getRadnjaNezakonitaIliNeizvrsena());
+            vs.setOptuzenoPrimalacMita(dto.getOptuzenoPrimalacMita());
             vs.setUtvrdjenaKrivicaUPresudi(dto.getUtvrdjenaKrivicaUPresudi());
-            vs.setOptuzeniZahtevaoMito(dto.getOptuzeniZahtevaoMito());
+            vs.setOptuzenoDavalacMita(dto.getOptuzenoDavalacMita());
 
             vs.setSimilarity(r.getEval());
             return vs;
