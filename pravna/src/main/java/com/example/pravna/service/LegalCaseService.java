@@ -72,26 +72,21 @@ public class LegalCaseService {
     public static void saveAkomaNtosoToFile(LegalDecisionResult result, String fileName) throws IOException {
         String xml = generateAkomaNtoso(result);
 
-        // Resolve path to src/main/resources
-        Path resourcePath = Paths.get("src", "main", "resources", "law_and_verdicts", fileName);
+        String path = Paths.get(System.getProperty("user.dir"), "data", "verdicts", fileName).toString();
 
-        try (BufferedWriter writer = Files.newBufferedWriter(resourcePath, StandardCharsets.UTF_8)) {
-            writer.write(xml);
-        }
+        Files.writeString(Paths.get(path), xml);
     }
 
     /**
      * Saves HTML to file
      */
-    public static void saveHtmlToResources(LegalDecisionResult result, String fileName) throws IOException {
+    public static void saveHtmlToFile(LegalDecisionResult result, String fileName) throws IOException {
         String html = generateHtml(result);
 
-        // Resolve path to src/main/resources
-        Path resourcePath = Paths.get("src", "main", "resources", "law_and_verdicts", fileName);
+        String path = Paths.get(System.getProperty("user.dir"), "data", "verdicts", "html", fileName).toString();
 
-        try (BufferedWriter writer = Files.newBufferedWriter(resourcePath, StandardCharsets.UTF_8)) {
-            writer.write(html);
-        }
+        Files.writeString(Paths.get(path), html);
+
     }
 
 
@@ -313,7 +308,7 @@ public class LegalCaseService {
         xml.append("Sudija <party id=\"judge\" refersTo=\"#judge\" as=\"#judge\">").append(escapeXml(result.getJudgeName())).append(",</party> ");
         xml.append("uz učešće <party id=\"clerk\" refersTo=\"#clerk\" as=\"#clerk\">").append(escapeXml(result.getClerkName())).append("</party> ");
         xml.append("kao zapisničara, u krivičnom predmetu okrivljenog <party id=\"defendant\" refersTo=\"#defendant\" as=\"#defendant\">").append(escapeXml(result.getDefendantName())).append(",</party> ");
-        xml.append("zbog krivičnog djela ").append(escapeXml(result.getLaw())).append(", ");
+        xml.append("zbog krivičnog djela ").append("<ref href=\"/krivicni#art_").append(result.getLaw_article()).append("_para_").append(result.getLaw_paragraph()).append("\">čl.").append(result.getLaw_article()).append(" st.").append(result.getLaw_paragraph()).append(" Krivičnog zakonika</ref>").append(", ");
         xml.append("donio je dana ").append(formattedDate).append(" godine\n");
         xml.append("            </p>\n");
         xml.append("        </introduction>\n");
@@ -418,7 +413,7 @@ public class LegalCaseService {
         html.append("    <p>").append(escapeHtml(result.getCourtName())).append(", Sudija ").append(escapeHtml(result.getJudgeName())).append(", ");
         html.append("uz učešće ").append(escapeHtml(result.getClerkName())).append(" kao zapisničara, ");
         html.append("u krivičnom predmetu protiv okrivljenog ").append(escapeHtml(result.getDefendantName())).append(", ");
-        html.append("zbog krivičnog djela ").append(escapeHtml(result.getLaw())).append(", ");
+        html.append("zbog krivičnog djela ").append(result.getLawHTML());
         html.append("donio je dana ").append(displayDate).append(" godine</p>\n\n");
 
         // Presuda
@@ -428,13 +423,13 @@ public class LegalCaseService {
 
         if(result.getSentence()>0){
             html.append("    <p class='centered'>Kriv je</p>\n");
-            html.append("    <p >").append(escapeHtml(result.getDecisionString())).append("</p>\n");
+            html.append("    <p >").append(result.getDecisionString()).append("</p>\n");
             html.append("    <p class='centered'>OSUĐUJE</p>\n");
             html.append("    <p>").append(escapeHtml(result.getSentenceString())).append("</p>\n");
             html.append("    <br>\n");
         }else{
             html.append("    <p class='centered'>SE OSLOBAĐA OPTUŽBI</p>\n");
-            html.append("    <p>").append(escapeHtml(result.getDecisionString())).append("</p>\n");
+            html.append("    <p>").append(result.getDecisionString()).append("</p>\n");
             html.append("    <br>\n");
         }
 

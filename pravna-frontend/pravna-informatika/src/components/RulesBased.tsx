@@ -15,7 +15,8 @@ export default function RulesBased() {
 
   const [verdict, setVerdict] = useState<{
     decision: string | null;
-    law: string | null;
+    law_article: string | null;
+    law_paragraph: string | null;
     sentence: number | null;
     explanation: string | null;
     caseNumber: string | null;
@@ -253,13 +254,26 @@ export default function RulesBased() {
             </label>
 
             <label>
-              <strong>Prema zakonu:</strong>
+              <strong>Prema članu zakona broj:</strong>
               <input
                 type="text"
-                value={verdict.law ?? ""}
+                value={verdict.law_article ?? ""}
                 onChange={(e) =>
                   setVerdict((prev) =>
-                    prev ? { ...prev, law: e.target.value } : prev
+                    prev ? { ...prev, law_article: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Paragraf broj:</strong>
+              <input
+                type="text"
+                value={verdict.law_paragraph ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev ? { ...prev, law_paragraph: e.target.value } : prev
                   )
                 }
               />

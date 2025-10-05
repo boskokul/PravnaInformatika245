@@ -1,12 +1,12 @@
 package com.example.pravna.model;
 
-import java.time.LocalDate;
+import java.util.regex.*;
 import java.util.HashMap;
 import java.util.Map;
 
 public class LegalDecisionResult {
-
-    private String law;
+    private int law_article;
+    private int law_paragraph;
     private String decision;
     private String explanation;
     private int minSentenceMonths;
@@ -32,10 +32,9 @@ public class LegalDecisionResult {
     public LegalDecisionResult() {
     }
 
-    public LegalDecisionResult(String law, String decision, String explanation, int minSentenceMonths, int maxSentenceMonths,
+    public LegalDecisionResult(String decision, String explanation, int minSentenceMonths, int maxSentenceMonths,
                                String caseNumber, String courtName, String countryCode, String judgeName,
-                               String clerkName, String defendantName, int sentence) {
-        this.law = law;
+                               String clerkName, String defendantName, int sentence, int law_article, int law_paragraph) {
         this.decision = decision;
         this.explanation = explanation;
         this.minSentenceMonths = minSentenceMonths;
@@ -47,15 +46,25 @@ public class LegalDecisionResult {
         this.clerkName = clerkName;
         this.defendantName = defendantName;
         this.sentence = sentence;
+        this.law_article = law_article;
+        this.law_paragraph = law_paragraph;
     }
 
     // Getters and setters for all fields...
-
-    public String getLaw() { return law; }
-
-    public void setLaw(String law){ this.law = law; }
     public void setLawFromViolation(String violaion) {
-        this.law = this.lawArticlesToViolations.get(violaion);
+
+        var law = this.lawArticlesToViolations.get(violaion);
+        Pattern pattern = Pattern.compile("art_(\\d+)_para_(\\d+)");
+        Matcher matcher = pattern.matcher(law);
+
+        if (matcher.matches()) {
+            int article = Integer.parseInt(matcher.group(1));
+            int paragraph = Integer.parseInt(matcher.group(2));
+            this.law_article = article;
+            this.law_paragraph = paragraph;
+        } else {
+            System.out.println("Invalid format");
+        }
     }
 
     public String getDecision() { return decision; }
@@ -101,10 +110,10 @@ public class LegalDecisionResult {
 
     public String getDecisionString(){
         if(this.sentence > 0){
-            return "Što je: Dana ... učinio delo iz " + this.getLaw() + " te ga sud";
+            return "Što je: Dana ... učinio delo iz " + this.getLawHTML() + " te ga sud";
         }
         else
-            return "Da je: Dana ... učinio delo iz " + this.getLaw();
+            return "Da je: Dana ... učinio delo iz " + this.getLawHTML();
     }
 
     public String getExplanationString(){
@@ -113,5 +122,32 @@ public class LegalDecisionResult {
         }
         else
             return "Tekst obrazloženja";
+    }
+
+    public int getLaw_paragraph() {
+        return law_paragraph;
+    }
+
+    public void setLaw_paragraph(int law_paragraph) {
+        this.law_paragraph = law_paragraph;
+    }
+
+    public int getLaw_article() {
+        return law_article;
+    }
+
+    public void setLaw_article(int law_article) {
+        this.law_article = law_article;
+    }
+
+    public String getLawHTML(){
+        if(this.law_paragraph>0 && this.law_article > 0) {
+
+            return "<a href=\"../../law_html/criminal_law_acoma_ntoso.html#"
+                    + "art_" + this.getLaw_article() + "_para_" + this.getLaw_paragraph()
+                    + "\">čl." + this.getLaw_article() + "st." + this.getLaw_paragraph() +" Krivičnog zakonika</a> ,";
+        }else {
+            return "";
+        }
     }
 }
