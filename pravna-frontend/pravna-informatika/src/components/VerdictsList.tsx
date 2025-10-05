@@ -22,18 +22,23 @@ export default function VerdictList({
 }) {
   return (
     <div
-      style={{ width: "300px", borderRight: "1px solid #ccc", padding: "1rem" }}
+      style={{
+        width: "300px",
+        borderRight: "1px solid #ccc",
+        padding: "1rem",
+        height: "100vh", // full height of the window
+        overflowY: "auto", // enables vertical scrolling
+        boxSizing: "border-box", // ensures padding doesn't exceed height
+      }}
     >
-      <ul>
+      <ul style={{ padding: 0, margin: 0, listStyle: "none" }}>
         {verdicts.map((v) => (
-          <li key={v}>
+          <li key={v} style={{ marginBottom: "1rem" }}>
             <button
               onClick={() => onSelect("http://localhost:8085/verdicts/" + v)}
             >
               presuda {v.slice(0, -5)}
             </button>
-            <br />
-            <br />
           </li>
         ))}
       </ul>

@@ -14,9 +14,18 @@ export default function RulesBased() {
   });
 
   const [verdict, setVerdict] = useState<{
-    decision: string;
-    law: string;
-    sentence: string;
+    decision: string | null;
+    law: string | null;
+    sentence: number | null;
+    explanation: string | null;
+    caseNumber: string | null;
+    courtName: string | null;
+    countryCode: string | null;
+    judgeName: string | null;
+    clerkName: string | null;
+    defendantName: string | null;
+    minSentenceMonths: number | null;
+    maxSentenceMonths: number | null;
   } | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -35,20 +44,29 @@ export default function RulesBased() {
       body: JSON.stringify(formData),
     });
 
-    const resultText = await res.text();
+    const result = await res.json();
 
-    const parsed = {
-      decision: "Ovde cu odluku",
-      law: "Ovde cu zakon",
-      sentence: resultText,
-    };
+    setVerdict(result);
+  };
 
-    setVerdict(parsed);
+  const handleSaveVerdict = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const res = await fetch(
+      "http://localhost:8085/api/legal-cases/save-decision",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(verdict),
+      }
+    );
+
+    const result = await res.json();
+
+    // setVerdict(result);
   };
 
   return (
     <div style={{ display: "flex", gap: "2rem", padding: "2rem" }}>
-      {/* Form Section */}
       <div style={{ flex: 1 }}>
         <h2>Unos činjenica za presudu</h2>
         <form
@@ -78,7 +96,7 @@ export default function RulesBased() {
               name="optuzenoDavalacMita"
               onChange={handleChange}
             />{" "}
-            Optuženi je dao mita
+            Optuženi je dao mito
           </label>
           <label>
             <input
@@ -143,18 +161,187 @@ export default function RulesBased() {
             borderRadius: "8px",
             backgroundColor: "#f9f9f9",
             color: "black",
+            width: "auto",
           }}
         >
-          <h3>Rezultat presude</h3>
-          <p>
-            <strong>Odluka:</strong> {verdict.decision}
-          </p>
-          <p>
-            <strong>Pravni osnov:</strong> {verdict.law}
-          </p>
-          <p>
-            <strong>Izrečena kazna:</strong> {verdict.sentence}
-          </p>
+          <h3>Rezultat presude po pravilima</h3>
+          <form
+            style={{ display: "grid", gap: "1rem", gridTemplateColumns: "1fr" }}
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Presuda je sačuvana ili prosleđena dalje.");
+            }}
+          >
+            <label>
+              <strong>Broj predmeta:</strong>
+              <input
+                disabled
+                type="text"
+                value={verdict.caseNumber ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev ? { ...prev, caseNumber: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Sud:</strong>
+              <input
+                type="text"
+                value={verdict.courtName ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev ? { ...prev, courtName: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Oznaka države:</strong>
+              <input
+                type="text"
+                value={verdict.countryCode ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev ? { ...prev, countryCode: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Sudija:</strong>
+              <input
+                type="text"
+                value={verdict.judgeName ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev ? { ...prev, judgeName: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Zapisničar:</strong>
+              <input
+                type="text"
+                value={verdict.clerkName ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev ? { ...prev, clerkName: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Okrivljeni:</strong>
+              <input
+                disabled
+                type="text"
+                value={verdict.defendantName ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev ? { ...prev, defendantName: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Prema zakonu:</strong>
+              <input
+                type="text"
+                value={verdict.law ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev ? { ...prev, law: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Minimalna predložena kazna (meseci):</strong>
+              <input
+                disabled
+                type="number"
+                value={verdict.minSentenceMonths ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev
+                      ? { ...prev, minSentenceMonths: Number(e.target.value) }
+                      : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Maksimalna predložena kazna (meseci):</strong>
+              <input
+                disabled
+                type="number"
+                value={verdict.maxSentenceMonths ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev
+                      ? { ...prev, maxSentenceMonths: Number(e.target.value) }
+                      : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Konačna kazna (meseci):</strong>
+              <input
+                type="number"
+                value={verdict.sentence ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev ? { ...prev, sentence: Number(e.target.value) } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Odluka:</strong>
+              <textarea
+                rows={4}
+                style={{ resize: "vertical", minHeight: "100px" }}
+                value={verdict.decision ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev ? { ...prev, decision: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Obrazloženje:</strong>
+              <textarea
+                rows={4}
+                style={{ resize: "vertical", minHeight: "100px" }}
+                value={verdict.explanation ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev ? { ...prev, explanation: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <button type="submit" onClick={handleSaveVerdict}>
+              Sačuvaj presudu
+            </button>
+          </form>
         </div>
       )}
     </div>
