@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { VerdictSimilarity } from "../types/VerdictSimilarity";
+import Viewer from "./Viewer";
 
 export default function RulesBased() {
   const [formData, setFormData] = useState({
@@ -29,6 +31,8 @@ export default function RulesBased() {
     maxSentenceMonths: number | null;
   } | null>(null);
 
+  const [similarVerdicts, setSimilarVerdicts] = useState<VerdictSimilarity[] | null>(null); // for case based reasoning
+  const [selectedFile, setSelectedFile] = useState<string | null>(null); // for file show in cbr
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
@@ -48,10 +52,25 @@ export default function RulesBased() {
     const result = await res.json();
 
     setVerdict(result);
+    setSimilarVerdicts(null);
   };
 
-  const handleSaveVerdict = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleCBR = async (e?: React.SyntheticEvent) => {
+    e?.preventDefault();
+    const res = await fetch("http://localhost:8085/api/case-based-reasoning/decide", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await res.json();
+
+    setSimilarVerdicts(result);
+    console.log(similarVerdicts);
+  };
+
+  const handleSaveVerdict = async (e?: React.SyntheticEvent) => {
+    e?.preventDefault();
     const res = await fetch(
       "http://localhost:8085/api/legal-cases/save-decision",
       {
@@ -71,7 +90,7 @@ export default function RulesBased() {
       <div style={{ flex: 1 }}>
         <h2>Unos činjenica za presudu</h2>
         <form
-          onSubmit={handleSubmit}
+          
           style={{
             display: "grid",
             gap: "1rem",
@@ -147,8 +166,11 @@ export default function RulesBased() {
             />{" "}
             Prijavio mito pre otkrivanja
           </label>
-          <button type="submit" style={{ marginTop: "1rem" }}>
+          <button type="button" style={{ marginTop: "1rem" }} onClick={handleSubmit}>
             Pošalji na odlučivanje
+          </button>
+          <button type="button" style={{ marginTop: "1rem" }} onClick={handleCBR}>
+            Dobavi slične slučajeve
           </button>
         </form>
       </div>
@@ -357,6 +379,71 @@ export default function RulesBased() {
             </button>
           </form>
         </div>
+      )}
+
+
+      {similarVerdicts && (
+        <div
+          style={{
+            display: "grid",
+            gap: "1rem",
+            gridTemplateColumns: "1fr",
+            maxWidth: "400px",
+          }}
+        >
+        <h3>Slične presude</h3>
+          <div style={{ display: "flex", height: "100vh" }}>
+          <div
+            style={{
+              flex: 1,
+              width: "300px",
+              borderRight: "1px solid #ccc",
+              padding: "1rem",
+              height: "100vh",
+              overflowY: "auto",
+              boxSizing: "border-box",
+            }}
+          >
+            <ul style={{ padding: 0, margin: 0, listStyle: "none" }}>
+              {similarVerdicts.map((v, index) => (
+                <li key={index} style={{ marginBottom: "1.5rem" }}>
+                  <button
+                    style={{
+                      background: "none",
+                      border: "none",
+                      color: "#007bff",
+                      cursor: "pointer",
+                      textAlign: "left",
+                      fontSize: "1rem",
+                      fontWeight: "bold",
+                      marginBottom: "0.5rem",
+                    }}
+                    onClick={() => setSelectedFile("http://localhost:8085/verdicts/" + v.name+".html")}
+                  >
+                  {v.name}
+                  </button>
+
+                  {/* Only show fields that are true */}
+                  <ul style={{ margin: 0, paddingLeft: "1rem", fontSize: "0.9rem" }}>
+                    {Object.entries(v)
+                      .filter(([key, value]) => value === true && key !== "name")
+                      .map(([key]) => (
+                        <li key={key} style={{ color: "#555" }}>
+                          {key}
+                        </li>
+                      ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div style={{ flex: 2 }}>
+              <Viewer filePath={selectedFile} />
+          </div>
+        </div>
+        {/* NOVA FORMA ZA CUVANJE PRESUDE */}
+      </div>
+
       )}
     </div>
   );
