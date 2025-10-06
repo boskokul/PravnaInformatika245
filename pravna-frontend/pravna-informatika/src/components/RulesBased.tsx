@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { VerdictSimilarity } from "../types/VerdictSimilarity";
 import Viewer from "./Viewer";
+import { VerdictFile } from "../types/VedictFile";
 
 export default function RulesBased() {
   const [formData, setFormData] = useState({
@@ -29,7 +30,39 @@ export default function RulesBased() {
     defendantName: string | null;
     minSentenceMonths: number | null;
     maxSentenceMonths: number | null;
-  } | null>(null);
+  } | null>();
+
+  //for cbr
+  const [cbrVedict, setcbrVerdict] = useState<VerdictFile>(
+    {decision:"",
+    law_article:"",
+    law_paragraph:"",
+    sentence: 0,
+    explanation:"",
+    caseNumber: "",
+    courtName: "",
+    countryCode: "",
+    judgeName: "",
+    clerkName: "",
+    defendantName: "",
+    minSentenceMonths: 0,
+    maxSentenceMonths: 0});
+  //variable for creating new metadata about verdict
+  const verdictSim: VerdictSimilarity = {
+    caseId: 0,
+    name: "",
+    optuzenoDavalacMita: false,
+    optuzenoPrimalacMita: false,
+    optuzeniSluzbenoLice: false,
+    radnjaNezakonitaIliNeizvrsena: false,
+    mitoVezanZaKazneniPostupak: false,
+    trazioMitoNakon: false,
+    prijavioMito: false,
+    oslobadjajuceOkolnosti: 0,
+    primjenjeniPropisi: [],
+    utvrdjenaKrivicaUPresudi: false,
+    similarity: 0,
+  };
 
   const [similarVerdicts, setSimilarVerdicts] = useState<VerdictSimilarity[] | null>(null); // for case based reasoning
   const [selectedFile, setSelectedFile] = useState<string | null>(null); // for file show in cbr
@@ -64,7 +97,20 @@ export default function RulesBased() {
     });
 
     const result = await res.json();
-
+    //initializing future verdict fields
+    verdictSim.name = formData.name;
+    verdictSim.mitoVezanZaKazneniPostupak = formData.mitoVezanZaKazneniPostupak;
+    verdictSim.optuzeniSluzbenoLice = formData.optuzeniSluzbenoLice;
+    verdictSim.optuzenoDavalacMita = formData.optuzenoDavalacMita;
+    verdictSim.optuzenoPrimalacMita = formData.optuzenoPrimalacMita;
+    verdictSim.oslobadjajuceOkolnosti = 2;
+    verdictSim.prijavioMito = formData.prijavioMito;
+    verdictSim.radnjaNezakonitaIliNeizvrsena = formData.radnjaNezakonitaIliNeizvrsena;
+    verdictSim.trazioMitoNakon = formData.trazioMitoNakon;
+    cbrVedict.caseNumber = formData.name;
+    cbrVedict.defendantName = formData.defendant;
+    setcbrVerdict(cbrVedict)
+    
     setSimilarVerdicts(result);
     console.log(similarVerdicts);
   };
@@ -82,6 +128,23 @@ export default function RulesBased() {
 
     const result = await res.json();
 
+    // setVerdict(result);
+  };
+
+  const handleSaveCBRVerdict = async (e?: React.SyntheticEvent) => {
+    e?.preventDefault();
+    const res = await fetch(
+      "http://localhost:8085/api/legal-cases/save-decision",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(cbrVedict),
+      }
+    );
+
+    const result = await res.json();
+    verdictSim.utvrdjenaKrivicaUPresudi = (cbrVedict.sentence!=0);
+    //TODO: call method for saving verdict metadata 
     // setVerdict(result);
   };
 
@@ -391,8 +454,180 @@ export default function RulesBased() {
             maxWidth: "400px",
           }}
         >
-        <h3>Slične presude</h3>
+          {/* NOVA FORMA ZA CUVANJE PRESUDE */}
+        <div
+          style={{
+            flex: 3,
+            border: "1px solid #ccc",
+            padding: "1rem",
+            borderRadius: "8px",
+            backgroundColor: "#f9f9f9",
+            color: "black",
+            width: "auto",
+          }}
+        >
+          <h3>Čuvanje presude</h3>
+          <form
+            style={{ display: "grid", gap: "1rem", gridTemplateColumns: "1fr" }}
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Presuda je sačuvana ili prosleđena dalje.");
+            }}
+          >
+            <label>
+              <strong>Broj predmeta:</strong>
+              <input
+                disabled
+                type="text"
+                value={cbrVedict.caseNumber ?? ""}
+                onChange={(e) =>
+                  setcbrVerdict((prev) =>
+                    prev ? { ...prev, caseNumber: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Sud:</strong>
+              <input
+                type="text"
+                value={cbrVedict.courtName ?? ""}
+                onChange={(e) =>
+                  setcbrVerdict((prev) =>
+                    prev ? { ...prev, courtName: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Oznaka države:</strong>
+              <input
+                type="text"
+                value={cbrVedict.countryCode ?? ""}
+                onChange={(e) =>
+                  setcbrVerdict((prev) =>
+                    prev ? { ...prev, countryCode: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Sudija:</strong>
+              <input
+                type="text"
+                value={cbrVedict.judgeName ?? ""}
+                onChange={(e) =>
+                  setcbrVerdict((prev) =>
+                    prev ? { ...prev, judgeName: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Zapisničar:</strong>
+              <input
+                type="text"
+                value={cbrVedict.clerkName ?? ""}
+                onChange={(e) =>
+                  setcbrVerdict((prev) =>
+                    prev ? { ...prev, clerkName: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Okrivljeni:</strong>
+              <input
+                disabled
+                type="text"
+                value={cbrVedict.defendantName ?? ""}
+                onChange={(e) =>
+                  setcbrVerdict((prev) =>
+                    prev ? { ...prev, defendantName: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Prema članu zakona broj:</strong>
+              <input
+                type="text"
+                value={cbrVedict.law_article ?? ""}
+                onChange={(e) =>
+                  setcbrVerdict((prev) =>
+                    prev ? { ...prev, law_article: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Paragraf broj:</strong>
+              <input
+                type="text"
+                value={cbrVedict.law_paragraph ?? ""}
+                onChange={(e) =>
+                  setcbrVerdict((prev) =>
+                    prev ? { ...prev, law_paragraph: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Konačna kazna (meseci):</strong>
+              <input
+                type="number"
+                value={cbrVedict.sentence ?? ""}
+                onChange={(e) =>
+                  setcbrVerdict((prev) =>
+                    prev ? { ...prev, sentence: Number(e.target.value) } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Odluka:</strong>
+              <textarea
+                rows={4}
+                style={{ resize: "vertical", minHeight: "100px" }}
+                value={cbrVedict.decision ?? ""}
+                onChange={(e) =>
+                  setcbrVerdict((prev) =>
+                    prev ? { ...prev, decision: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
+              <strong>Obrazloženje:</strong>
+              <textarea
+                rows={4}
+                style={{ resize: "vertical", minHeight: "100px" }}
+                value={cbrVedict.explanation ?? ""}
+                onChange={(e) =>
+                  setcbrVerdict((prev) =>
+                    prev ? { ...prev, explanation: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <button type="submit" onClick={handleSaveCBRVerdict}>
+              Sačuvaj presudu
+            </button>
+          </form>
+        </div>
           <div style={{ display: "flex", height: "100vh" }}>
+          <h3>Slične presude</h3>
           <div
             style={{
               flex: 1,
@@ -426,12 +661,13 @@ export default function RulesBased() {
                   {/* Only show fields that are true */}
                   <ul style={{ margin: 0, paddingLeft: "1rem", fontSize: "0.9rem" }}>
                     {Object.entries(v)
-                      .filter(([key, value]) => value === true && key !== "name")
-                      .map(([key]) => (
-                        <li key={key} style={{ color: "#555" }}>
-                          {key}
+                      .filter(([key, value]) => value === true && key !== "name" || key == "primjenjeniPropisi")
+                      .map(([key, value]) => (
+                        <li key={key == "primenjeniPropisi"? value:key} style={{ color: "#555" }}>
+                          {(key == "primenjeniPropisi")? value:key}
                         </li>
                       ))}
+                    
                   </ul>
                 </li>
               ))}
@@ -441,7 +677,7 @@ export default function RulesBased() {
               <Viewer filePath={selectedFile} />
           </div>
         </div>
-        {/* NOVA FORMA ZA CUVANJE PRESUDE */}
+        
       </div>
 
       )}
