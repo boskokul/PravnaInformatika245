@@ -1,0 +1,32 @@
+-- SQL INSERT script generated from the provided data.
+-- Note: 'primjenjeni_propisi' is set to a default value as per your request.
+-- 'oslobadjajuce_okolnosti' is calculated by counting items in the 'olaksavajuce_okolnosti' column.
+
+INSERT INTO verdicts (
+    name,
+    optuzeno_davalac_mita,
+    optuzeno_primalac_mita,
+    optuzeni_sluzbeno_lice,
+    radnja_nezakonita_ili_neizvrsena,
+    mito_vezan_za_kazneni_postupak,
+    trazio_mito_nakon,
+    prijavio_mito,
+    primjenjeni_propisi,
+    oslobadjajuce_okolnosti,
+    utvrdjena_krivica_u_presudi
+) VALUES
+('K51-23', TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, ARRAY['art_424_para_1'], 5, TRUE),
+('K70-22', TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, ARRAY['art_424_para_2'], 4, TRUE),
+('K82-18', TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, ARRAY['art_424_para_2'], 2, TRUE),
+('K112-23', TRUE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, ARRAY['art_424_para_1'], 2, TRUE),
+('K114-09', TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, ARRAY['art_424_para_1'], 3, TRUE),
+('K132-07', TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, ARRAY['art_424_para_1'], 4, TRUE),
+('K200-22', TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, ARRAY['art_424_para_1'], 3, TRUE),
+('K242-08', TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, ARRAY['art_424_para_1'], 4, TRUE),
+('K315-24', TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, ARRAY['art_424_para_2'], 1, TRUE),
+('K537-24', TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, ARRAY['art_424_para_2'], 6, TRUE),
+('K677-09', FALSE, TRUE, TRUE, FALSE, FALSE, TRUE, FALSE, ARRAY['art_423_para_4'], 1, FALSE),
+('K366-18', FALSE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, ARRAY['art_424_para_2','art_423_para_2'], 5, FALSE),
+('K244-09', TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, ARRAY['art_424_para_1'], 4, TRUE),
+('K30-16', TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, ARRAY['art_424_para_1'], 6, TRUE),
+('K99-18', TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, ARRAY['art_424_para_1'], 4, TRUE);

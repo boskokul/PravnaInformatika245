@@ -6,7 +6,7 @@ import es.ucm.fdi.gaia.jcolibri.cbrcore.CaseComponent;
 
 import java.util.List;
 
-public class VerdictSimilarity implements CaseComponent {
+public class VerdictSimilarity {
     private Long caseId;
     private String name;
     private Boolean optuzenoDavalacMita;
@@ -124,11 +124,6 @@ public class VerdictSimilarity implements CaseComponent {
 
     public void setUtvrdjenaKrivicaUPresudi(Boolean utvrdjenaKrivicaUPresudi) {
         this.utvrdjenaKrivicaUPresudi = utvrdjenaKrivicaUPresudi;
-    }
-
-    @Override
-    public Attribute getIdAttribute() {
-        return new Attribute("id", this.getClass());
     }
 
     public VerdictSimilarity() {
