@@ -3,11 +3,11 @@
         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
         xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
-    <lc:case rdf:about="string">
-    <lc:name>string</lc:name>
+    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#KOKO">
+    <lc:name>KOKO</lc:name>
     
     <!-- o optuzenom -->
-    <lc:defendant>string</lc:defendant>
+    <lc:defendant>BIlija</lc:defendant>
     <lc:optuzeni_davalac_mita>yes</lc:optuzeni_davalac_mita>
 	
 	<lc:optuzeni_primalac_mita>no</lc:optuzeni_primalac_mita>

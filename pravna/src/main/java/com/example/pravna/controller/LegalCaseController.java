@@ -9,7 +9,11 @@ import com.example.pravna.service.LegalCaseService;
 
 import jakarta.validation.Valid;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:5173")
 @RestController
@@ -28,7 +32,7 @@ public class LegalCaseController {
     @PostMapping("/save-decision")
     public ResponseEntity<String> saveDecision(@Valid @RequestBody LegalDecisionResult result) {
         try {
-            LegalCaseService.saveHtmlToResources(result, result.getCaseNumber() + ".html");
+            LegalCaseService.saveHtmlToFile(result, result.getCaseNumber() + ".html");
             LegalCaseService.saveAkomaNtosoToFile(result, result.getCaseNumber() + ".xml");
             return ResponseEntity.ok("Presuda je uspešno sačuvana.");
         } catch (IOException e) {
@@ -36,4 +40,18 @@ public class LegalCaseController {
         }
     }
 
+    @GetMapping("/html-files")
+    public List<String> getHtmlFiles() {
+
+        File folder = new File(Paths.get(System.getProperty("user.dir"), "data", "verdicts", "html").toString());
+        File[] files = folder.listFiles((dir, name) -> name.toLowerCase().endsWith(".html"));
+
+        List<String> htmlFileNames = new ArrayList<>();
+        if (files != null) {
+            for (File file : files) {
+                htmlFileNames.add(file.getName());
+            }
+        }
+        return htmlFileNames;
+    }
 }
