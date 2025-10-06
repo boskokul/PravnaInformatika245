@@ -98,15 +98,6 @@ export default function RulesBased() {
 
     const result = await res.json();
     //initializing future verdict fields
-    verdictSim.name = formData.name;
-    verdictSim.mitoVezanZaKazneniPostupak = formData.mitoVezanZaKazneniPostupak;
-    verdictSim.optuzeniSluzbenoLice = formData.optuzeniSluzbenoLice;
-    verdictSim.optuzenoDavalacMita = formData.optuzenoDavalacMita;
-    verdictSim.optuzenoPrimalacMita = formData.optuzenoPrimalacMita;
-    verdictSim.oslobadjajuceOkolnosti = 2;
-    verdictSim.prijavioMito = formData.prijavioMito;
-    verdictSim.radnjaNezakonitaIliNeizvrsena = formData.radnjaNezakonitaIliNeizvrsena;
-    verdictSim.trazioMitoNakon = formData.trazioMitoNakon;
     cbrVedict.caseNumber = formData.name;
     cbrVedict.defendantName = formData.defendant;
     setcbrVerdict(cbrVedict)
@@ -142,9 +133,30 @@ export default function RulesBased() {
       }
     );
 
-    const result = await res.json();
+    const result = await res;
+    verdictSim.name = formData.name;
+    verdictSim.mitoVezanZaKazneniPostupak = formData.mitoVezanZaKazneniPostupak;
+    verdictSim.optuzeniSluzbenoLice = formData.optuzeniSluzbenoLice;
+    verdictSim.optuzenoDavalacMita = formData.optuzenoDavalacMita;
+    verdictSim.optuzenoPrimalacMita = formData.optuzenoPrimalacMita;
+    verdictSim.oslobadjajuceOkolnosti = 2;
+    verdictSim.prijavioMito = formData.prijavioMito;
+    verdictSim.radnjaNezakonitaIliNeizvrsena = formData.radnjaNezakonitaIliNeizvrsena;
+    verdictSim.trazioMitoNakon = formData.trazioMitoNakon;
     verdictSim.utvrdjenaKrivicaUPresudi = (cbrVedict.sentence!=0);
+    verdictSim.primjenjeniPropisi.push("art_"+cbrVedict.law_article+"para_"+cbrVedict.law_paragraph)
+
     //TODO: call method for saving verdict metadata 
+    const res1 = await fetch(
+      "http://localhost:8085/verdicts/save",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(verdictSim),
+      }
+    );
+
+    const result1 = await res1.json()
     // setVerdict(result);
   };
 
@@ -658,17 +670,29 @@ export default function RulesBased() {
                   {v.name}
                   </button>
 
-                  {/* Only show fields that are true */}
-                  <ul style={{ margin: 0, paddingLeft: "1rem", fontSize: "0.9rem" }}>
-                    {Object.entries(v)
-                      .filter(([key, value]) => value === true && key !== "name" || key == "primjenjeniPropisi")
-                      .map(([key, value]) => (
-                        <li key={key == "primenjeniPropisi"? value:key} style={{ color: "#555" }}>
-                          {(key == "primenjeniPropisi")? value:key}
-                        </li>
-                      ))}
-                    
-                  </ul>
+                   {/* Only show fields that are true or the array primjenjeniPropisi */}
+      <ul style={{ margin: 0, paddingLeft: "1rem", fontSize: "0.9rem" }}>
+        {Object.entries(v)
+          .filter(
+            ([key, value]) =>
+              (value === true && key !== "name") ||
+              key === "primjenjeniPropisi"
+          )
+          .flatMap(([key, value]) => {
+            if (key === "primjenjeniPropisi" && Array.isArray(value)) {
+              return value.map((item, idx) => (
+                <li key={key + idx} style={{ color: "#555" }}>
+                  {item}
+                </li>
+              ));
+            }
+            return (
+              <li key={key} style={{ color: "#555" }}>
+                {key}
+              </li>
+            );
+          })}
+      </ul>
                 </li>
               ))}
             </ul>
