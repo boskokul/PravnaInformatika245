@@ -29,7 +29,6 @@ function App() {
           }
         />
         <Route path="/ruleBased" element={<RulesBased />} />
-        <Route path="/caseBased" element={<CaseBased />} />
       </Routes>
     </BrowserRouter>
   );

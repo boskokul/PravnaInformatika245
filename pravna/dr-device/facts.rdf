@@ -3,8 +3,8 @@
         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
         xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
-    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#K30025">
-    <lc:name>K300-25</lc:name>
+    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#Jovana">
+    <lc:name>Jovana</lc:name>
     
     <!-- o optuzenom -->
     <lc:defendant>Milovan Milesevic</lc:defendant>
@@ -13,8 +13,8 @@
 	<lc:optuzeni_primalac_mita>no</lc:optuzeni_primalac_mita>
     <lc:optuzeni_sluzbeno_lice>no</lc:optuzeni_sluzbeno_lice>
     <!-- o samoj radnji i predmetu mita (da li je radio nesto zabranjeno ili nije izvrsio obaveznu radnju) -->
-    <lc:radnja_nezakonita_ili_neizvrsena>no</lc:radnja_nezakonita_ili_neizvrsena>	
-    <lc:mito_vezan_za_kazneni_postupak>yes</lc:mito_vezan_za_kazneni_postupak>
+    <lc:radnja_nezakonita_ili_neizvrsena>yes</lc:radnja_nezakonita_ili_neizvrsena>	
+    <lc:mito_vezan_za_kazneni_postupak>no</lc:mito_vezan_za_kazneni_postupak>
     <!-- da li je trazio mito nakon sto je vec uradjena nelegalna ili neizvrsena obavezna radnja -->
     <lc:trazio_mito_nakon>no</lc:trazio_mito_nakon>
     <!-- da li ga je sam prijavio pre otkrivanja -->

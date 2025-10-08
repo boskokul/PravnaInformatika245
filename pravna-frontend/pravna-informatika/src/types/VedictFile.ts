@@ -12,4 +12,5 @@ export interface VerdictFile{
     defendantName: string | null;
     minSentenceMonths: number | null;
     maxSentenceMonths: number | null;
+    defendantBackground: string| null;
 };

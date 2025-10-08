@@ -319,7 +319,7 @@ public class LegalCaseService {
         xml.append("                            PRESUDU\n");
         xml.append("            </p>\n");
         xml.append("            <p>\n");
-        xml.append("                Okrivljeni <party id=\"defendant\" refersTo=\"#defendant\" as=\"#defendant\">").append(escapeXml(result.getDefendantName())).append("</party>\n");
+        xml.append("                Okrivljeni <party id=\"defendant\" refersTo=\"#defendant\" as=\"#defendant\">").append(escapeXml(result.getDefendantName())).append("</party> ").append(escapeXml(result.getDefendantBackground())).append("\n");
         xml.append("            </p>\n");
         xml.append("        </background>\n");
 
@@ -419,7 +419,7 @@ public class LegalCaseService {
         // Presuda
         html.append("    <br><p class='centered'>PRESUDU</p>\n");
         html.append("    <br>");
-        html.append("    <p>Okrivljeni ").append(escapeHtml(result.getDefendantName())).append("</p>\n");
+        html.append("    <p>Okrivljeni ").append(escapeHtml(result.getDefendantName())).append(", ").append(escapeHtml(result.getDefendantBackground())).append("</p>\n ");
 
         if(result.getSentence()>0){
             html.append("    <p class='centered'>Kriv je</p>\n");

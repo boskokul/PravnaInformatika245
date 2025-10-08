@@ -17,6 +17,7 @@ public class LegalDecisionResult {
     private String judgeName;
     private String clerkName;
     private String defendantName;
+    private String defendantBackground;
     private int sentence;
 
     private final Map<String, String> lawArticlesToViolations = new HashMap<>() {{
@@ -34,7 +35,7 @@ public class LegalDecisionResult {
 
     public LegalDecisionResult(String decision, String explanation, int minSentenceMonths, int maxSentenceMonths,
                                String caseNumber, String courtName, String countryCode, String judgeName,
-                               String clerkName, String defendantName, int sentence, int law_article, int law_paragraph) {
+                               String clerkName, String defendantName, int sentence, int law_article, int law_paragraph, String defendant_background) {
         this.decision = decision;
         this.explanation = explanation;
         this.minSentenceMonths = minSentenceMonths;
@@ -48,6 +49,7 @@ public class LegalDecisionResult {
         this.sentence = sentence;
         this.law_article = law_article;
         this.law_paragraph = law_paragraph;
+        this.defendantBackground = defendant_background;
     }
 
     // Getters and setters for all fields...
@@ -138,6 +140,14 @@ public class LegalDecisionResult {
 
     public void setLaw_article(int law_article) {
         this.law_article = law_article;
+    }
+
+    public String getDefendantBackground() {
+        return defendantBackground;
+    }
+
+    public void setDefendantBackground(String defendantBackground) {
+        this.defendantBackground = defendantBackground;
     }
 
     public String getLawHTML(){

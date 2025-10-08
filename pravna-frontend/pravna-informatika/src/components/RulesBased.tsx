@@ -2,8 +2,10 @@ import { useState } from "react";
 import { VerdictSimilarity } from "../types/VerdictSimilarity";
 import Viewer from "./Viewer";
 import { VerdictFile } from "../types/VedictFile";
+import { useNavigate } from "react-router-dom";
 
 export default function RulesBased() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     defendant: "",
@@ -30,6 +32,7 @@ export default function RulesBased() {
     defendantName: string | null;
     minSentenceMonths: number | null;
     maxSentenceMonths: number | null;
+    defendantBackground: string| null;
   } | null>();
 
   //for cbr
@@ -46,7 +49,8 @@ export default function RulesBased() {
     clerkName: "",
     defendantName: "",
     minSentenceMonths: 0,
-    maxSentenceMonths: 0});
+    maxSentenceMonths: 0,
+    defendantBackground: ""});
   //variable for creating new metadata about verdict
   const verdictSim: VerdictSimilarity = {
     caseId: 0,
@@ -97,13 +101,16 @@ export default function RulesBased() {
     });
 
     const result = await res.json();
+    
     //initializing future verdict fields
     cbrVedict.caseNumber = formData.name;
     cbrVedict.defendantName = formData.defendant;
     setcbrVerdict(cbrVedict)
     
     setSimilarVerdicts(result);
+    setVerdict(null);
     console.log(similarVerdicts);
+
   };
 
   const handleSaveVerdict = async (e?: React.SyntheticEvent) => {
@@ -117,9 +124,10 @@ export default function RulesBased() {
       }
     );
 
-    const result = await res.json();
+    const result = await res;
 
     // setVerdict(result);
+    navigate("/"); // navigacija na pocetnu stranu da se vidi presuda
   };
 
   const handleSaveCBRVerdict = async (e?: React.SyntheticEvent) => {
@@ -158,6 +166,7 @@ export default function RulesBased() {
 
     const result1 = await res1.json()
     // setVerdict(result);
+    navigate("/");
   };
 
   return (
@@ -240,6 +249,15 @@ export default function RulesBased() {
               onChange={handleChange}
             />{" "}
             Prijavio mito pre otkrivanja
+          </label>
+          <label>
+            Oslobadjajuce okolnosti
+            <input
+              type="number"
+              name="oslobadjajuceOkolnosti"
+              //onChange={handleChange}
+            />{" "}
+            
           </label>
           <button type="button" style={{ marginTop: "1rem" }} onClick={handleSubmit}>
             Pošalji na odlučivanje
@@ -351,6 +369,20 @@ export default function RulesBased() {
             </label>
 
             <label>
+              <strong>Istorijat okrivljenog:</strong>
+              <textarea
+                rows={4}
+                style={{ resize: "vertical", minHeight: "100px" }}
+                value={verdict.defendantBackground ?? ""}
+                onChange={(e) =>
+                  setVerdict((prev) =>
+                    prev ? { ...prev, defendantBackground: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
+
+            <label>
               <strong>Prema članu zakona broj:</strong>
               <input
                 type="text"
@@ -364,7 +396,7 @@ export default function RulesBased() {
             </label>
 
             <label>
-              <strong>Paragraf broj:</strong>
+              <strong>Stav broj:</strong>
               <input
                 type="text"
                 value={verdict.law_paragraph ?? ""}
@@ -565,7 +597,19 @@ export default function RulesBased() {
                 }
               />
             </label>
-
+            <label>
+              <strong>Istorijat okrivljenog:</strong>
+              <textarea
+                rows={4}
+                style={{ resize: "vertical", minHeight: "100px" }}
+                value={cbrVedict.defendantBackground ?? ""}
+                onChange={(e) =>
+                  setcbrVerdict((prev) =>
+                    prev ? { ...prev, defendantBackground: e.target.value } : prev
+                  )
+                }
+              />
+            </label>
             <label>
               <strong>Prema članu zakona broj:</strong>
               <input
@@ -580,7 +624,7 @@ export default function RulesBased() {
             </label>
 
             <label>
-              <strong>Paragraf broj:</strong>
+              <strong>Stav broj:</strong>
               <input
                 type="text"
                 value={cbrVedict.law_paragraph ?? ""}
