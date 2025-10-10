@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../../schemas/akomantoso30.xsd ">
+    <judgement>
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRauthor>
+                        Osnovni sud u Kotoru
+                    </FRBRauthor>
+                    <FRBRdate date="2025-10-10"> 
+                        2025-10-10
+                    </FRBRdate>
+                    <FRBRtitle>                      
+                        K300-25
+                    </FRBRtitle>
+                    <FRBRcountry>
+                        CG
+                    </FRBRcountry>
+                </FRBRWork>
+            </identification>
+            <references>
+                <TLCOrganization eId="court" href="/ontology/organization/court" showAs="Osnovni sud u Kotoru" />
+                <TLCPerson eId="judge" href="/ontology/person/judge" showAs="Milica Milicevic" />
+                <TLCPerson eId="clerk" href="/ontology/person/clerk" showAs="Milan Milankovic" />
+                <TLCPerson eId="defendant" href="/ontology/person/defendant" showAs="Milovan Milesevic" />
+                <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
+                <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
+                <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
+            </references> 
+        </meta>
+        <judgmentBody>
+        <introduction>
+            <p class="subtitle">
+                        U IME DRŽAVE
+            </p>
+            <p>
+                <organization id="court" refersTo="#court">Osnovni sud u Kotoru</organization> Sudija <party id="judge" refersTo="#judge" as="#judge">Milica Milicevic,</party> uz učešće <party id="clerk" refersTo="#clerk" as="#clerk">Milan Milankovic</party> kao zapisničara, u krivičnom predmetu okrivljenog <party id="defendant" refersTo="#defendant" as="#defendant">Milovan Milesevic,</party> zbog krivičnog djela <ref href="/krivicni#art_424_para_1">čl.424 st.1 Krivičnog zakonika</ref>, donio je dana 2025-10-10 godine
+            </p>
+        </introduction>
+        <background>
+            <p class="subtitle">
+                            PRESUDU
+            </p>
+            <p>
+                Okrivljeni <party id="defendant" refersTo="#defendant" as="#defendant">Milovan Milesevic</party> rodjen 1989. u Kotoru, neoženjen, srednjeg imovinskog stanja, ranije neosuđivan
+            </p>
+        </background>
+        <decision>
+            <p class="subtitle">
+                Kriv je
+            </p>
+            <p class="subtitle">
+                        Što je: Dana ... učinio delo iz &lt;a href=&quot;../../law_html/criminal_law_acoma_ntoso.html#art_424_para_1&quot;&gt;čl.424st.1 Krivičnog zakonika&lt;/a&gt; , te ga sud
+            </p>
+            <p class="subtitle">
+                OSUĐUJE
+            </p>
+            <p>
+                Na 6 meseci zatvorkse kazne.
+            </p>
+        </decision>
+        <arguments>
+            <p class="subtitle">
+                OBRAZLOŽENJE
+            </p>
+            <p>
+                Sud je na osnovu iznesenih dokaza utvrdio da je optuženi pokušao  dati mito koje je vezano za krivični postupak koji se vodi protiv njegove majke. 
+            </p>
+        </arguments>
+        </judgmentBody>
+        <conclusion>
+            <p class="subtitle">
+                        ZAPISNIČARKA SUTKINJA
+            </p>
+            <p>
+                <party id="clerk" refersTo="#clerk" as="#clerk">Milan Milankovic, s.r.</party> <party id="judge" refersTo="#judge" as="#judge">Milica Milicevic, s.r.</party>
+            </p>
+        </conclusion>
+    </judgement>
+</akomaNtoso>

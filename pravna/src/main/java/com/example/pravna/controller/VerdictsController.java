@@ -12,6 +12,7 @@ import com.example.pravna.service.VerdictsService;
 import com.example.pravna.util.CaseData;
 import com.example.pravna.util.VerdictSimilarity;
 import jakarta.validation.Valid;
+import org.hibernate.internal.util.collections.CaseInsensitiveDictionary;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
@@ -44,6 +45,12 @@ public class VerdictsController {
         _cbrService.addCaseToBase(cd);
         System.out.println("Presuda sacuvana. ---- metapodaci");
         return ResponseEntity.ok(newverdict);
+    }
+
+    @GetMapping(value = "/metadata/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Verdict> getVerdictData(@PathVariable String name) throws IOException {
+        Verdict v = _verdictsService.getByName(name);
+        return ResponseEntity.ok(v);
     }
 }
 

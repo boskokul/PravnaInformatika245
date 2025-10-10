@@ -29,4 +29,9 @@ public class VerdictsService {
 
         return _verdictReposiroty.save(v);
     }
+
+    public Verdict getByName(String name)
+    {
+        return _verdictReposiroty.getByName(name);
+    }
 }

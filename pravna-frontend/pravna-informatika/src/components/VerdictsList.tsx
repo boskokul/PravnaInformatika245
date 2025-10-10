@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import { Verdict } from "../types/Verdict";
 
 export default function VerdictList({
-  onSelect,
+  onSelect, onSelectVerdict
 }: {
   onSelect: (file: string) => void;
+  onSelectVerdict: (verdict: string) => void;
 }) {
   const [verdicts, setVerdicts] = useState<string[]>([]);
 
@@ -13,6 +15,8 @@ export default function VerdictList({
       .then((data) => setVerdicts(data))
       .catch((err) => console.error("Failed to fetch verdicts:", err));
   }, []);
+
+  
 
   return (
     <div
@@ -29,7 +33,7 @@ export default function VerdictList({
         {verdicts.map((v) => (
           <li key={v} style={{ marginBottom: "1rem" }}>
             <button
-              onClick={() => onSelect("http://localhost:8085/verdicts/" + v)}
+              onClick={() =>{ onSelect("http://localhost:8085/verdicts/" + v); onSelectVerdict(v.slice(0, v.length-5))}}
             >
               presuda {v.slice(0, -5)}
             </button>
