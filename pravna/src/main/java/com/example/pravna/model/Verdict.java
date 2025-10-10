@@ -86,8 +86,9 @@ public class Verdict {
     /**
      * Applied legal acts in verdict
      */
+
     @Column(name = "primjenjeni_propisi", nullable = false)
-    @NotNull(message = "Applied legal acts must be specified")
+    @NotNull(message = "Extenuating circumstances must be specified")
     private List<String> primjenjeniPropisi;
 
     /**
@@ -97,6 +98,16 @@ public class Verdict {
     @NotNull(message = "Extenuating circumstances must be specified")
     private Integer oslobadjajuceOkolnosti;
 
+    @Column(name = "sudija")
+    private String sudija;
+
+    @Column(name = "zapisnicar")
+    private String zapisnicar;
+
+    @Column(name = "okrivljeni" )
+    private String okrivljeni;
+    @Column(name = "sud" )
+    private String sud;
     /**
      * Guilt established
      */

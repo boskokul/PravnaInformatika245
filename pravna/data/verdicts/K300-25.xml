@@ -5,24 +5,24 @@
             <identification source="#court">
                 <FRBRWork>
                     <FRBRauthor>
-                        Berane
+                        Osnovni sud u Kotoru
                     </FRBRauthor>
-                    <FRBRdate date="2025-10-05"> 
-                        2025-10-05
+                    <FRBRdate date="2025-10-10"> 
+                        2025-10-10
                     </FRBRdate>
                     <FRBRtitle>                      
-                        K24-2025
+                        K300-25
                     </FRBRtitle>
                     <FRBRcountry>
-                        sds
+                        CG
                     </FRBRcountry>
                 </FRBRWork>
             </identification>
             <references>
-                <TLCOrganization eId="court" href="/ontology/organization/court" showAs="Berane" />
-                <TLCPerson eId="judge" href="/ontology/person/judge" showAs="sdfsd" />
-                <TLCPerson eId="clerk" href="/ontology/person/clerk" showAs="dsds" />
-                <TLCPerson eId="defendant" href="/ontology/person/defendant" showAs="BIlija" />
+                <TLCOrganization eId="court" href="/ontology/organization/court" showAs="Osnovni sud u Kotoru" />
+                <TLCPerson eId="judge" href="/ontology/person/judge" showAs="Milica Milicevic" />
+                <TLCPerson eId="clerk" href="/ontology/person/clerk" showAs="Milan Milankovic" />
+                <TLCPerson eId="defendant" href="/ontology/person/defendant" showAs="Milovan Milesevic" />
                 <TLCRole eId="judge" href="/ontology/role/judge" showAs="Judge" />
                 <TLCRole eId="clerk" href="/ontology/role/clerk" showAs="Clerk" />
                 <TLCRole eId="defendant" href="/ontology/role/defendant" showAs="Defendant" />
@@ -34,7 +34,7 @@
                         U IME DRŽAVE
             </p>
             <p>
-                <organization id="court" refersTo="#court">Berane</organization> Sudija <party id="judge" refersTo="#judge" as="#judge">sdfsd,</party> uz učešće <party id="clerk" refersTo="#clerk" as="#clerk">dsds</party> kao zapisničara, u krivičnom predmetu okrivljenog <party id="defendant" refersTo="#defendant" as="#defendant">BIlija,</party> zbog krivičnog djela <ref href="/krivicni#art_424_para_1">čl.424 st.1 Krivičnog zakonika</ref>, donio je dana 2025-10-05 godine
+                <organization id="court" refersTo="#court">Osnovni sud u Kotoru</organization> Sudija <party id="judge" refersTo="#judge" as="#judge">Milica Milicevic,</party> uz učešće <party id="clerk" refersTo="#clerk" as="#clerk">Milan Milankovic</party> kao zapisničara, u krivičnom predmetu okrivljenog <party id="defendant" refersTo="#defendant" as="#defendant">Milovan Milesevic,</party> zbog krivičnog djela <ref href="/krivicni#art_424_para_1">čl.424 st.1 Krivičnog zakonika</ref>, donio je dana 2025-10-10 godine
             </p>
         </introduction>
         <background>
@@ -42,7 +42,7 @@
                             PRESUDU
             </p>
             <p>
-                Okrivljeni <party id="defendant" refersTo="#defendant" as="#defendant">BIlija</party>
+                Okrivljeni <party id="defendant" refersTo="#defendant" as="#defendant">Milovan Milesevic</party> rodjen 1989. u Kotoru, neoženjen, srednjeg imovinskog stanja, ranije neosuđivan
             </p>
         </background>
         <decision>
@@ -56,7 +56,7 @@
                 OSUĐUJE
             </p>
             <p>
-                Na 3 meseci zatvorkse kazne.
+                Na 6 meseci zatvorkse kazne.
             </p>
         </decision>
         <arguments>
@@ -64,7 +64,7 @@
                 OBRAZLOŽENJE
             </p>
             <p>
-                Tekst obrazloženja
+                Sud je na osnovu iznesenih dokaza utvrdio da je optuženi pokušao  dati mito koje je vezano za krivični postupak koji se vodi protiv njegove majke. 
             </p>
         </arguments>
         </judgmentBody>
@@ -73,7 +73,7 @@
                         ZAPISNIČARKA SUTKINJA
             </p>
             <p>
-                <party id="clerk" refersTo="#clerk" as="#clerk">dsds, s.r.</party> <party id="judge" refersTo="#judge" as="#judge">sdfsd, s.r.</party>
+                <party id="clerk" refersTo="#clerk" as="#clerk">Milan Milankovic, s.r.</party> <party id="judge" refersTo="#judge" as="#judge">Milica Milicevic, s.r.</party>
             </p>
         </conclusion>
     </judgement>

@@ -8,13 +8,10 @@ export default function SideBarButtons() {
     >
       <h3>Unos nove presude</h3>
       <button onClick={() => navigate("/ruleBased")}>
-        Presuđivanje po pravilima
+        Nova presuda
       </button>
       <br />
       <br />
-      <button onClick={() => navigate("/caseBased")}>
-        Presudjivanje po slučajevima
-      </button>
       <br />
       <br />
     </div>
